@@ -6,7 +6,7 @@
 
 <title>Kevin Ayala | Growth Partner Revenue Share</title>
 <meta name="description" content="Kevin Ayala - Growth Partner bajo modelo Revenue Share. Solo cobramos si tu empresa factura más. Crecimiento estratégico sin anticipos.">
-<meta name="keywords" content="Growth Partner Ecuador, Revenue Share, crecimiento empresarial, socio estratégico, escalamiento empresarial, marketing performance">
+<meta name="keywords" content="Growth Partner Ecuador, Revenue Share, socio estratégico, escalamiento empresarial, marketing performance">
 <meta name="author" content="Kevin Ayala">
 
 <meta property="og:title" content="Kevin Ayala | Growth Partner">
@@ -28,56 +28,74 @@
 </script>
 
 <style>
+*{box-sizing:border-box;}
+
 body{
 margin:0;
-font-family:Arial, sans-serif;
-background:#0f172a;
+font-family: 'Segoe UI', sans-serif;
+background:linear-gradient(135deg,#0f172a,#111827);
 color:white;
-scroll-behavior:smooth;
 }
 
 header{
-padding:20px;
+padding:20px 5%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-max-width:1200px;
-margin:auto;
 }
 
 .logo{
-font-weight:bold;
+font-weight:700;
 font-size:22px;
 }
 
 section{
-padding:80px 20px;
-max-width:1100px;
+padding:80px 5%;
+max-width:1200px;
 margin:auto;
 }
 
-video{
-width:100%;
-border-radius:20px;
-margin-bottom:30px;
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
 }
 
-h1{font-size:38px;}
-h2{font-size:28px;}
+iframe{
+width:100%;
+aspect-ratio:16/9;
+border-radius:20px;
+border:none;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+h2{
+font-size:30px;
+margin-bottom:20px;
+}
 
 p{
-color:#cbd5e1;
-line-height:1.6;
+color:#d1d5db;
+line-height:1.7;
+}
+
+.buttons{
+margin-top:25px;
 }
 
 button{
-padding:15px 30px;
-border:none;
+padding:14px 28px;
 border-radius:30px;
+border:none;
 cursor:pointer;
-font-weight:bold;
-font-size:16px;
-margin:10px 5px;
+font-weight:600;
+margin-right:10px;
 }
 
 .primary{
@@ -92,22 +110,34 @@ color:#06b6d4;
 }
 
 .card{
-background:#1e293b;
+background:#1f2937;
 padding:25px;
-border-radius:15px;
+border-radius:18px;
 margin:15px 0;
+transition:transform .3s ease;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 input, textarea{
 width:100%;
-padding:12px;
+padding:14px;
 margin:10px 0;
-border-radius:8px;
+border-radius:10px;
 border:none;
+background:#111827;
+color:white;
 }
 
 form{
 max-width:600px;
+}
+
+.calendly-inline-widget{
+border-radius:20px;
+overflow:hidden;
 }
 
 .whatsapp{
@@ -115,36 +145,29 @@ position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
-padding:16px;
+padding:18px;
 border-radius:50%;
 font-size:22px;
 color:white;
 text-decoration:none;
-box-shadow:0 4px 12px rgba(0,0,0,.3);
-}
-
-.fade-in{
-opacity:0;
-transform:translateY(30px);
-transition:all .6s ease;
-}
-
-.visible{
-opacity:1;
-transform:translateY(0);
+box-shadow:0 4px 15px rgba(0,0,0,.3);
 }
 
 footer{
 text-align:center;
 padding:40px;
 font-size:14px;
-color:#94a3b8;
+color:#9ca3af;
 }
 
-@media(max-width:768px){
-h1{font-size:24px;}
-h2{font-size:20px;}
-section{padding:50px 15px;}
+/* Responsive */
+@media(max-width:992px){
+.hero{
+grid-template-columns:1fr;
+}
+h1{font-size:30px;}
+h2{font-size:22px;}
+section{padding:60px 5%;}
 }
 </style>
 </head>
@@ -158,47 +181,56 @@ section{padding:50px 15px;}
 <a href="https://wa.me/593992648781" class="whatsapp">💬</a>
 
 <!-- HERO -->
-<section class="fade-in">
+<section class="hero">
 
-<video controls poster="">
-<source src="video-demo.mp4" type="video/mp4">
-Tu navegador no soporta video HTML5.
-</video>
-
+<div>
 <h1>Solo cobramos si tu empresa factura más.</h1>
 
 <p>
-Soy Kevin Ayala, Growth Partner estratégico bajo modelo Revenue Share.
-No cobro anticipos ni mensualidades.
-Solo participo cuando tu empresa obtiene resultados reales.
+Soy Kevin Ayala, Growth Partner bajo modelo Revenue Share.
+No cobro anticipos. No cobro mensualidades.
+Solo participo cuando tu empresa crece.
 </p>
 
+<div class="buttons">
 <button class="primary" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'})">
 Aplicar evaluación estratégica
 </button>
 
 <button class="secondary" onclick="document.getElementById('agenda').scrollIntoView({behavior:'smooth'})">
-Agendar llamada directa
+Agendar llamada
 </button>
+</div>
+</div>
+
+<div>
+<iframe src="https://www.youtube.com/embed/TU_VIDEO_ID"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+</div>
 
 </section>
 
 <!-- MODELO -->
-<section class="fade-in">
+<section>
 <h2>¿Cómo funciona el modelo?</h2>
+
 <p>
 Implemento sistemas completos de crecimiento: estructura comercial,
 optimización de procesos, adquisición de clientes y escalamiento estratégico.
 </p>
+
 <p>
-Una vez que generamos facturación incremental medible,
+Cuando generamos facturación incremental medible,
 participamos con un porcentaje previamente acordado.
 </p>
+
 <p><strong>Si no hay crecimiento, no hay cobro.</strong></p>
 </section>
 
 <!-- TESTIMONIOS -->
-<section class="fade-in">
+<section>
 <h2>Resultados reales</h2>
 
 <div class="card">
@@ -211,7 +243,7 @@ participamos con un porcentaje previamente acordado.
 </section>
 
 <!-- CALENDLY -->
-<section id="agenda" class="fade-in">
+<section id="agenda">
 <h2>Agenda una llamada estratégica</h2>
 
 <div class="calendly-inline-widget"
@@ -223,7 +255,7 @@ style="min-width:320px;height:700px;">
 </section>
 
 <!-- FORMULARIO -->
-<section id="formulario" class="fade-in">
+<section id="formulario">
 <h2>Aplicación estratégica</h2>
 
 <form action="https://formsubmit.co/convenimentornosseguros@gmail.com" method="POST">
@@ -238,27 +270,12 @@ style="min-width:320px;height:700px;">
 <button class="primary">Enviar aplicación</button>
 </form>
 
-<p style="margin-top:20px;">
-Evaluamos cada empresa antes de aceptar una alianza.
-Modelo 100% basado en desempeño.
-</p>
 </section>
 
 <footer>
 Kevin Ayala | Growth Partner  
 Modelo Revenue Share basado en resultados reales.
 </footer>
-
-<script>
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("visible");
-}
-});
-});
-document.querySelectorAll(".fade-in").forEach(el=>observer.observe(el));
-</script>
 
 </body>
 </html>
