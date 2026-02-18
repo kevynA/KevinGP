@@ -3,223 +3,211 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comvenim | Digitalización Estratégica Empresarial</title>
-<meta name="description" content="Transformamos empresas en sistemas digitales escalables mediante estrategia, tecnología y automatización.">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<title>Comvenim | Growth Partner</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#0b1120;color:#fff}
-section{padding:100px 20px}
-.container{max-width:1200px;margin:auto}
-h1{font-size:48px;font-weight:800;line-height:1.1}
-h2{font-size:34px;margin-bottom:20px;text-align:center}
-p{color:#cbd5e1;margin:20px 0;text-align:center}
-.hero{
-background: radial-gradient(circle at top left,#1e293b,#0b1120);
-text-align:center;
-padding:140px 20px
+body {
+  margin:0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
 }
-.badge{
-background:#22c55e;
-color:#000;
-padding:8px 20px;
-border-radius:40px;
-font-size:14px;
-font-weight:600
+
+.container {
+  max-width:1200px;
+  margin:auto;
+  padding:60px 20px;
 }
-.btn{
-background:#22c55e;
-color:#000;
-padding:14px 30px;
-border:none;
-border-radius:40px;
-cursor:pointer;
-font-weight:700;
-transition:.3s;
-text-decoration:none;
-display:inline-block
+
+h1,h2,h3 { color:white; }
+
+.highlight { color:#22c55e; font-weight:bold; }
+
+.hero { text-align:center; margin-bottom:80px; }
+
+.hero h1 { font-size:2.8rem; }
+
+.hero p { max-width:850px; margin:auto; color:#cbd5f5; font-size:1.2rem; }
+
+.video-wrapper {
+  margin-top:50px;
+  display:flex;
+  justify-content:center;
 }
-.btn:hover{background:#16a34a;color:#fff;transform:scale(1.05)}
-.flex{display:flex;flex-wrap:wrap;gap:30px;justify-content:center}
-.card{
-background:rgba(30,41,59,0.6);
-backdrop-filter:blur(10px);
-padding:40px;
-border-radius:20px;
-flex:1;
-min-width:280px;
-transition:.3s;
-border:1px solid rgba(255,255,255,0.05)
+
+.video-wrapper iframe {
+  width:100%;
+  max-width:900px;
+  height:500px;
+  border-radius:20px;
 }
-.card:hover{transform:translateY(-10px)}
-.price{font-size:30px;color:#22c55e;font-weight:800;margin:15px 0}
-.features{text-align:left;margin-top:20px}
-.features li{margin:10px 0}
-.highlight{
-border:2px solid #22c55e
+
+.section-title {
+  text-align:center;
+  margin-bottom:50px;
 }
-.testimonial{
-background:#1e293b;
-padding:30px;
-border-radius:20px;
-max-width:350px
+
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
 }
-.video-wrapper{
-position:relative;
-padding-bottom:56.25%;
-height:0;
-overflow:hidden;
-border-radius:20px
+
+.card {
+  background:#020617;
+  border:1px solid #1e293b;
+  border-radius:20px;
+  padding:30px;
+  transition:0.3s;
 }
-.video-wrapper iframe{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%
+
+.card:hover {
+  transform:translateY(-6px);
+  border-color:#22c55e;
 }
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:#fff;
-padding:18px;
-border-radius:50%;
-font-size:22px;
-text-decoration:none
+
+.cta {
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 26px;
+  background:linear-gradient(90deg,#22c55e,#16a34a);
+  color:#022c22;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:bold;
 }
-@media(max-width:768px){
-h1{font-size:30px}
-.flex{flex-direction:column}
+
+.testimonials {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.testimonial {
+  background:#0f172a;
+  border-radius:20px;
+  padding:25px;
+  border:1px solid #1e293b;
+}
+
+.form-section {
+  background:#020617;
+  border-radius:20px;
+  padding:50px;
+  margin-top:80px;
+}
+
+form {
+  display:grid;
+  gap:20px;
+}
+
+input, select, textarea {
+  padding:14px;
+  border-radius:10px;
+  border:none;
+  font-size:1rem;
+}
+
+button {
+  padding:16px;
+  background:#22c55e;
+  border:none;
+  border-radius:999px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+footer {
+  text-align:center;
+  margin-top:80px;
+  color:#64748b;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-<div class="container">
-<span class="badge">Growth Partner Empresarial</span>
-<h1>Tu Empresa Puede Estar Facturando Mucho Más… Pero No Tiene Estructura Digital</h1>
-<p>Implementamos estrategia, tecnología y posicionamiento para convertir negocios tradicionales en sistemas digitales rentables y escalables.</p>
-<a href="#planes" class="btn">Solicitar Diagnóstico Estratégico</a>
-</div>
-</section>
+<section class="container hero">
+<h1>Implementamos crecimiento real.<br>
+<span class="highlight">Solo cobramos si tu negocio factura más.</span>
+</h1>
 
-<!-- VIDEO VSL -->
-<section>
-<div class="container">
-<h2>Descubre Cómo Escalamos Empresas</h2>
+<p>
+Nos convertimos en socio estratégico de empresas de servicios,
+consultoras, constructoras, clínicas y negocios tradicionales que quieren
+crecer de forma estructurada.<br><br>
+
+<strong>No cobramos anticipos.</strong>
+Solo participamos con un porcentaje cuando tu empresa obtiene resultados medibles.
+</p>
+
 <div class="video-wrapper">
-<iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/VIDEO_ID_AQUI"
+title="Video presentación"
+frameborder="0"
+allowfullscreen></iframe>
 </div>
-</div>
+
 </section>
 
-<!-- PLANES -->
-<section id="planes">
-<div class="container">
-<h2>Programas de Implementación Estratégica</h2>
-<div class="flex">
+<section class="container">
+<h2 class="section-title">Casos de Éxito</h2>
 
-<div class="card">
-<h3>Programa Presencia Digital</h3>
-<p class="price">Desde $1,200</p>
-<ul class="features">
-<li>✔ Arquitectura estratégica de redes</li>
-<li>✔ Posicionamiento de marca</li>
-<li>✔ Embudo básico de captación</li>
-<li>✔ Estructura de contenidos avanzada</li>
-<li>✔ Sesión estratégica personalizada</li>
-</ul>
-<button class="btn" onclick="contactar('Programa Presencia Digital')">
-Aplicar al Programa
-</button>
-</div>
-
-<div class="card highlight">
-<h3>Programa Web Corporativo</h3>
-<p class="price">Desde $2,000</p>
-<ul class="features">
-<li>✔ Sitio web optimizado a conversión</li>
-<li>✔ SEO técnico</li>
-<li>✔ Integración WhatsApp / CRM</li>
-<li>✔ Arquitectura estratégica digital</li>
-<li>✔ Optimización para Google</li>
-</ul>
-<button class="btn" onclick="contactar('Programa Web Corporativo')">
-Aplicar al Programa
-</button>
-</div>
-
-<div class="card">
-<h3>Programa Crecimiento Integral</h3>
-<p class="price">Desde $3,500</p>
-<ul class="features">
-<li>✔ Estrategia digital completa</li>
-<li>✔ Web optimizada + SEO avanzado</li>
-<li>✔ Automatización de procesos</li>
-<li>✔ Posicionamiento Google</li>
-<li>✔ Acompañamiento estratégico empresarial</li>
-</ul>
-<button class="btn" onclick="contactar('Programa Crecimiento Integral')">
-Aplicar al Programa
-</button>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- TESTIMONIOS -->
-<section>
-<div class="container">
-<h2>Empresas que ya escalaron</h2>
-<div class="flex">
+<div class="testimonials">
 
 <div class="testimonial">
-<p>"Duplicamos nuestras ventas en menos de 6 meses."</p>
-<strong>- CEO Comercial</strong>
+<p>"En 90 días duplicamos nuestros leads y empezamos a cerrar contratos grandes.
+No pagamos nada hasta que vimos resultados reales."</p>
+<strong>— Empresa Constructora</strong>
 </div>
 
 <div class="testimonial">
-<p>"Ahora aparecemos en Google y generamos leads constantes."</p>
-<strong>- Director Marketing</strong>
+<p>"Pasamos de depender de referencias a tener un sistema digital estable
+que genera clientes cada mes."</p>
+<strong>— Clínica Privada</strong>
 </div>
 
 <div class="testimonial">
-<p>"Automatizamos procesos y reducimos costos operativos."</p>
-<strong>- Gerente General</strong>
+<p>"Lo más potente fue la estructura estratégica.
+Ahora tenemos previsibilidad en ingresos."</p>
+<strong>— Firma de Servicios Profesionales</strong>
 </div>
 
-</div>
 </div>
 </section>
 
-<!-- CTA FINAL -->
-<section>
-<div class="container" style="text-align:center">
-<h2>¿Listo Para Escalar Tu Empresa?</h2>
-<p>Agenda una llamada estratégica. Evaluamos tu negocio y diseñamos tu plan de implementación.</p>
-<button class="btn" onclick="contactar('Diagnóstico Estratégico General')">
-Agendar Diagnóstico
-</button>
-</div>
+<section class="container form-section">
+<h2 style="text-align:center;">Aplicar para Evaluación Estratégica</h2>
+
+<p style="text-align:center; max-width:700px; margin:auto; color:#cbd5f5;">
+Solo trabajamos con empresas que facturan mínimo $5,000 mensuales
+y quieren escalar de forma estructurada.
+</p>
+
+<form action="https://formsubmit.co/tuemail@gmail.com" method="POST">
+
+<input type="text" name="nombre" placeholder="Nombre completo" required>
+
+<input type="text" name="empresa" placeholder="Nombre de la empresa" required>
+
+<select name="facturacion" required>
+<option value="">Facturación mensual aproximada</option>
+<option>$5,000 - $10,000</option>
+<option>$10,000 - $30,000</option>
+<option>$30,000+</option>
+</select>
+
+<textarea name="objetivo" placeholder="¿Cuál es el principal reto que quieres resolver?" required></textarea>
+
+<button type="submit">Solicitar Evaluación</button>
+
+</form>
 </section>
 
-<a href="https://wa.me/593992648781" class="whatsapp">💬</a>
-
-<script>
-function contactar(plan){
-let mensaje = "Hola, quiero aplicar al " + plan + 
-". Mi empresa está interesada en escalar y me gustaría agendar un diagnóstico estratégico.";
-window.open("https://wa.me/593992648781?text=" + encodeURIComponent(mensaje));
-}
-</script>
+<footer>
+© 2026 Comvenim · Growth Partner · Solo cobramos si generamos resultados
+</footer>
 
 </body>
 </html>
