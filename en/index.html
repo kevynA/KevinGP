@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Growth Partner | Revenue Share Model</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0f172a;
+color:white;
+scroll-behavior:smooth;
+}
+
+section{
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+h1,h2,h3{
+margin-bottom:20px;
+}
+
+button{
+padding:15px 25px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.primary{
+background:#06b6d4;
+color:white;
+}
+
+.secondary{
+background:transparent;
+border:2px solid #06b6d4;
+color:#06b6d4;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+margin:15px 0;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:none;
+}
+
+.lang-toggle{
+position:fixed;
+top:20px;
+right:20px;
+background:#06b6d4;
+padding:10px 15px;
+border-radius:20px;
+cursor:pointer;
+font-weight:bold;
+z-index:1000;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+color:white;
+text-decoration:none;
+}
+
+.socials a{
+margin-right:15px;
+color:#06b6d4;
+text-decoration:none;
+font-weight:bold;
+}
+
+.fade-in{
+opacity:0;
+transform:translateY(30px);
+transition:all .6s ease;
+}
+
+.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+h1{font-size:26px;}
+section{padding:50px 15px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="lang-toggle" onclick="toggleLang()">EN</div>
+
+<a href="https://wa.me/593992648781" class="whatsapp">💬</a>
+
+<!-- HERO -->
+<section class="fade-in">
+<h1 class="translate"
+data-es="Solo cobramos si tu empresa factura más."
+data-en="We only get paid when your company grows.">
+Solo cobramos si tu empresa factura más.
+</h1>
+
+<p class="translate"
+data-es="Nos convertimos en tu socio estratégico bajo modelo Revenue Share. Sin anticipos. Sin riesgo."
+data-en="We become your strategic partner under a Revenue Share model. No retainers. No upfront risk.">
+Nos convertimos en tu socio estratégico bajo modelo Revenue Share. Sin anticipos. Sin riesgo.
+</p>
+
+<button class="primary translate"
+data-es="Aplicar ahora"
+data-en="Apply now">
+Aplicar ahora
+</button>
+</section>
+
+<!-- MODELO -->
+<section class="fade-in">
+<h2 class="translate"
+data-es="¿Qué es Revenue Share?"
+data-en="What is Revenue Share?">
+¿Qué es Revenue Share?
+</h2>
+
+<p class="translate"
+data-es="Cobramos un porcentaje de la facturación generada después de implementar nuestro sistema. Solo ganamos cuando tú ganas."
+data-en="We charge a percentage of the revenue generated after implementation. We win only when you win.">
+Cobramos un porcentaje de la facturación generada después de implementar nuestro sistema. Solo ganamos cuando tú ganas.
+</p>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="fade-in">
+<h2 class="translate"
+data-es="Resultados reales"
+data-en="Real Results">
+Resultados reales
+</h2>
+
+<div class="card">
+<p>"Incrementamos 37% la facturación en 4 meses."</p>
+</div>
+
+<div class="card">
+<p>"El modelo sin riesgo nos permitió escalar sin inversión inicial."</p>
+</div>
+</section>
+
+<!-- REDES -->
+<section class="fade-in socials">
+<h2 class="translate"
+data-es="Conéctate con nosotros"
+data-en="Connect with us">
+Conéctate con nosotros
+</h2>
+
+<a href="#">Instagram</a>
+<a href="#">LinkedIn</a>
+<a href="#">TikTok</a>
+</section>
+
+<!-- FORMULARIO -->
+<section class="fade-in">
+<h2 class="translate"
+data-es="Aplica para trabajar con nosotros"
+data-en="Apply to work with us">
+Aplica para trabajar con nosotros
+</h2>
+
+<form>
+<input type="text" placeholder="Nombre / Name" required>
+<input type="email" placeholder="Email" required>
+<input type="tel" placeholder="Teléfono / Phone" required>
+<textarea placeholder="Describe tu negocio / Describe your business"></textarea>
+
+<button class="primary translate"
+data-es="Enviar aplicación"
+data-en="Submit application">
+Enviar aplicación
+</button>
+</form>
+</section>
+
+<!-- FOOTER -->
+<section style="text-align:center; font-size:14px;">
+<p class="translate"
+data-es="No cobramos nada antes de generar resultados medibles."
+data-en="We charge nothing before generating measurable results.">
+No cobramos nada antes de generar resultados medibles.
+</p>
+</section>
+
+<script>
+
+let currentLang = "es";
+
+function toggleLang(){
+currentLang = currentLang === "es" ? "en" : "es";
+
+document.querySelectorAll(".translate").forEach(el => {
+el.innerText = el.getAttribute("data-" + currentLang);
+});
+
+document.querySelector(".lang-toggle").innerText = currentLang === "es" ? "EN" : "ES";
+}
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("visible");
+}
+});
+});
+
+document.querySelectorAll(".fade-in").forEach(el=>observer.observe(el));
+
+</script>
+
+</body>
+</html>
