@@ -1,35 +1,101 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Growth Partner | Revenue Share Model</title>
+
+<title>Kevin Ayala | Revenue Share Growth Partner</title>
+<meta name="description" content="Kevin Ayala - Performance-based Growth Partner. We don’t charge retainers. We get paid only when your company scales.">
+<meta name="keywords" content="Revenue Share Growth Partner, Performance Based Consulting, Business Scaling USA, Strategic Growth Partner">
+<meta name="author" content="Kevin Ayala">
+
+<meta property="og:title" content="Kevin Ayala | Revenue Share Growth Partner">
+<meta property="og:description" content="No retainers. No upfront fees. We build revenue systems and scale your company.">
+<meta property="og:type" content="website">
+
+<link rel="alternate" hreflang="es" href="https://kevin-gp.vercel.app/" />
+<link rel="alternate" hreflang="en" href="#index.html" />
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ProfessionalService",
+"name": "Kevin Ayala - Revenue Share Growth Partner",
+"description": "Performance-based strategic growth consulting.",
+"areaServed": "United States",
+"url": "https://kevin-gp.vercel.app/"
+}
+</script>
 
 <style>
+*{box-sizing:border-box;}
+
 body{
 margin:0;
-font-family:Arial, sans-serif;
-background:#0f172a;
+font-family:'Segoe UI', sans-serif;
+background:linear-gradient(135deg,#0f172a,#111827);
 color:white;
-scroll-behavior:smooth;
+}
+
+header{
+padding:20px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-weight:700;
+font-size:22px;
 }
 
 section{
-padding:80px 20px;
-max-width:1100px;
+padding:80px 5%;
+max-width:1200px;
 margin:auto;
 }
 
-h1,h2,h3{
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+iframe{
+width:100%;
+aspect-ratio:16/9;
+border-radius:20px;
+border:none;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+h1{
+font-size:44px;
 margin-bottom:20px;
 }
 
+h2{
+font-size:30px;
+margin-bottom:20px;
+}
+
+p{
+color:#d1d5db;
+line-height:1.7;
+}
+
+.buttons{
+margin-top:25px;
+}
+
 button{
-padding:15px 25px;
-border:none;
+padding:14px 28px;
 border-radius:30px;
+border:none;
 cursor:pointer;
-font-weight:bold;
+font-weight:600;
+margin-right:10px;
 }
 
 .primary{
@@ -44,30 +110,34 @@ color:#06b6d4;
 }
 
 .card{
-background:#1e293b;
+background:#1f2937;
 padding:25px;
-border-radius:15px;
+border-radius:18px;
 margin:15px 0;
+transition:transform .3s ease;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 input, textarea{
 width:100%;
-padding:12px;
+padding:14px;
 margin:10px 0;
-border-radius:8px;
+border-radius:10px;
 border:none;
+background:#111827;
+color:white;
 }
 
-.lang-toggle{
-position:fixed;
-top:20px;
-right:20px;
-background:#06b6d4;
-padding:10px 15px;
+form{
+max-width:600px;
+}
+
+.calendly-inline-widget{
 border-radius:20px;
-cursor:pointer;
-font-weight:bold;
-z-index:1000;
+overflow:hidden;
 }
 
 .whatsapp{
@@ -75,166 +145,138 @@ position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
-padding:15px;
+padding:18px;
 border-radius:50%;
 font-size:22px;
 color:white;
 text-decoration:none;
+box-shadow:0 4px 15px rgba(0,0,0,.3);
 }
 
-.socials a{
-margin-right:15px;
-color:#06b6d4;
-text-decoration:none;
-font-weight:bold;
+footer{
+text-align:center;
+padding:40px;
+font-size:14px;
+color:#9ca3af;
 }
 
-.fade-in{
-opacity:0;
-transform:translateY(30px);
-transition:all .6s ease;
+@media(max-width:992px){
+.hero{
+grid-template-columns:1fr;
 }
-
-.visible{
-opacity:1;
-transform:translateY(0);
-}
-
-@media(max-width:768px){
-h1{font-size:26px;}
-section{padding:50px 15px;}
+h1{font-size:30px;}
+h2{font-size:22px;}
+section{padding:60px 5%;}
 }
 </style>
 </head>
 
 <body>
 
-<div class="lang-toggle" onclick="toggleLang()">EN</div>
+<header>
+<div class="logo">Kevin Ayala</div>
+<a href="https://tudominio.com/" style="color:#06b6d4;text-decoration:none;">ES</a>
+</header>
 
 <a href="https://wa.me/593992648781" class="whatsapp">💬</a>
 
 <!-- HERO -->
-<section class="fade-in">
-<h1 class="translate"
-data-es="Solo cobramos si tu empresa factura más."
-data-en="We only get paid when your company grows.">
-Solo cobramos si tu empresa factura más.
-</h1>
+<section class="hero">
 
-<p class="translate"
-data-es="Nos convertimos en tu socio estratégico bajo modelo Revenue Share. Sin anticipos. Sin riesgo."
-data-en="We become your strategic partner under a Revenue Share model. No retainers. No upfront risk.">
-Nos convertimos en tu socio estratégico bajo modelo Revenue Share. Sin anticipos. Sin riesgo.
+<div>
+<h1>We Don’t Charge Fees. We Build Revenue Systems.</h1>
+
+<p>
+I’m Kevin Ayala, a performance-based Growth Partner.
+No retainers. No upfront payments.
+We only get compensated when your company scales.
 </p>
 
-<button class="primary translate"
-data-es="Aplicar ahora"
-data-en="Apply now">
-Aplicar ahora
+<div class="buttons">
+<button class="primary" onclick="document.getElementById('application').scrollIntoView({behavior:'smooth'})">
+Apply for Strategic Evaluation
 </button>
+
+<button class="secondary" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">
+Book a Call
+</button>
+</div>
+</div>
+
+<div>
+<iframe src="https://www.youtube.com/embed/TU_VIDEO_ID"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+</div>
+
 </section>
 
-<!-- MODELO -->
-<section class="fade-in">
-<h2 class="translate"
-data-es="¿Qué es Revenue Share?"
-data-en="What is Revenue Share?">
-¿Qué es Revenue Share?
-</h2>
+<!-- MODEL -->
+<section>
+<h2>How the Revenue Share Model Works</h2>
 
-<p class="translate"
-data-es="Cobramos un porcentaje de la facturación generada después de implementar nuestro sistema. Solo ganamos cuando tú ganas."
-data-en="We charge a percentage of the revenue generated after implementation. We win only when you win.">
-Cobramos un porcentaje de la facturación generada después de implementar nuestro sistema. Solo ganamos cuando tú ganas.
+<p>
+We design and implement complete growth infrastructures:
+sales systems, client acquisition, operational optimization,
+and scalable positioning strategies.
 </p>
+
+<p>
+Once measurable incremental revenue is achieved,
+we participate through a pre-agreed percentage.
+</p>
+
+<p><strong>If we don’t generate growth, we don’t get paid.</strong></p>
 </section>
 
-<!-- TESTIMONIOS -->
-<section class="fade-in">
-<h2 class="translate"
-data-es="Resultados reales"
-data-en="Real Results">
-Resultados reales
-</h2>
+<!-- RESULTS -->
+<section>
+<h2>Proven Results</h2>
 
 <div class="card">
-<p>"Incrementamos 37% la facturación en 4 meses."</p>
+<p>"Revenue increased by 37% within 4 months."</p>
 </div>
 
 <div class="card">
-<p>"El modelo sin riesgo nos permitió escalar sin inversión inicial."</p>
+<p>"We shifted from unpredictable referrals to a scalable revenue engine."</p>
 </div>
 </section>
 
-<!-- REDES -->
-<section class="fade-in socials">
-<h2 class="translate"
-data-es="Conéctate con nosotros"
-data-en="Connect with us">
-Conéctate con nosotros
-</h2>
+<!-- CALENDLY -->
+<section id="booking">
+<h2>Book a Strategic Growth Call</h2>
 
-<a href="#">Instagram</a>
-<a href="#">LinkedIn</a>
-<a href="#">TikTok</a>
+<div class="calendly-inline-widget"
+data-url="https://calendly.com/convenimentornosseguros/30min"
+style="min-width:320px;height:700px;">
+</div>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </section>
 
-<!-- FORMULARIO -->
-<section class="fade-in">
-<h2 class="translate"
-data-es="Aplica para trabajar con nosotros"
-data-en="Apply to work with us">
-Aplica para trabajar con nosotros
-</h2>
+<!-- APPLICATION -->
+<section id="application">
+<h2>Strategic Partnership Application</h2>
 
-<form>
-<input type="text" placeholder="Nombre / Name" required>
-<input type="email" placeholder="Email" required>
-<input type="tel" placeholder="Teléfono / Phone" required>
-<textarea placeholder="Describe tu negocio / Describe your business"></textarea>
+<form action="https://formsubmit.co/convenimentornosseguros@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Growth Partnership Application">
 
-<button class="primary translate"
-data-es="Enviar aplicación"
-data-en="Submit application">
-Enviar aplicación
-</button>
+<input type="text" name="Full Name" placeholder="Full Name" required>
+<input type="email" name="Email" placeholder="Business Email" required>
+<input type="tel" name="Phone" placeholder="Phone Number" required>
+<textarea name="Business" placeholder="Describe your company and current revenue"></textarea>
+
+<button class="primary">Submit Application</button>
 </form>
+
 </section>
 
-<!-- FOOTER -->
-<section style="text-align:center; font-size:14px;">
-<p class="translate"
-data-es="No cobramos nada antes de generar resultados medibles."
-data-en="We charge nothing before generating measurable results.">
-No cobramos nada antes de generar resultados medibles.
-</p>
-</section>
-
-<script>
-
-let currentLang = "es";
-
-function toggleLang(){
-currentLang = currentLang === "es" ? "en" : "es";
-
-document.querySelectorAll(".translate").forEach(el => {
-el.innerText = el.getAttribute("data-" + currentLang);
-});
-
-document.querySelector(".lang-toggle").innerText = currentLang === "es" ? "EN" : "ES";
-}
-
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("visible");
-}
-});
-});
-
-document.querySelectorAll(".fade-in").forEach(el=>observer.observe(el));
-
-</script>
+<footer>
+Kevin Ayala | Performance-Based Growth Partner  
+Revenue Share Model. No Fees Before Results.
+</footer>
 
 </body>
 </html>
