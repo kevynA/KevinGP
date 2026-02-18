@@ -13,8 +13,8 @@
 <meta property="og:description" content="Modelo basado en resultados reales. Sin anticipos. Sin riesgo.">
 <meta property="og:type" content="website">
 
-<link rel="alternate" hreflang="es" href="https://kevin-gp.vercel.app/" />
-<link rel="alternate" hreflang="en" href="KevinGP/en/index.html" />
+<link rel="alternate" hreflang="es" href="Index" />
+<link rel="alternate" hreflang="en" href="en/index.html" />
 
 <script type="application/ld+json">
 {
@@ -169,6 +169,28 @@ h1{font-size:30px;}
 h2{font-size:22px;}
 section{padding:60px 5%;}
 }
+  .language-switch {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.lang-btn {
+    text-decoration: none;
+    padding: 8px 14px;
+    margin-left: 8px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.lang-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
 </style>
 </head>
 
@@ -176,6 +198,12 @@ section{padding:60px 5%;}
 
 <header>
 <div class="logo">Kevin Ayala</div>
+
+  <div class="language-switch">
+    <a href="/" class="lang-btn">ES</a>
+    <a href="/en/" class="lang-btn">EN</a>
+</div>
+
 </header>
 
 <a href="https://wa.me/593992648781" class="whatsapp">💬</a>
@@ -269,7 +297,12 @@ style="min-width:320px;height:700px;">
 
 <button class="primary">Enviar aplicación</button>
 </form>
-
+  
+<script>
+if (navigator.language.startsWith('en') && window.location.pathname === '/') {
+    window.location.href = "/en/";
+}
+</script>
 </section>
 
 <footer>
