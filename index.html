@@ -297,12 +297,6 @@ style="min-width:320px;height:700px;">
 
 <button class="primary">Enviar aplicación</button>
 </form>
-
-  <script>
-if (navigator.language.startsWith('en') && window.location.pathname === '/') {
-    window.location.href = "/en/";
-}
-</script>
   
 </section>
 
@@ -310,6 +304,43 @@ if (navigator.language.startsWith('en') && window.location.pathname === '/') {
 Kevin Ayala | Growth Partner  
 Modelo Revenue Share basado en resultados reales.
 </footer>
+  
+<script>
+(function() {
+    var userLang = navigator.language || navigator.userLanguage;
+    var currentPath = window.location.pathname;
+
+    // Normalizamos idioma
+    userLang = userLang.toLowerCase();
+
+    // Si está en la raíz (versión español)
+    if (currentPath === "/" || currentPath === "/index.html") {
+
+        if (userLang.startsWith("en")) {
+            window.location.href = "/en/";
+        } else if (userLang.startsWith("es")) {
+            // Se queda en español
+        } else {
+            // Idioma no identificado → español por defecto
+        }
+
+    }
+
+    // Si está en la versión inglesa
+    if (currentPath.startsWith("/en")) {
+
+        if (userLang.startsWith("es")) {
+            window.location.href = "/";
+        } else if (userLang.startsWith("en")) {
+            // Se queda en inglés
+        } else {
+            // Idioma no identificado → se queda en inglés
+        }
+
+    }
+
+})();
+</script>
 
 </body>
 </html>
