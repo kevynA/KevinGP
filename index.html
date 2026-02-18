@@ -3,211 +3,339 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comvenim | Growth Partner</title>
+<title>Comvenim | Growth Partner Internacional</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin:0;
-  font-family: 'Inter', sans-serif;
-  background: radial-gradient(circle at top, #0f172a, #020617);
-  color: #e5e7eb;
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:'Inter',sans-serif;
+background:linear-gradient(135deg,#0f172a,#020617);
+color:#e5e7eb;
+overflow-x:hidden;
 }
 
-.container {
-  max-width:1200px;
-  margin:auto;
-  padding:60px 20px;
+.container{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
 }
 
-h1,h2,h3 { color:white; }
+h1,h2,h3{color:white}
 
-.highlight { color:#22c55e; font-weight:bold; }
+.highlight{color:#22c55e;font-weight:700}
 
-.hero { text-align:center; margin-bottom:80px; }
-
-.hero h1 { font-size:2.8rem; }
-
-.hero p { max-width:850px; margin:auto; color:#cbd5f5; font-size:1.2rem; }
-
-.video-wrapper {
-  margin-top:50px;
-  display:flex;
-  justify-content:center;
+.section-title{
+text-align:center;
+margin-bottom:50px;
+font-size:2.2rem;
 }
 
-.video-wrapper iframe {
-  width:100%;
-  max-width:900px;
-  height:500px;
-  border-radius:20px;
+.hero{text-align:center}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:20px;
 }
 
-.section-title {
-  text-align:center;
-  margin-bottom:50px;
+.hero p{
+max-width:850px;
+margin:auto;
+font-size:1.2rem;
+color:#cbd5f5;
+line-height:1.6;
 }
 
-.cards {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:30px;
+.video-wrapper{
+margin-top:50px;
+display:flex;
+justify-content:center;
 }
 
-.card {
-  background:#020617;
-  border:1px solid #1e293b;
-  border-radius:20px;
-  padding:30px;
-  transition:0.3s;
+.video-wrapper iframe{
+width:100%;
+max-width:900px;
+height:500px;
+border-radius:20px;
+box-shadow:0 20px 60px rgba(0,0,0,0.5);
 }
 
-.card:hover {
-  transform:translateY(-6px);
-  border-color:#22c55e;
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 
-.cta {
-  display:inline-block;
-  margin-top:20px;
-  padding:14px 26px;
-  background:linear-gradient(90deg,#22c55e,#16a34a);
-  color:#022c22;
-  border-radius:999px;
-  text-decoration:none;
-  font-weight:bold;
+.card{
+background:linear-gradient(145deg,#0f172a,#111827);
+padding:30px;
+border-radius:20px;
+border:1px solid #1e293b;
+transition:0.4s;
 }
 
-.testimonials {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:30px;
+.card:hover{
+transform:translateY(-8px);
+border-color:#22c55e;
 }
 
-.testimonial {
-  background:#0f172a;
-  border-radius:20px;
-  padding:25px;
-  border:1px solid #1e293b;
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 
-.form-section {
-  background:#020617;
-  border-radius:20px;
-  padding:50px;
-  margin-top:80px;
+.testimonial{
+background:#0f172a;
+padding:30px;
+border-radius:20px;
+border:1px solid #1e293b;
+transition:0.3s;
 }
 
-form {
-  display:grid;
-  gap:20px;
+.testimonial:hover{
+transform:translateY(-6px);
+border-color:#22c55e;
 }
 
-input, select, textarea {
-  padding:14px;
-  border-radius:10px;
-  border:none;
-  font-size:1rem;
+.logos{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:40px;
 }
 
-button {
-  padding:16px;
-  background:#22c55e;
-  border:none;
-  border-radius:999px;
-  font-weight:bold;
-  cursor:pointer;
+.logos img{
+filter:grayscale(100%);
+opacity:0.7;
+transition:0.3s;
 }
 
-footer {
-  text-align:center;
-  margin-top:80px;
-  color:#64748b;
+.logos img:hover{
+filter:none;
+opacity:1;
+}
+
+.social-links{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.social-links a{
+padding:14px 22px;
+border-radius:999px;
+text-decoration:none;
+font-weight:600;
+background:#1e293b;
+color:white;
+transition:0.3s;
+}
+
+.social-links a:hover{
+background:#22c55e;
+color:#022c22;
+}
+
+.form-section{
+margin-top:100px;
+background:#0f172a;
+padding:60px;
+border-radius:25px;
+box-shadow:0 20px 60px rgba(0,0,0,0.4);
+}
+
+form{
+display:grid;
+gap:20px;
+margin-top:30px;
+}
+
+input,select,textarea{
+padding:15px;
+border-radius:12px;
+border:1px solid #1e293b;
+background:#020617;
+color:white;
+font-size:1rem;
+}
+
+input:focus,select:focus,textarea:focus{
+outline:none;
+border-color:#22c55e;
+}
+
+button{
+padding:16px;
+border:none;
+border-radius:999px;
+background:linear-gradient(90deg,#22c55e,#16a34a);
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+border-radius:50%;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+z-index:999;
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+
+.fade-in{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.fade-in.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+footer{
+text-align:center;
+margin:80px 0 40px;
+color:#64748b;
+font-size:0.9rem;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:2.2rem}
+.video-wrapper iframe{height:300px}
 }
 </style>
-</head>
 
+<!-- Meta Pixel -->
+<!-- Pega aquí tu código -->
+
+<!-- Google Analytics -->
+<!-- Pega aquí tu código -->
+
+</head>
 <body>
 
-<section class="container hero">
+<section class="container hero fade-in">
 <h1>Implementamos crecimiento real.<br>
 <span class="highlight">Solo cobramos si tu negocio factura más.</span>
 </h1>
 
 <p>
-Nos convertimos en socio estratégico de empresas de servicios,
-consultoras, constructoras, clínicas y negocios tradicionales que quieren
-crecer de forma estructurada.<br><br>
-
-<strong>No cobramos anticipos.</strong>
-Solo participamos con un porcentaje cuando tu empresa obtiene resultados medibles.
+Nos convertimos en socio estratégico de empresas que quieren escalar con estructura.
+No cobramos anticipos. Participamos únicamente cuando el crecimiento es real y medible.
 </p>
 
 <div class="video-wrapper">
-<iframe src="https://www.youtube.com/embed/VIDEO_ID_AQUI"
-title="Video presentación"
-frameborder="0"
-allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/VIDEO_ID_AQUI" frameborder="0" allowfullscreen></iframe>
 </div>
-
 </section>
 
-<section class="container">
+<section class="container fade-in">
+<h2 class="section-title">Cómo Funciona</h2>
+<div class="cards">
+<div class="card"><h3>1. Diagnóstico</h3><p>Analizamos mercado y estructura interna.</p></div>
+<div class="card"><h3>2. Implementación</h3><p>Construimos tu ecosistema digital.</p></div>
+<div class="card"><h3>3. Optimización</h3><p>Escalamos lo que genera ingresos.</p></div>
+<div class="card"><h3>4. Revenue Share</h3><p>Solo cobramos cuando facturas más.</p></div>
+</div>
+</section>
+
+<section class="container fade-in">
+<h2 class="section-title">Impacto Estratégico</h2>
+<div class="cards">
+<div class="card"><h3>+120%</h3><p>Crecimiento promedio en leads</p></div>
+<div class="card"><h3>90 días</h3><p>Implementación promedio</p></div>
+<div class="card"><h3>0%</h3><p>Riesgo financiero inicial</p></div>
+</div>
+</section>
+
+<section class="container fade-in">
+<h2 class="section-title">Empresas que han confiado</h2>
+<div class="logos">
+<img src="logo1.png" width="120">
+<img src="logo2.png" width="120">
+<img src="logo3.png" width="120">
+</div>
+</section>
+
+<section class="container fade-in">
 <h2 class="section-title">Casos de Éxito</h2>
-
 <div class="testimonials">
-
-<div class="testimonial">
-<p>"En 90 días duplicamos nuestros leads y empezamos a cerrar contratos grandes.
-No pagamos nada hasta que vimos resultados reales."</p>
-<strong>— Empresa Constructora</strong>
-</div>
-
-<div class="testimonial">
-<p>"Pasamos de depender de referencias a tener un sistema digital estable
-que genera clientes cada mes."</p>
-<strong>— Clínica Privada</strong>
-</div>
-
-<div class="testimonial">
-<p>"Lo más potente fue la estructura estratégica.
-Ahora tenemos previsibilidad en ingresos."</p>
-<strong>— Firma de Servicios Profesionales</strong>
-</div>
-
+<div class="testimonial"><p>"Duplicamos nuestros leads en 90 días."</p><strong>— Empresa Constructora</strong></div>
+<div class="testimonial"><p>"Sistema digital que genera ventas mensuales."</p><strong>— Clínica Privada</strong></div>
+<div class="testimonial"><p>"Crecimiento estructurado y medible."</p><strong>— Firma Profesional</strong></div>
 </div>
 </section>
 
-<section class="container form-section">
+<section class="container fade-in">
+<h2 class="section-title">Conecta con Nosotros</h2>
+<div class="social-links">
+<a href="#" target="_blank">Instagram</a>
+<a href="#" target="_blank">LinkedIn</a>
+<a href="#" target="_blank">Facebook</a>
+<a href="#" target="_blank">YouTube</a>
+</div>
+</section>
+
+<section class="container form-section fade-in">
 <h2 style="text-align:center;">Aplicar para Evaluación Estratégica</h2>
 
-<p style="text-align:center; max-width:700px; margin:auto; color:#cbd5f5;">
-Solo trabajamos con empresas que facturan mínimo $5,000 mensuales
-y quieren escalar de forma estructurada.
-</p>
-
-<form action="https://formsubmit.co/convenimentornosseguros@gmail.com" method="POST">
-
+<form action="https://formsubmit.co/tuemail@gmail.com" method="POST">
 <input type="text" name="nombre" placeholder="Nombre completo" required>
-
-<input type="text" name="empresa" placeholder="Nombre de la empresa" required>
-
+<input type="text" name="empresa" placeholder="Empresa" required>
+<input type="tel" name="telefono" placeholder="Teléfono / WhatsApp" required>
 <select name="facturacion" required>
 <option value="">Facturación mensual aproximada</option>
 <option>$5,000 - $10,000</option>
 <option>$10,000 - $30,000</option>
 <option>$30,000+</option>
 </select>
-
-<textarea name="objetivo" placeholder="¿Cuál es el principal reto que quieres resolver?" required></textarea>
-
+<textarea name="objetivo" placeholder="¿Cuál es tu principal reto?" required></textarea>
 <button type="submit">Solicitar Evaluación</button>
-
 </form>
 </section>
 
+<a href="https://wa.me/593XXXXXXXXX" class="whatsapp-float" target="_blank">💬</a>
+
 <footer>
-© 2026 Comvenim · Growth Partner · Solo cobramos si generamos resultados
+© 2026 Comvenim · Growth Partner Internacional · Revenue Share Model
 </footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("visible");
+}
+});
+});
+document.querySelectorAll(".fade-in").forEach(el=>observer.observe(el));
+</script>
 
 </body>
 </html>
