@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comvenim | Growth Partner Internacional</title>
+<title>Comvenim Growth Partners</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -24,8 +24,19 @@ padding:80px 20px;
 }
 
 h1,h2,h3{color:white}
-
 .highlight{color:#22c55e;font-weight:700}
+
+.lang-toggle{
+position:fixed;
+top:20px;
+right:20px;
+background:#1e293b;
+padding:8px 15px;
+border-radius:20px;
+cursor:pointer;
+font-size:0.9rem;
+z-index:999;
+}
 
 .section-title{
 text-align:center;
@@ -34,19 +45,8 @@ font-size:2.2rem;
 }
 
 .hero{text-align:center}
-
-.hero h1{
-font-size:3rem;
-margin-bottom:20px;
-}
-
-.hero p{
-max-width:850px;
-margin:auto;
-font-size:1.2rem;
-color:#cbd5f5;
-line-height:1.6;
-}
+.hero h1{font-size:3rem;margin-bottom:20px}
+.hero p{max-width:850px;margin:auto;font-size:1.2rem;color:#cbd5f5;line-height:1.6}
 
 .video-wrapper{
 margin-top:50px;
@@ -81,43 +81,35 @@ transform:translateY(-8px);
 border-color:#22c55e;
 }
 
-.testimonials{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.testimonial{
+.form-section{
+margin-top:100px;
 background:#0f172a;
-padding:30px;
-border-radius:20px;
+padding:60px;
+border-radius:25px;
+box-shadow:0 20px 60px rgba(0,0,0,0.4);
+}
+
+form{display:grid;gap:20px;margin-top:30px}
+
+input,select,textarea{
+padding:15px;
+border-radius:12px;
 border:1px solid #1e293b;
+background:#020617;
+color:white;
+}
+
+button{
+padding:16px;
+border:none;
+border-radius:999px;
+background:linear-gradient(90deg,#22c55e,#16a34a);
+font-weight:bold;
+cursor:pointer;
 transition:0.3s;
 }
 
-.testimonial:hover{
-transform:translateY(-6px);
-border-color:#22c55e;
-}
-
-.logos{
-display:flex;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
-margin-top:40px;
-}
-
-.logos img{
-filter:grayscale(100%);
-opacity:0.7;
-transition:0.3s;
-}
-
-.logos img:hover{
-filter:none;
-opacity:1;
-}
+button:hover{transform:scale(1.05)}
 
 .social-links{
 display:flex;
@@ -142,48 +134,6 @@ background:#22c55e;
 color:#022c22;
 }
 
-.form-section{
-margin-top:100px;
-background:#0f172a;
-padding:60px;
-border-radius:25px;
-box-shadow:0 20px 60px rgba(0,0,0,0.4);
-}
-
-form{
-display:grid;
-gap:20px;
-margin-top:30px;
-}
-
-input,select,textarea{
-padding:15px;
-border-radius:12px;
-border:1px solid #1e293b;
-background:#020617;
-color:white;
-font-size:1rem;
-}
-
-input:focus,select:focus,textarea:focus{
-outline:none;
-border-color:#22c55e;
-}
-
-button{
-padding:16px;
-border:none;
-border-radius:999px;
-background:linear-gradient(90deg,#22c55e,#16a34a);
-font-weight:bold;
-cursor:pointer;
-transition:0.3s;
-}
-
-button:hover{
-transform:scale(1.05);
-}
-
 .whatsapp-float{
 position:fixed;
 bottom:25px;
@@ -200,30 +150,12 @@ font-size:28px;
 text-decoration:none;
 box-shadow:0 10px 30px rgba(0,0,0,0.4);
 z-index:999;
-transition:0.3s;
 }
 
-.whatsapp-float:hover{
-transform:scale(1.1);
-}
+.fade-in{opacity:0;transform:translateY(40px);transition:0.8s}
+.fade-in.visible{opacity:1;transform:translateY(0)}
 
-.fade-in{
-opacity:0;
-transform:translateY(40px);
-transition:all 0.8s ease;
-}
-
-.fade-in.visible{
-opacity:1;
-transform:translateY(0);
-}
-
-footer{
-text-align:center;
-margin:80px 0 40px;
-color:#64748b;
-font-size:0.9rem;
-}
+footer{text-align:center;margin:80px 0 40px;color:#64748b;font-size:0.9rem}
 
 @media(max-width:768px){
 .hero h1{font-size:2.2rem}
@@ -232,22 +164,21 @@ font-size:0.9rem;
 </style>
 
 <!-- Meta Pixel -->
-<!-- Pega aquí tu código -->
+<!-- Insert Meta Pixel here -->
 
 <!-- Google Analytics -->
-<!-- Pega aquí tu código -->
+<!-- Insert GA4 here -->
 
 </head>
 <body>
 
-<section class="container hero fade-in">
-<h1>Implementamos crecimiento real.<br>
-<span class="highlight">Solo cobramos si tu negocio factura más.</span>
-</h1>
+<div class="lang-toggle" onclick="toggleLang()">ES / EN</div>
 
-<p>
-Nos convertimos en socio estratégico de empresas que quieren escalar con estructura.
-No cobramos anticipos. Participamos únicamente cuando el crecimiento es real y medible.
+<section class="container hero fade-in">
+<h1 id="headline">Solo cobramos si tu negocio factura más.</h1>
+<p id="subheadline">
+Nos convertimos en socio estratégico bajo modelo Revenue Share.
+Sin anticipos. Sin riesgo inicial.
 </p>
 
 <div class="video-wrapper">
@@ -256,77 +187,91 @@ No cobramos anticipos. Participamos únicamente cuando el crecimiento es real y 
 </section>
 
 <section class="container fade-in">
-<h2 class="section-title">Cómo Funciona</h2>
+<h2 class="section-title">How It Works</h2>
 <div class="cards">
-<div class="card"><h3>1. Diagnóstico</h3><p>Analizamos mercado y estructura interna.</p></div>
-<div class="card"><h3>2. Implementación</h3><p>Construimos tu ecosistema digital.</p></div>
-<div class="card"><h3>3. Optimización</h3><p>Escalamos lo que genera ingresos.</p></div>
-<div class="card"><h3>4. Revenue Share</h3><p>Solo cobramos cuando facturas más.</p></div>
+<div class="card"><h3>1. Strategy</h3><p>Market & structure analysis.</p></div>
+<div class="card"><h3>2. Implementation</h3><p>Full digital ecosystem build.</p></div>
+<div class="card"><h3>3. Optimization</h3><p>Performance-based scaling.</p></div>
+<div class="card"><h3>4. Revenue Share</h3><p>We earn only when you grow.</p></div>
 </div>
 </section>
 
 <section class="container fade-in">
-<h2 class="section-title">Impacto Estratégico</h2>
+<h2 class="section-title">Industries We Focus On</h2>
 <div class="cards">
-<div class="card"><h3>+120%</h3><p>Crecimiento promedio en leads</p></div>
-<div class="card"><h3>90 días</h3><p>Implementación promedio</p></div>
-<div class="card"><h3>0%</h3><p>Riesgo financiero inicial</p></div>
+<div class="card"><h3>Construction Companies</h3></div>
+<div class="card"><h3>Medical Clinics</h3></div>
+<div class="card"><h3>Law Firms</h3></div>
+<div class="card"><h3>B2B Service Companies</h3></div>
 </div>
 </section>
 
 <section class="container fade-in">
-<h2 class="section-title">Empresas que han confiado</h2>
-<div class="logos">
-<img src="logo1.png" width="120">
-<img src="logo2.png" width="120">
-<img src="logo3.png" width="120">
+<h2 class="section-title">Transparency & Dashboard</h2>
+<div class="card">
+<p>
+All revenue share agreements include transparent reporting,
+shared dashboards and measurable KPIs.
+</p>
 </div>
 </section>
 
 <section class="container fade-in">
-<h2 class="section-title">Casos de Éxito</h2>
-<div class="testimonials">
-<div class="testimonial"><p>"Duplicamos nuestros leads en 90 días."</p><strong>— Empresa Constructora</strong></div>
-<div class="testimonial"><p>"Sistema digital que genera ventas mensuales."</p><strong>— Clínica Privada</strong></div>
-<div class="testimonial"><p>"Crecimiento estructurado y medible."</p><strong>— Firma Profesional</strong></div>
-</div>
-</section>
-
-<section class="container fade-in">
-<h2 class="section-title">Conecta con Nosotros</h2>
-<div class="social-links">
-<a href="#" target="_blank">Instagram</a>
-<a href="#" target="_blank">LinkedIn</a>
-<a href="#" target="_blank">Facebook</a>
-<a href="#" target="_blank">YouTube</a>
+<h2 class="section-title">Book Strategic Call</h2>
+<div class="card">
+<iframe src="https://calendly.com/convenimentornosseguros"
+width="100%" height="600" frameborder="0"></iframe>
 </div>
 </section>
 
 <section class="container form-section fade-in">
-<h2 style="text-align:center;">Aplicar para Evaluación Estratégica</h2>
+<h2 style="text-align:center;">Apply for Strategic Evaluation</h2>
 
-<form action="https://formsubmit.co/tuemail@gmail.com" method="POST">
-<input type="text" name="nombre" placeholder="Nombre completo" required>
-<input type="text" name="empresa" placeholder="Empresa" required>
-<input type="tel" name="telefono" placeholder="Teléfono / WhatsApp" required>
-<select name="facturacion" required>
-<option value="">Facturación mensual aproximada</option>
+<form action="https://formsubmit.co/convenimentornosseguros@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="text" name="company" placeholder="Company" required>
+<input type="tel" name="phone" placeholder="Phone / WhatsApp" required>
+<select name="revenue" required>
+<option value="">Monthly Revenue</option>
 <option>$5,000 - $10,000</option>
 <option>$10,000 - $30,000</option>
 <option>$30,000+</option>
 </select>
-<textarea name="objetivo" placeholder="¿Cuál es tu principal reto?" required></textarea>
-<button type="submit">Solicitar Evaluación</button>
+<textarea name="challenge" placeholder="Main challenge" required></textarea>
+<button type="submit">Apply Now</button>
 </form>
 </section>
 
-<a href="https://wa.me/593XXXXXXXXX" class="whatsapp-float" target="_blank">💬</a>
+<section class="container fade-in">
+<h2 class="section-title">Connect With Us</h2>
+<div class="social-links">
+<a href="#">Instagram</a>
+<a href="#">LinkedIn</a>
+<a href="#">Facebook</a>
+<a href="#">YouTube</a>
+</div>
+</section>
+
+<a href="https://wa.me/593992648781" class="whatsapp-float" target="_blank">💬</a>
 
 <footer>
-© 2026 Comvenim · Growth Partner Internacional · Revenue Share Model
+© 2026 Comvenim Growth Partners · Performance-Based Model
 </footer>
 
 <script>
+function toggleLang(){
+let headline=document.getElementById("headline");
+let sub=document.getElementById("subheadline");
+
+if(headline.innerText.includes("Solo")){
+headline.innerText="We only get paid when your company grows.";
+sub.innerText="Strategic Growth Partner under a Revenue Share model. No retainers. No upfront risk.";
+}else{
+headline.innerText="Solo cobramos si tu negocio factura más.";
+sub.innerText="Nos convertimos en socio estratégico bajo modelo Revenue Share. Sin anticipos. Sin riesgo inicial.";
+}
+}
+
 const observer=new IntersectionObserver(entries=>{
 entries.forEach(entry=>{
 if(entry.isIntersecting){
