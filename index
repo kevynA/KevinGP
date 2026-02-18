@@ -3,186 +3,205 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comvenim | Digitaliza tu Negocio</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Comvenim | Growth Partner & Digitalización Estratégica</title>
+<meta name="description" content="Transformamos empresas tradicionales en negocios digitales escalables mediante estrategia, tecnología y automatización.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-body{margin:0;font-family:'Poppins',sans-serif;background:#0f172a;color:#fff}
-section{padding:60px 20px;text-align:center}
-h1,h2,h3{margin:15px 0}
-.container{max-width:1100px;margin:auto}
-.btn{background:#22c55e;color:#000;padding:12px 25px;border:none;border-radius:30px;cursor:pointer;font-weight:600}
-.btn:hover{background:#16a34a;color:#fff}
-.card{background:#1e293b;padding:25px;border-radius:15px;margin:15px;flex:1;min-width:280px}
-.flex{display:flex;flex-wrap:wrap;justify-content:center}
-.price{font-size:28px;color:#22c55e;font-weight:bold}
-.features{text-align:left;margin-top:15px}
-.features li{margin:8px 0}
-.hero{background:linear-gradient(to right,#0f172a,#1e293b);padding:100px 20px}
-.hero h1{font-size:40px}
-.hero p{max-width:700px;margin:auto;font-size:18px}
-.badge{background:#22c55e;color:#000;padding:5px 15px;border-radius:20px;font-size:14px}
-#cart{position:fixed;top:20px;right:20px;background:#22c55e;color:#000;padding:10px 20px;border-radius:30px;cursor:pointer;font-weight:600}
-#cartItems{background:#1e293b;padding:20px;border-radius:10px;margin-top:20px;display:none}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px;border-radius:50%;font-size:24px;text-decoration:none}
-.social a{margin:10px;color:#22c55e;text-decoration:none;font-weight:600}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#0b1120;color:#fff;scroll-behavior:smooth}
+section{padding:100px 20px}
+.container{max-width:1200px;margin:auto}
+h1{font-size:48px;font-weight:800;line-height:1.1}
+h2{font-size:34px;margin-bottom:20px}
+p{color:#cbd5e1;margin:20px 0}
+.hero{
+background: radial-gradient(circle at top left,#1e293b,#0b1120);
+text-align:center;
+padding:140px 20px
+}
+.badge{
+background:#22c55e;
+color:#000;
+padding:8px 20px;
+border-radius:40px;
+font-size:14px;
+font-weight:600
+}
+.btn{
+background:#22c55e;
+color:#000;
+padding:14px 30px;
+border:none;
+border-radius:40px;
+cursor:pointer;
+font-weight:700;
+transition:.3s;
+text-decoration:none;
+display:inline-block
+}
+.btn:hover{background:#16a34a;color:#fff;transform:scale(1.05)}
+.flex{display:flex;flex-wrap:wrap;gap:30px;justify-content:center}
+.card{
+background:rgba(30,41,59,0.6);
+backdrop-filter:blur(10px);
+padding:40px;
+border-radius:20px;
+flex:1;
+min-width:280px;
+transition:.3s;
+border:1px solid rgba(255,255,255,0.05)
+}
+.card:hover{transform:translateY(-10px)}
+.price{font-size:30px;color:#22c55e;font-weight:800;margin:15px 0}
+.features{text-align:left;margin-top:20px}
+.features li{margin:10px 0}
+.testimonial{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+max-width:350px
+}
+.video-wrapper{
+position:relative;
+padding-bottom:56.25%;
+height:0;
+overflow:hidden;
+border-radius:20px
+}
+.video-wrapper iframe{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%
+}
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:18px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none
+}
 @media(max-width:768px){
-.hero h1{font-size:28px}
-.flex{flex-direction:column;align-items:center}
+h1{font-size:30px}
+.flex{flex-direction:column}
 }
 </style>
 </head>
 
 <body>
 
-<div id="cart">🛒 Carrito (<span id="cartCount">0</span>)</div>
-
+<!-- HERO VSL -->
 <section class="hero">
 <div class="container">
-<span class="badge">Digitaliza y Escala tu Negocio</span>
-<h1>Convierte tu Negocio en una Máquina de Ventas Online</h1>
-<p>Si tu empresa no está estructurada digitalmente, estás perdiendo clientes todos los días. Yo te ayudo a implementar tecnología, presencia digital y automatización para escalar tus resultados.</p>
-<button class="btn" onclick="scrollToPlans()">Ver Planes</button>
+<span class="badge">Digitalización Estratégica Empresarial</span>
+<h1>Si Tu Empresa No Está Digitalizada, Está Perdiendo Dinero Cada Día</h1>
+<p>Ayudo a empresas medianas y grandes a estructurar su presencia digital, automatizar procesos y escalar sus ventas mediante tecnología y estrategia de crecimiento.</p>
+<a href="#planes" class="btn">Ver Planes Estratégicos</a>
 </div>
 </section>
 
+<!-- VIDEO VSL -->
 <section>
 <div class="container">
-<h2>¿Qué Está Pasando Con Tu Negocio?</h2>
-<p>❌ Redes sociales sin estrategia<br>
-❌ Página web inexistente o mal optimizada<br>
-❌ Procesos manuales que frenan el crecimiento<br>
-❌ Falta de posicionamiento en Google</p>
-
-<h2>La Solución</h2>
-<p>Implementamos estructura digital completa: presencia estratégica, sitio web optimizado y tecnología para crecimiento sostenible.</p>
+<h2>Descubre Cómo Transformamos Negocios</h2>
+<div class="video-wrapper">
+<iframe src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" 
+frameborder="0" allowfullscreen></iframe>
+</div>
 </div>
 </section>
 
+<!-- PLANES -->
 <section id="planes">
 <div class="container">
-<h2>Planes Estratégicos</h2>
+<h2>Planes de Crecimiento Estratégico</h2>
 <div class="flex">
 
 <div class="card">
 <h3>Plan Presencia Digital</h3>
-<p class="price">$299</p>
+<p class="price">$1,200</p>
 <ul class="features">
-<li>✔ Auditoría de redes sociales</li>
-<li>✔ Estructura estratégica de contenido</li>
-<li>✔ Optimización de perfil</li>
-<li>✔ Calendario de publicaciones</li>
-<li>✔ Estrategia de crecimiento orgánico</li>
+<li>✔ Arquitectura estratégica de redes</li>
+<li>✔ Branding digital optimizado</li>
+<li>✔ Estrategia de contenido avanzada</li>
+<li>✔ Embudo básico de captación</li>
+<li>✔ Consultoría personalizada</li>
 </ul>
-<button class="btn" onclick="addToCart('Plan Presencia Digital',299)">Agregar al carrito</button>
+<a href="LINK_STRIPE_PLAN1" class="btn">Comprar Ahora</a>
 </div>
 
 <div class="card">
-<h3>Plan Sitio Web</h3>
-<p class="price">$499</p>
+<h3>Plan Web Corporativo</h3>
+<p class="price">$2,000</p>
 <ul class="features">
-<li>✔ Landing Page o Web Corporativa</li>
-<li>✔ Diseño profesional responsive</li>
-<li>✔ Optimización SEO básica</li>
-<li>✔ Integración WhatsApp</li>
-<li>✔ Dominio y hosting asesorado</li>
+<li>✔ Sitio web profesional optimizado</li>
+<li>✔ SEO técnico</li>
+<li>✔ Estructura orientada a conversión</li>
+<li>✔ Integración WhatsApp y CRM</li>
+<li>✔ Optimización para Google</li>
 </ul>
-<button class="btn" onclick="addToCart('Plan Sitio Web',499)">Agregar al carrito</button>
+<a href="LINK_STRIPE_PLAN2" class="btn">Comprar Ahora</a>
 </div>
 
 <div class="card">
 <h3>Plan Crecimiento Integral</h3>
-<p class="price">$799</p>
+<p class="price">$3,500</p>
 <ul class="features">
-<li>✔ Estrategia completa redes sociales</li>
-<li>✔ Creación de sitio web optimizado</li>
+<li>✔ Estrategia digital completa</li>
+<li>✔ Sitio web optimizado + SEO</li>
+<li>✔ Automatización de procesos</li>
 <li>✔ Posicionamiento en Google</li>
-<li>✔ Automatización básica de procesos</li>
-<li>✔ Consultoría estratégica personalizada</li>
+<li>✔ Acompañamiento estratégico</li>
 </ul>
-<button class="btn" onclick="addToCart('Plan Crecimiento Integral',799)">Agregar al carrito</button>
+<a href="LINK_STRIPE_PLAN3" class="btn">Comprar Ahora</a>
 </div>
 
 </div>
 </div>
 </section>
 
+<!-- TESTIMONIOS -->
 <section>
 <div class="container">
-<h2>Servicios Adicionales</h2>
+<h2>Resultados Reales</h2>
 <div class="flex">
 
-<div class="card">
-<h3>Mantenimiento de Equipos</h3>
-<p>$80</p>
-<button class="btn" onclick="addToCart('Mantenimiento de Equipos',80)">Agregar</button>
+<div class="testimonial">
+<p>"Duplicamos nuestras ventas en 4 meses tras implementar la estructura digital."</p>
+<strong>- CEO Empresa Comercial</strong>
 </div>
 
-<div class="card">
-<h3>Instalación Cámaras Seguridad</h3>
-<p>$150</p>
-<button class="btn" onclick="addToCart('Instalación Cámaras',150)">Agregar</button>
+<div class="testimonial">
+<p>"Pasamos de no existir en Google a generar leads constantes."</p>
+<strong>- Director Marketing</strong>
 </div>
 
-<div class="card">
-<h3>Landing Page Individual</h3>
-<p>$250</p>
-<button class="btn" onclick="addToCart('Landing Page Individual',250)">Agregar</button>
-</div>
-
-<div class="card">
-<h3>Consultoría Estratégica</h3>
-<p>$120</p>
-<button class="btn" onclick="addToCart('Consultoría Estratégica',120)">Agregar</button>
+<div class="testimonial">
+<p>"La automatización nos permitió reducir costos operativos significativamente."</p>
+<strong>- Gerente General</strong>
 </div>
 
 </div>
 </div>
 </section>
 
+<!-- CONTACTO -->
 <section>
-<div class="container">
-<h2>Contacto</h2>
-<p>¿Listo para digitalizar tu negocio?</p>
-<div class="social">
-<a href="#">Instagram</a>
-<a href="#">Facebook</a>
-<a href="#">LinkedIn</a>
-<a href="#">TikTok</a>
-</div>
-
-<div id="cartItems"></div>
-
+<div class="container" style="text-align:center">
+<h2>¿Listo Para Escalar?</h2>
+<p>Agenda una llamada estratégica o adquiere uno de nuestros planes.</p>
+<a href="https://wa.me/TU_NUMERO_AQUI?text=Hola%20quiero%20información%20estratégica" class="btn">Contactar Ahora</a>
 </div>
 </section>
 
-<a href="https://wa.me/593000000000" class="whatsapp">💬</a>
-
-<script>
-let cart = [];
-function addToCart(name,price){
-cart.push({name,price});
-document.getElementById('cartCount').innerText = cart.length;
-alert(name + " agregado al carrito");
-}
-document.getElementById('cart').onclick = function(){
-let cartBox = document.getElementById('cartItems');
-if(cartBox.style.display === "none"){
-cartBox.style.display = "block";
-let total = 0;
-cartBox.innerHTML = "<h3>Tu Carrito</h3>";
-cart.forEach(item=>{
-cartBox.innerHTML += `<p>${item.name} - $${item.price}</p>`;
-total += item.price;
-});
-cartBox.innerHTML += `<h4>Total: $${total}</h4>`;
-}else{
-cartBox.style.display = "none";
-}
-}
-function scrollToPlans(){
-document.getElementById('planes').scrollIntoView({behavior:"smooth"});
-}
-</script>
+<a href="https://wa.me/TU_NUMERO_AQUI" class="whatsapp">💬</a>
 
 </body>
 </html>
