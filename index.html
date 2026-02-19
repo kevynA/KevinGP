@@ -350,6 +350,85 @@ section{padding:60px 5%;}
   background: #374151;
   color: white;
 }
+  .plans-section {
+  padding: 80px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  color: #94a3b8;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.plan-card {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 18px;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+}
+
+.plan-card.featured {
+  border: 2px solid #00c2ff;
+  transform: scale(1.03);
+}
+
+.price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #00c2ff;
+  margin: 15px 0;
+}
+
+.plan-card ul {
+  margin: 20px 0;
+  padding-left: 18px;
+}
+
+.plan-card ul li {
+  margin-bottom: 8px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #00c2ff;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .plans-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 
@@ -499,70 +578,70 @@ allowfullscreen>
   </div>
 </section>
 <!-- ========================= -->
-<!-- PLANES HORIZONTALES -->
+<!-- STATIC DIGITAL MARKETING PLANS -->
 <!-- ========================= -->
 
-<section class="planes-section">
+<section class="plans-section">
   <div class="container">
 
-    <h2 class="section-title">Planes de Marketing Digital</h2>
+    <h2 class="section-title">Digital Marketing Plans</h2>
+    <p class="section-intro">
+      Structured solutions designed to build authority, visibility, and scalable growth.
+    </p>
 
-    <div class="carousel-wrapper">
-      <button class="nav prev" onclick="scrollCarousel('planes-carousel', -1)">❮</button>
+    <div class="plans-grid">
 
-      <div class="carousel" id="planes-carousel">
-
-        <!-- PLAN 1 -->
-        <div class="card">
-          <h3>Presencia Digital</h3>
-          <p class="price">$200</p>
-          <ul>
-            <li>Optimización de redes</li>
-            <li>Identidad visual básica</li>
-            <li>Calendario 30 días</li>
-            <li>WhatsApp Business</li>
-          </ul>
-          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Plan%20Presencia%20Digital%20$200"
-             target="_blank" class="btn-primary">
-            Solicitar
-          </a>
-        </div>
-
-        <!-- PLAN 2 -->
-        <div class="card">
-          <h3>Web & Posicionamiento</h3>
-          <p class="price">$200</p>
-          <ul>
-            <li>Desarrollo web profesional</li>
-            <li>SEO básico</li>
-            <li>Google Analytics</li>
-            <li>Optimización conversión</li>
-          </ul>
-          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Plan%20Web%20$200"
-             target="_blank" class="btn-primary">
-            Solicitar
-          </a>
-        </div>
-
-        <!-- PLAN 3 -->
-        <div class="card featured">
-          <h3>Crecimiento Integral</h3>
-          <p class="price">$400</p>
-          <ul>
-            <li>Incluye ambos planes</li>
-            <li>Embudo optimizado</li>
-            <li>Campañas publicitarias</li>
-            <li>Asesoría estratégica</li>
-          </ul>
-          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Plan%20Integral%20$400"
-             target="_blank" class="btn-primary">
-            Solicitar
-          </a>
-        </div>
-
+      <!-- PLAN 1 -->
+      <div class="plan-card">
+        <h3>Digital Presence Plan</h3>
+        <p class="price">$200</p>
+        <ul>
+          <li>Social media profile optimization</li>
+          <li>Basic brand visual identity</li>
+          <li>30-day content strategy</li>
+          <li>WhatsApp Business setup</li>
+          <li>Initial positioning strategy</li>
+        </ul>
+        <a href="https://wa.me/YOUR_NUMBER?text=I%20am%20interested%20in%20the%20Digital%20Presence%20Plan%20$200"
+           target="_blank" class="btn-primary">
+          Get Started
+        </a>
       </div>
 
-      <button class="nav next" onclick="scrollCarousel('planes-carousel', 1)">❯</button>
+      <!-- PLAN 2 -->
+      <div class="plan-card">
+        <h3>Website & Positioning Plan</h3>
+        <p class="price">$200</p>
+        <ul>
+          <li>Professional website development</li>
+          <li>Basic SEO optimization</li>
+          <li>Google Analytics setup</li>
+          <li>Conversion optimization</li>
+          <li>WhatsApp integration</li>
+        </ul>
+        <a href="https://wa.me/YOUR_NUMBER?text=I%20am%20interested%20in%20the%20Website%20and%20Positioning%20Plan%20$200"
+           target="_blank" class="btn-primary">
+          Get Started
+        </a>
+      </div>
+
+      <!-- PLAN 3 -->
+      <div class="plan-card featured">
+        <h3>Integrated Growth Plan</h3>
+        <p class="price">$400</p>
+        <ul>
+          <li>Includes both previous plans</li>
+          <li>Optimized sales funnel</li>
+          <li>Ad campaign setup</li>
+          <li>Strategic growth consulting</li>
+          <li>Performance tracking system</li>
+        </ul>
+        <a href="https://wa.me/YOUR_NUMBER?text=I%20am%20interested%20in%20the%20Integrated%20Growth%20Plan%20$400"
+           target="_blank" class="btn-primary">
+          Get Started
+        </a>
+      </div>
+
     </div>
 
   </div>
