@@ -190,6 +190,99 @@ section{padding:60px 5%;}
     transform: scale(1.05);
     opacity: 0.9;
 } 
+ <style>
+.professional-section {
+  padding: 80px 20px;
+  background: #0f172a;
+  color: white;
+}
+
+.professional-section h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 50px;
+}
+
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.profile-image img {
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.highlights li {
+  margin-bottom: 10px;
+}
+
+/* CERTIFICATIONS */
+.certifications-section {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.certifications-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 8);
+  animation: scroll 25s linear infinite;
+}
+
+.slide-track img {
+  width: 250px;
+  height: 160px;
+  margin-right: 20px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: white;
+  padding: 10px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image img {
+    width: 240px;
+  }
+
+  .slide-track img {
+    width: 180px;
+    height: 120px;
+  }
+}
+</style>
+
 </style>
 </head>
 
@@ -282,42 +375,53 @@ style="min-width:320px;height:700px;">
 <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </section>
 
- <section id="professional-profile" class="professional-section">
+<section id="professional-profile" class="professional-section">
   <div class="container">
-    
+
     <h2>Kevin Ayala – Growth Partner</h2>
     <p class="subtitle">Strategy, Automation & Business Scaling</p>
 
     <div class="profile-content">
+
+      <!-- PHOTO -->
+      <div class="profile-image">
+        <img src="your-photo.jpg" alt="Kevin Ayala Growth Partner">
+      </div>
+
+      <!-- TEXT -->
       <div class="profile-text">
         <p>
-          I am Kevin Ayala, a Growth Partner specialized in strategic expansion, process optimization, and legally structured Revenue Share models for mid-sized and large-scale companies.
-        </p>
-
-        <p>
-          My approach integrates advanced digital marketing, intelligent automation systems, and commercial structuring to create measurable and sustainable growth.
+          I am Kevin Ayala, a Growth Partner specialized in strategic expansion,
+          process optimization, and revenue share models for mid-sized and large-scale companies.
         </p>
 
         <ul class="highlights">
           <li>✔ Automated lead acquisition systems</li>
           <li>✔ Conversion funnel optimization</li>
-          <li>✔ Legally structured revenue share models</li>
+          <li>✔ Structured revenue share models</li>
           <li>✔ Strategic performance dashboards</li>
         </ul>
       </div>
 
-      <div class="certifications">
-        <h3>Certifications & Education</h3>
-        <ul>
-          <li>• Digital Marketing Certification</li>
-          <li>• CRM & Automation Systems Certification</li>
-          <li>• Business Growth Strategy Training</li>
-          <li>• Scalable Business Model Specialization</li>
-        </ul>
+    </div>
+
+    <!-- CERTIFICATIONS SLIDER -->
+    <div class="certifications-section">
+      <h3>Certifications & Education</h3>
+
+      <div class="certifications-slider">
+        <div class="slide-track">
+          <img src="cert1.jpg" alt="Certification 1">
+          <img src="cert2.jpg" alt="Certification 2">
+          <img src="cert3.jpg" alt="Certification 3">
+          <img src="cert4.jpg" alt="Certification 4">
+        </div>
       </div>
     </div>
+
   </div>
 </section>
+
 
 <!-- APPLICATION -->
 <section id="application">
