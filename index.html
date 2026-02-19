@@ -429,6 +429,47 @@ section{padding:60px 5%;}
     grid-template-columns: 1fr;
   }
 }
+ .producto-card {
+  background: #0f172a;
+  border-radius: 18px;
+  overflow: hidden;
+  min-width: 320px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image {
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.producto-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 20px;
+  color: white;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: bold;
+  color: #00c2ff;
+  margin: 10px 0;
+} 
 </style>
 </head>
 
@@ -570,75 +611,72 @@ allowfullscreen>
       <p>
         Este modelo es ideal para empresas que ya facturan y quieren escalar con estructura, no improvisación.
       </p>
-      <a href="#contacto" class="btn-primary">
-        Aplicar evaluación estratégica →
-      </a>
     </div>
 
   </div>
 </section>
 <!-- ========================= -->
-<!-- STATIC DIGITAL MARKETING PLANS -->
+<!-- PLANES DE MARKETING DIGITAL -->
 <!-- ========================= -->
 
-<section class="plans-section">
+<section class="planes-section">
   <div class="container">
 
-    <h2 class="section-title">Digital Marketing Plans</h2>
+    <h2 class="section-title">Planes de Marketing Digital</h2>
     <p class="section-intro">
-      Structured solutions designed to build authority, visibility, and scalable growth.
+      Soluciones estructuradas diseñadas para construir autoridad, visibilidad y crecimiento escalable.
     </p>
 
-    <div class="plans-grid">
+    <div class="planes-grid">
 
       <!-- PLAN 1 -->
       <div class="plan-card">
-        <h3>Digital Presence Plan</h3>
+        <h3>Plan Presencia Digital</h3>
         <p class="price">$200</p>
         <ul>
-          <li>Social media profile optimization</li>
-          <li>Basic brand visual identity</li>
-          <li>30-day content strategy</li>
-          <li>WhatsApp Business setup</li>
-          <li>Initial positioning strategy</li>
+          <li>Optimización profesional de redes sociales</li>
+          <li>Diseño de identidad visual básica</li>
+          <li>Calendario estratégico de contenido (30 días)</li>
+          <li>Configuración de WhatsApp Business</li>
+          <li>Estrategia inicial de posicionamiento</li>
         </ul>
-        <a href="https://wa.me/YOUR_NUMBER?text=I%20am%20interested%20in%20the%20Digital%20Presence%20Plan%20$200"
+        <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20el%20Plan%20Presencia%20Digital%20$200"
            target="_blank" class="btn-primary">
-          Get Started
+          Solicitar por WhatsApp
         </a>
       </div>
 
       <!-- PLAN 2 -->
       <div class="plan-card">
-        <h3>Website & Positioning Plan</h3>
+        <h3>Plan Web & Posicionamiento</h3>
         <p class="price">$200</p>
         <ul>
-          <li>Professional website development</li>
-          <li>Basic SEO optimization</li>
-          <li>Google Analytics setup</li>
-          <li>Conversion optimization</li>
-          <li>WhatsApp integration</li>
+          <li>Desarrollo de página web profesional</li>
+          <li>Optimización SEO básica</li>
+          <li>Configuración de Google Analytics</li>
+          <li>Optimización para conversión</li>
+          <li>Integración con redes y WhatsApp</li>
         </ul>
-        <a href="https://wa.me/YOUR_NUMBER?text=I%20am%20interested%20in%20the%20Website%20and%20Positioning%20Plan%20$200"
+        <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20el%20Plan%20Web%20y%20Posicionamiento%20$200"
            target="_blank" class="btn-primary">
-          Get Started
+          Solicitar por WhatsApp
         </a>
       </div>
 
       <!-- PLAN 3 -->
       <div class="plan-card featured">
-        <h3>Integrated Growth Plan</h3>
+        <h3>Plan Crecimiento Integral</h3>
         <p class="price">$400</p>
         <ul>
-          <li>Includes both previous plans</li>
-          <li>Optimized sales funnel</li>
-          <li>Ad campaign setup</li>
-          <li>Strategic growth consulting</li>
-          <li>Performance tracking system</li>
+          <li>Incluye Plan Presencia Digital</li>
+          <li>Incluye Plan Web & Posicionamiento</li>
+          <li>Embudo de conversión optimizado</li>
+          <li>Configuración de campañas publicitarias</li>
+          <li>Asesoría estratégica personalizada</li>
         </ul>
-        <a href="https://wa.me/YOUR_NUMBER?text=I%20am%20interested%20in%20the%20Integrated%20Growth%20Plan%20$400"
+        <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20el%20Plan%20Crecimiento%20Integral%20$400"
            target="_blank" class="btn-primary">
-          Get Started
+          Solicitar por WhatsApp
         </a>
       </div>
 
@@ -646,9 +684,9 @@ allowfullscreen>
 
   </div>
 </section>
-
+  
 <!-- ========================= -->
-<!-- PRODUCTOS DIGITALES -->
+<!-- PRODUCTOS CON IMÁGENES -->
 <!-- ========================= -->
 
 <section class="productos-section">
@@ -661,44 +699,68 @@ allowfullscreen>
 
       <div class="carousel" id="productos-carousel">
 
-        <div class="card">
-          <h3>Cámaras de Seguridad</h3>
-          <p class="price">$150</p>
-          <p>Instalación profesional y monitoreo remoto.</p>
-          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Cámaras%20$150"
-             target="_blank" class="btn-secondary">
-            Comprar
-          </a>
+        <!-- PRODUCTO 1 -->
+        <div class="card producto-card">
+          <div class="card-image">
+            <img src="images/camaras.jpg" alt="Cámaras de Seguridad">
+          </div>
+          <div class="card-content">
+            <h3>Cámaras de Seguridad</h3>
+            <p class="price">$150</p>
+            <p>Instalación profesional y monitoreo remoto en tiempo real.</p>
+            <a href="https://wa.me/TU_NUMERO?text=Estoy%20interesado%20en%20Cámaras%20de%20Seguridad%20$150"
+               target="_blank" class="btn-secondary">
+              Comprar
+            </a>
+          </div>
         </div>
 
-        <div class="card">
-          <h3>Mantenimiento Equipos</h3>
-          <p class="price">$80</p>
-          <p>Optimización, limpieza y actualización.</p>
-          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Mantenimiento%20$80"
-             target="_blank" class="btn-secondary">
-            Comprar
-          </a>
+        <!-- PRODUCTO 2 -->
+        <div class="card producto-card">
+          <div class="card-image">
+            <img src="images/mantenimiento.jpg" alt="Mantenimiento de Equipos">
+          </div>
+          <div class="card-content">
+            <h3>Mantenimiento Equipos</h3>
+            <p class="price">$80</p>
+            <p>Optimización, limpieza interna y actualización de software.</p>
+            <a href="https://wa.me/TU_NUMERO?text=Estoy%20interesado%20en%20Mantenimiento%20$80"
+               target="_blank" class="btn-secondary">
+              Comprar
+            </a>
+          </div>
         </div>
 
-        <div class="card">
-          <h3>Consultoría Estratégica</h3>
-          <p class="price">$120</p>
-          <p>Sesión personalizada de crecimiento digital.</p>
-          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Consultoría%20$120"
-             target="_blank" class="btn-secondary">
-            Agendar
-          </a>
+        <!-- PRODUCTO 3 -->
+        <div class="card producto-card">
+          <div class="card-image">
+            <img src="images/consultoria.jpg" alt="Consultoría Estratégica">
+          </div>
+          <div class="card-content">
+            <h3>Consultoría Estratégica</h3>
+            <p class="price">$120</p>
+            <p>Sesión personalizada enfocada en crecimiento digital.</p>
+            <a href="https://wa.me/TU_NUMERO?text=Estoy%20interesado%20en%20Consultoría%20$120"
+               target="_blank" class="btn-secondary">
+              Agendar
+            </a>
+          </div>
         </div>
 
-        <div class="card">
-          <h3>Contenido Digital</h3>
-          <p class="price">$150</p>
-          <p>Creación estratégica para redes sociales.</p>
-          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Contenido%20$150"
-             target="_blank" class="btn-secondary">
-            Solicitar
-          </a>
+        <!-- PRODUCTO 4 -->
+        <div class="card producto-card">
+          <div class="card-image">
+            <img src="images/contenido.jpg" alt="Creación de Contenido">
+          </div>
+          <div class="card-content">
+            <h3>Creación de Contenido</h3>
+            <p class="price">$150</p>
+            <p>Contenido estratégico optimizado para conversión.</p>
+            <a href="https://wa.me/TU_NUMERO?text=Estoy%20interesado%20en%20Contenido%20Digital%20$150"
+               target="_blank" class="btn-secondary">
+              Solicitar
+            </a>
+          </div>
         </div>
 
       </div>
@@ -707,7 +769,7 @@ allowfullscreen>
     </div>
 
   </div>
-</section>  
+</section>
   
 <!-- TESTIMONIOS -->
 <section>
