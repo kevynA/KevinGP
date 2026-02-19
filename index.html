@@ -191,6 +191,99 @@ section{padding:60px 5%;}
     transform: scale(1.05);
     opacity: 0.9;
 }
+  <style>
+.professional-section {
+  padding: 80px 20px;
+  background: #0f172a;
+  color: white;
+}
+
+.professional-section h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 50px;
+}
+
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.profile-image img {
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.highlights li {
+  margin-bottom: 10px;
+}
+
+/* CERTIFICATIONS */
+.certifications-section {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.certifications-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 8);
+  animation: scroll 25s linear infinite;
+}
+
+.slide-track img {
+  width: 250px;
+  height: 160px;
+  margin-right: 20px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: white;
+  padding: 10px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image img {
+    width: 240px;
+  }
+
+  .slide-track img {
+    width: 180px;
+    height: 120px;
+  }
+}
+</style>
+
 </style>
 </head>
 
@@ -283,40 +376,51 @@ style="min-width:320px;height:700px;">
 </section>
 <section id="perfil-profesional" class="professional-section">
   <div class="container">
-    
+
     <h2>Kevin Ayala – Growth Partner</h2>
     <p class="subtitle">Estrategia, Automatización y Escalamiento Empresarial</p>
 
     <div class="profile-content">
+
+      <!-- FOTO -->
+      <div class="profile-image">
+        <img src="tu-foto.jpg" alt="Kevin Ayala Growth Partner">
+      </div>
+
+      <!-- TEXTO -->
       <div class="profile-text">
         <p>
-          Soy Kevin Ayala, Growth Partner especializado en crecimiento estratégico, optimización de procesos y modelos de Revenue Share para empresas de media y gran escala.
-        </p>
-
-        <p>
-          Mi enfoque combina marketing digital, automatización inteligente y estructuración comercial para generar crecimiento sostenible y medible.
+          Soy Kevin Ayala, Growth Partner especializado en crecimiento estratégico,
+          optimización de procesos y modelos de Revenue Share para empresas de media y gran escala.
         </p>
 
         <ul class="highlights">
-          <li>✔ Implementación de sistemas de captación automatizada</li>
+          <li>✔ Sistemas automatizados de captación</li>
           <li>✔ Optimización de embudos de conversión</li>
-          <li>✔ Modelos de Revenue Share estructurados legalmente</li>
-          <li>✔ Dashboard estratégico para toma de decisiones</li>
+          <li>✔ Modelos de Revenue Share estructurados</li>
+          <li>✔ Dashboards estratégicos para decisiones</li>
         </ul>
       </div>
 
-      <div class="certifications">
-        <h3>Certificaciones y Formación</h3>
-        <ul>
-          <li>• Certificación en Marketing Digital</li>
-          <li>• Certificación en Automatización y CRM</li>
-          <li>• Formación en Estrategias de Crecimiento Empresarial</li>
-          <li>• Especialización en Modelos de Negocio Escalables</li>
-        </ul>
+    </div>
+
+    <!-- CERTIFICACIONES CARRUSEL -->
+    <div class="certifications-section">
+      <h3>Certificaciones y Formación</h3>
+
+      <div class="certifications-slider">
+        <div class="slide-track">
+          <img src="cert1.jpg" alt="Certificación 1">
+          <img src="cert2.jpg" alt="Certificación 2">
+          <img src="cert3.jpg" alt="Certificación 3">
+          <img src="cert4.jpg" alt="Certificación 4">
+        </div>
       </div>
     </div>
+
   </div>
 </section>
+
 
 <!-- FORMULARIO -->
 <section id="formulario">
