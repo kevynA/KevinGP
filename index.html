@@ -281,6 +281,75 @@ section{padding:60px 5%;}
     height: 120px;
   }
 }
+  .carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 300px;
+  background: #111827;
+  padding: 25px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  flex-shrink: 0;
+}
+
+.card.featured {
+  border: 2px solid #00c2ff;
+  transform: scale(1.05);
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #00c2ff;
+}
+
+.nav {
+  background: #1f2937;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #00c2ff;
+  color: black;
+}
+
+.btn-secondary {
+  background: #374151;
+  color: white;
+}
 </style>
 </head>
 
@@ -429,7 +498,138 @@ allowfullscreen>
 
   </div>
 </section>
+<!-- ========================= -->
+<!-- PLANES HORIZONTALES -->
+<!-- ========================= -->
 
+<section class="planes-section">
+  <div class="container">
+
+    <h2 class="section-title">Planes de Marketing Digital</h2>
+
+    <div class="carousel-wrapper">
+      <button class="nav prev" onclick="scrollCarousel('planes-carousel', -1)">❮</button>
+
+      <div class="carousel" id="planes-carousel">
+
+        <!-- PLAN 1 -->
+        <div class="card">
+          <h3>Presencia Digital</h3>
+          <p class="price">$200</p>
+          <ul>
+            <li>Optimización de redes</li>
+            <li>Identidad visual básica</li>
+            <li>Calendario 30 días</li>
+            <li>WhatsApp Business</li>
+          </ul>
+          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Plan%20Presencia%20Digital%20$200"
+             target="_blank" class="btn-primary">
+            Solicitar
+          </a>
+        </div>
+
+        <!-- PLAN 2 -->
+        <div class="card">
+          <h3>Web & Posicionamiento</h3>
+          <p class="price">$200</p>
+          <ul>
+            <li>Desarrollo web profesional</li>
+            <li>SEO básico</li>
+            <li>Google Analytics</li>
+            <li>Optimización conversión</li>
+          </ul>
+          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Plan%20Web%20$200"
+             target="_blank" class="btn-primary">
+            Solicitar
+          </a>
+        </div>
+
+        <!-- PLAN 3 -->
+        <div class="card featured">
+          <h3>Crecimiento Integral</h3>
+          <p class="price">$400</p>
+          <ul>
+            <li>Incluye ambos planes</li>
+            <li>Embudo optimizado</li>
+            <li>Campañas publicitarias</li>
+            <li>Asesoría estratégica</li>
+          </ul>
+          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Plan%20Integral%20$400"
+             target="_blank" class="btn-primary">
+            Solicitar
+          </a>
+        </div>
+
+      </div>
+
+      <button class="nav next" onclick="scrollCarousel('planes-carousel', 1)">❯</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================= -->
+<!-- PRODUCTOS DIGITALES -->
+<!-- ========================= -->
+
+<section class="productos-section">
+  <div class="container">
+
+    <h2 class="section-title">Productos y Servicios Digitales</h2>
+
+    <div class="carousel-wrapper">
+      <button class="nav prev" onclick="scrollCarousel('productos-carousel', -1)">❮</button>
+
+      <div class="carousel" id="productos-carousel">
+
+        <div class="card">
+          <h3>Cámaras de Seguridad</h3>
+          <p class="price">$150</p>
+          <p>Instalación profesional y monitoreo remoto.</p>
+          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Cámaras%20$150"
+             target="_blank" class="btn-secondary">
+            Comprar
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Mantenimiento Equipos</h3>
+          <p class="price">$80</p>
+          <p>Optimización, limpieza y actualización.</p>
+          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Mantenimiento%20$80"
+             target="_blank" class="btn-secondary">
+            Comprar
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Consultoría Estratégica</h3>
+          <p class="price">$120</p>
+          <p>Sesión personalizada de crecimiento digital.</p>
+          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Consultoría%20$120"
+             target="_blank" class="btn-secondary">
+            Agendar
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Contenido Digital</h3>
+          <p class="price">$150</p>
+          <p>Creación estratégica para redes sociales.</p>
+          <a href="https://wa.me/TU_NUMERO?text=Interesado%20en%20Contenido%20$150"
+             target="_blank" class="btn-secondary">
+            Solicitar
+          </a>
+        </div>
+
+      </div>
+
+      <button class="nav next" onclick="scrollCarousel('productos-carousel', 1)">❯</button>
+    </div>
+
+  </div>
+</section>  
+  
 <!-- TESTIMONIOS -->
 <section>
 <h2>Resultados reales</h2>
@@ -531,6 +731,13 @@ Kevin Ayala | Growth Partner
 Modelo Revenue Share basado en resultados reales.
 </footer>
 
-
+<script>
+function scrollCarousel(id, direction) {
+  const container = document.getElementById(id);
+  const scrollAmount = 320;
+  container.scrollLeft += direction * scrollAmount;
+}
+</script>
+  
 </body>
 </html>
