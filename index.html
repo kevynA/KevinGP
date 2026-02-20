@@ -1,1296 +1,1463 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kevin Ayala | Growth Partner - Revenue Share sin riesgo</title>
-<meta name="description" content="Solo cobramos si tu empresa factura más. Growth Partner bajo modelo Revenue Share. Estrategia, automatización y escalamiento sin anticipos.">
-<meta name="keywords" content="Growth Partner, Revenue Share, escalamiento empresarial, marketing performance, sin riesgo">
-<meta name="author" content="Kevin Ayala">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kevin-gp.vercel.app/">
-<meta property="og:title" content="Kevin Ayala | Growth Partner - Revenue Share">
-<meta property="og:description" content="Solo cobramos si tu empresa crece. Sin anticipos. Sin riesgo.">
-<meta property="og:image" content="https://kevin-gp.vercel.app/og-image.jpg">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://kevin-gp.vercel.app/">
-<meta property="twitter:title" content="Kevin Ayala | Growth Partner - Revenue Share">
-<meta property="twitter:description" content="Solo cobramos si tu empresa crece. Sin anticipos. Sin riesgo.">
-<meta property="twitter:image" content="https://kevin-gp.vercel.app/og-image.jpg">
-
-<!-- Hreflang -->
-<link rel="alternate" hreflang="es" href="https://kevin-gp.vercel.app/" />
-<link rel="alternate" hreflang="en" href="https://kevin-gp.vercel.app/en/" />
-
-<!-- Schema.org optimizado -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Kevin Ayala - Growth Partner Revenue Share",
-  "description": "Consultoría estratégica bajo modelo Revenue Share basado en resultados. Solo cobramos si tu empresa factura más.",
-  "areaServed": "Ecuador",
-  "url": "https://kevin-gp.vercel.app/",
-  "telephone": "+593992648781",
-  "priceRange": "$$",
-  "image": "https://kevin-gp.vercel.app/Kevin 1.webp",
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "EC"
-  }
-}
-</script>
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0b1120 0%, #0f172a 100%);
-  color: #fff;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-/* Header mejorado */
-header {
-  padding: 20px 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(11, 17, 32, 0.95);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 1px solid rgba(6, 182, 212, 0.2);
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #06b6d4, #3b82f6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.language-switch {
-  display: flex;
-  gap: 10px;
-}
-
-.lang-btn {
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 30px;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  font-weight: 600;
-  font-size: 14px;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.lang-btn:hover {
-  background: #06b6d4;
-  border-color: #06b6d4;
-  transform: translateY(-2px);
-}
-
-/* WhatsApp flotante mejorado */
-.whatsapp {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: #25D366;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  color: white;
-  text-decoration: none;
-  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
-  transition: all 0.3s ease;
-  z-index: 99;
-}
-
-.whatsapp:hover {
-  transform: scale(1.1) translateY(-5px);
-  box-shadow: 0 15px 35px rgba(37, 211, 102, 0.6);
-}
-
-/* Contenedor general */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-section {
-  padding: 100px 0;
-}
-
-/* Hero section mejorado */
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-  min-height: 90vh;
-  padding-top: 40px;
-}
-
-.hero-content h1 {
-  font-size: 52px;
-  line-height: 1.2;
-  margin-bottom: 25px;
-  background: linear-gradient(to right, #fff, #94a3b8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.highlight {
-  color: #06b6d4;
-  -webkit-text-fill-color: #06b6d4;
-}
-
-.hero-subtitle {
-  font-size: 18px;
-  color: #94a3b8;
-  margin-bottom: 30px;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 16px 32px;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: none;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, #06b6d4, #0284c7);
-  color: white;
-  box-shadow: 0 10px 20px rgba(6, 182, 212, 0.3);
-}
-
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(6, 182, 212, 0.5);
-}
-
-.btn-secondary {
-  background: transparent;
-  border: 2px solid #06b6d4;
-  color: #06b6d4;
-}
-
-.btn-secondary:hover {
-  background: #06b6d4;
-  color: white;
-  transform: translateY(-3px);
-}
-
-.video-container {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.video-container iframe {
-  width: 100%;
-  aspect-ratio: 16/9;
-  display: block;
-}
-
-/* Sección modelo */
-.modelo-section {
-  background: rgba(15, 23, 42, 0.5);
-  border-radius: 30px;
-  margin: 20px;
-}
-
-.section-title {
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 20px;
-  background: linear-gradient(135deg, #fff, #94a3b8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.section-subtitle {
-  text-align: center;
-  font-size: 18px;
-  color: #94a3b8;
-  max-width: 800px;
-  margin: 0 auto 50px;
-}
-
-.modelo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin: 50px 0;
-}
-
-.modelo-card {
-  background: rgba(31, 41, 55, 0.7);
-  backdrop-filter: blur(10px);
-  padding: 30px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-}
-
-.modelo-card:hover {
-  transform: translateY(-5px);
-  border-color: #06b6d4;
-  box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
-}
-
-.modelo-card h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
-  color: #06b6d4;
-}
-
-.modelo-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.modelo-card li {
-  margin-bottom: 10px;
-  padding-left: 25px;
-  position: relative;
-}
-
-.modelo-card li:before {
-  content: "✓";
-  color: #06b6d4;
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-}
-
-/* Planes de marketing */
-.planes-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
-}
-
-.plan-card {
-  background: rgba(31, 41, 55, 0.7);
-  backdrop-filter: blur(10px);
-  padding: 40px 30px;
-  border-radius: 20px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.plan-card.featured {
-  border: 2px solid #06b6d4;
-  transform: scale(1.05);
-  box-shadow: 0 20px 40px rgba(6, 182, 212, 0.3);
-}
-
-.plan-card.featured:before {
-  content: "MÁS POPULAR";
-  position: absolute;
-  top: 20px;
-  right: -30px;
-  background: #06b6d4;
-  color: white;
-  padding: 5px 40px;
-  transform: rotate(45deg);
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.plan-card:hover {
-  transform: translateY(-10px);
-  border-color: #06b6d4;
-}
-
-.plan-card h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
-.price {
-  font-size: 42px;
-  font-weight: 700;
-  color: #06b6d4;
-  margin: 20px 0;
-}
-
-.price small {
-  font-size: 16px;
-  color: #94a3b8;
-  font-weight: normal;
-}
-
-.plan-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 30px 0;
-  text-align: left;
-}
-
-.plan-card li {
-  margin-bottom: 12px;
-  padding-left: 25px;
-  position: relative;
-}
-
-.plan-card li:before {
-  content: "✓";
-  color: #06b6d4;
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-}
-
-/* Productos carrusel */
-.productos-section {
-  overflow: hidden;
-}
-
-.carousel-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 40px;
-}
-
-.carousel {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 20px 0;
-  scrollbar-width: none;
-}
-
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.producto-card {
-  min-width: 300px;
-  background: rgba(31, 41, 55, 0.7);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-}
-
-.producto-card:hover {
-  transform: translateY(-10px);
-  border-color: #06b6d4;
-}
-
-.card-image {
-  height: 200px;
-  overflow: hidden;
-}
-
-.card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.producto-card:hover .card-image img {
-  transform: scale(1.1);
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.card-content h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.card-content .price {
-  font-size: 28px;
-  margin: 10px 0;
-}
-
-.nav {
-  background: rgba(31, 41, 55, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav:hover {
-  background: #06b6d4;
-  border-color: #06b6d4;
-}
-
-/* Perfil profesional */
-.profile-content {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 50px;
-  align-items: center;
-  margin: 50px 0;
-}
-
-.profile-image {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 3px solid #06b6d4;
-}
-
-.profile-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.profile-image:hover img {
-  transform: scale(1.05);
-}
-
-.highlights {
-  list-style: none;
-  padding: 0;
-}
-
-.highlights li {
-  margin-bottom: 15px;
-  padding-left: 30px;
-  position: relative;
-  font-size: 18px;
-}
-
-.highlights li:before {
-  content: "→";
-  color: #06b6d4;
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-}
-
-/* Certificaciones */
-.certifications-slider {
-  overflow: hidden;
-  padding: 30px 0;
-  position: relative;
-}
-
-.slide-track {
-  display: flex;
-  width: calc(250px * 14);
-  animation: scroll 30s linear infinite;
-}
-
-.slide-track img {
-  width: 250px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-right: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-}
-
-.slide-track img:hover {
-  border-color: #06b6d4;
-  transform: scale(1.05);
-}
-
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-/* Testimonios */
-.testimonios-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.testimonio-card {
-  background: rgba(31, 41, 55, 0.7);
-  backdrop-filter: blur(10px);
-  padding: 30px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  position: relative;
-}
-
-.testimonio-card:before {
-  content: """;
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  font-size: 60px;
-  color: #06b6d4;
-  opacity: 0.3;
-  font-family: serif;
-}
-
-.testimonio-card p {
-  font-size: 18px;
-  font-style: italic;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
-}
-
-.testimonio-author {
-  font-weight: bold;
-  color: #06b6d4;
-}
-
-.testimonio-company {
-  font-size: 14px;
-  color: #94a3b8;
-}
-
-/* Calendly */
-.calendly-inline-widget {
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Formulario */
-.form-container {
-  max-width: 600px;
-  margin: 0 auto;
-  background: rgba(31, 41, 55, 0.7);
-  backdrop-filter: blur(10px);
-  padding: 40px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(17, 24, 39, 0.8);
-  color: white;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #06b6d4;
-  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.2);
-}
-
-.form-group textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
-.form-btn {
-  width: 100%;
-  padding: 16px;
-  font-size: 18px;
-}
-
-/* Footer */
-footer {
-  background: rgba(11, 17, 32, 0.95);
-  padding: 60px 20px 30px;
-  text-align: center;
-  border-top: 1px solid rgba(6, 182, 212, 0.2);
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-logo {
-  font-size: 28px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #06b6d4, #3b82f6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
-}
-
-.footer-text {
-  color: #94a3b8;
-  margin-bottom: 30px;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: #06b6d4;
-}
-
-.copyright {
-  color: #6b7280;
-  font-size: 14px;
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-  section {
-    padding: 80px 0;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 40px;
-  }
+  <!-- TÍTULO Y META PRINCIPALES (Optimizados SEO) -->
+  <title>Kevin Ayala | Growth Partner Revenue Share - Sin Riesgo</title>
+  <meta name="title" content="Kevin Ayala | Growth Partner Revenue Share - Estrategia sin anticipos">
+  <meta name="description" content="Solo cobramos si tu empresa factura más. Growth Partner especializado en Revenue Share. Escalamiento empresarial con resultados medibles. Sin anticipos. Sin riesgo.">
+  <meta name="keywords" content="Growth Partner Ecuador, Revenue Share, socio estratégico, escalamiento empresarial, marketing performance, consultoría crecimiento, Kevin Ayala">
+  <meta name="author" content="Kevin Ayala">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Spanish">
+  <meta name="revisit-after" content="7 days">
   
-  .hero-content h1 {
-    font-size: 42px;
-  }
+  <!-- FAVICON (Logo de pestaña) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2306b6d4'/><text x='50' y='70' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>K</text></svg>">
+  <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2306b6d4'/><text x='50' y='70' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>K</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2306b6d4'/><text x='50' y='70' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>K</text></svg>">
   
-  .hero-buttons {
-    justify-content: center;
-  }
+  <!-- OPEN GRAPH / FACEBOOK (Para compartir en redes) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kevin-gp.vercel.app/">
+  <meta property="og:title" content="Kevin Ayala | Growth Partner Revenue Share">
+  <meta property="og:description" content="Solo cobramos si tu empresa factura más. Modelo Revenue Share sin anticipos.">
+  <meta property="og:image" content="https://kevin-gp.vercel.app/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Kevin Ayala Growth Partner">
+  <meta property="og:locale" content="es_EC">
   
-  .profile-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
+  <!-- TWITTER (Para compartir en X/Twitter) -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://kevin-gp.vercel.app/">
+  <meta property="twitter:title" content="Kevin Ayala | Growth Partner Revenue Share">
+  <meta property="twitter:description" content="Solo cobramos si tu empresa factura más. Modelo Revenue Share sin anticipos.">
+  <meta property="twitter:image" content="https://kevin-gp.vercel.app/og-image.jpg">
   
-  .profile-image {
-    max-width: 300px;
-    margin: 0 auto;
-  }
+  <!-- HREFLANG (Idiomas) -->
+  <link rel="alternate" hreflang="es" href="https://kevin-gp.vercel.app/" />
+  <link rel="alternate" hreflang="en" href="https://kevin-gp.vercel.app/en/" />
   
-  .highlights li {
-    text-align: left;
-  }
+  <!-- CANONICAL (Evita contenido duplicado) -->
+  <link rel="canonical" href="https://kevin-gp.vercel.app/">
   
-  .plan-card.featured {
-    transform: scale(1);
+  <!-- SCHEMA.ORG JSON-LD (Datos estructurados para Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://kevin-gp.vercel.app/#professional",
+    "name": "Kevin Ayala - Growth Partner Revenue Share",
+    "description": "Consultoría estratégica bajo modelo Revenue Share basado en resultados. Solo cobramos si tu empresa factura más.",
+    "url": "https://kevin-gp.vercel.app/",
+    "telephone": "+593992648781",
+    "email": "convenimentornosseguros@gmail.com",
+    "priceRange": "$$",
+    "image": "https://kevin-gp.vercel.app/Kevin%201.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ecuador",
+      "addressCountry": "EC"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Ecuador"
+    },
+    "sameAs": [
+      "https://wa.me/593992648781",
+      "https://linkedin.com/in/kevin-ayala-growth",
+      "https://instagram.com/kevinayala.gp"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de Growth Partner",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Plan Presencia Digital",
+            "description": "Optimización profesional de redes sociales y estrategia de contenido",
+            "price": "200",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Plan Web & Posicionamiento",
+            "description": "Desarrollo web y optimización SEO",
+            "price": "200",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Plan Crecimiento Integral",
+            "description": "Paquete completo de marketing digital y asesoría estratégica",
+            "price": "400",
+            "priceCurrency": "USD"
+          }
+        }
+      ]
+    }
   }
-}
+  </script>
+  
+  <!-- SCHEMA PARA REVIEWS / TESTIMONIALS -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Servicios de Growth Partner Kevin Ayala",
+    "description": "Servicios de consultoría en crecimiento empresarial bajo modelo Revenue Share",
+    "brand": {
+      "@type": "Brand",
+      "name": "Kevin Ayala Growth Partner"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Carlos Mendoza"
+        },
+        "reviewBody": "Incrementamos 37% la facturación en solo 4 meses."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "María Fernanda"
+        },
+        "reviewBody": "Pasamos de ventas inestables a un sistema predecible."
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "12",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>
+  
+  <!-- SCHEMA PARA PERSON (Perfil profesional) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kevin Ayala",
+    "jobTitle": "Growth Partner",
+    "description": "Especialista en crecimiento estratégico y Revenue Share",
+    "url": "https://kevin-gp.vercel.app/",
+    "image": "https://kevin-gp.vercel.app/Kevin%201.webp",
+    "sameAs": [
+      "https://wa.me/593992648781",
+      "https://linkedin.com/in/kevin-ayala-growth"
+    ],
+    "knowsAbout": ["Growth Marketing", "Revenue Share", "Digital Strategy", "Business Scaling"]
+  }
+  </script>
+  
+  <!-- GOOGLE SITE VERIFICATION (Para Search Console) -->
+  <meta name="google-site-verification" content="TU_CODIGO_VERIFICACION" />
+  
+  <!-- ESTILOS CSS MEJORADOS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 32px;
-  }
-  
-  .hero-content h1 {
-    font-size: 32px;
-  }
-  
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .slide-track img {
-    width: 200px;
-    height: 120px;
-  }
-  
-  .form-container {
-    padding: 30px 20px;
-  }
-}
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0b1120 0%, #0f172a 100%);
+      color: #fff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
 
-/* Animaciones adicionales */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+    /* Header pegajoso */
+    header {
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(11, 17, 32, 0.95);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(6, 182, 212, 0.2);
+    }
 
-section {
-  animation: fadeInUp 0.8s ease-out;
-}
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #06b6d4, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
-/* Badges y elementos de confianza */
-.trust-badge {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-}
+    .language-switch {
+      display: flex;
+      gap: 10px;
+    }
 
-.trust-badge span {
-  background: rgba(6, 182, 212, 0.2);
-  padding: 5px 15px;
-  border-radius: 50px;
-  font-size: 14px;
-  border: 1px solid rgba(6, 182, 212, 0.3);
-}
+    .lang-btn {
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
 
-/* Contador de resultados */
-.results-counter {
-  display: flex;
-  justify-content: space-around;
-  margin: 40px 0;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+    .lang-btn:hover {
+      background: #06b6d4;
+      border-color: #06b6d4;
+      transform: translateY(-2px);
+    }
 
-.counter-item {
-  text-align: center;
-}
+    /* WhatsApp flotante */
+    .whatsapp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      transition: all 0.3s ease;
+      z-index: 99;
+    }
 
-.counter-number {
-  font-size: 40px;
-  font-weight: 700;
-  color: #06b6d4;
-}
+    .whatsapp:hover {
+      transform: scale(1.1) translateY(-5px);
+      box-shadow: 0 15px 35px rgba(37, 211, 102, 0.6);
+    }
 
-.counter-label {
-  color: #94a3b8;
-  font-size: 14px;
-}
-</style>
+    /* Contenedor general */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      padding: 100px 0;
+    }
+
+    /* Hero section */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      min-height: 90vh;
+      padding-top: 40px;
+    }
+
+    .hero-content h1 {
+      font-size: 52px;
+      line-height: 1.2;
+      margin-bottom: 25px;
+      background: linear-gradient(to right, #fff, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .highlight {
+      color: #06b6d4;
+      -webkit-text-fill-color: #06b6d4;
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 16px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #06b6d4, #0284c7);
+      color: white;
+      box-shadow: 0 10px 20px rgba(6, 182, 212, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px rgba(6, 182, 212, 0.5);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 2px solid #06b6d4;
+      color: #06b6d4;
+    }
+
+    .btn-secondary:hover {
+      background: #06b6d4;
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    .video-container {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .video-container iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: block;
+    }
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .trust-badge span {
+      background: rgba(6, 182, 212, 0.2);
+      padding: 5px 15px;
+      border-radius: 50px;
+      font-size: 14px;
+      border: 1px solid rgba(6, 182, 212, 0.3);
+    }
+
+    /* Contadores de resultados */
+    .results-counter {
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 0;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .counter-item {
+      text-align: center;
+    }
+
+    .counter-number {
+      font-size: 40px;
+      font-weight: 700;
+      color: #06b6d4;
+    }
+
+    .counter-label {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    /* SECCIÓN MODELO - CORREGIDA (Vertical) */
+    .modelo-section {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 30px;
+      margin: 20px;
+      padding: 60px 0;
+    }
+
+    .section-title {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #fff, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-intro {
+      text-align: center;
+      font-size: 18px;
+      color: #94a3b8;
+      max-width: 800px;
+      margin: 0 auto 50px;
+      line-height: 1.7;
+    }
+
+    .modelo-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .step {
+      background: rgba(31, 41, 55, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .step:hover {
+      transform: translateY(-3px);
+      border-color: #06b6d4;
+      box-shadow: 0 10px 30px rgba(6, 182, 212, 0.2);
+    }
+
+    .step h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #06b6d4;
+    }
+
+    .step p {
+      color: #d1d5db;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .step ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 0 0;
+    }
+
+    .step li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+      color: #d1d5db;
+    }
+
+    .step li:before {
+      content: "✓";
+      color: #06b6d4;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    .highlight {
+      color: #06b6d4;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* Planes de marketing */
+    .planes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .plan-card {
+      background: rgba(31, 41, 55, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 40px 30px;
+      border-radius: 20px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .plan-card.featured {
+      border: 2px solid #06b6d4;
+      transform: scale(1.05);
+      box-shadow: 0 20px 40px rgba(6, 182, 212, 0.3);
+    }
+
+    .plan-card.featured:before {
+      content: "MÁS POPULAR";
+      position: absolute;
+      top: 20px;
+      right: -30px;
+      background: #06b6d4;
+      color: white;
+      padding: 5px 40px;
+      transform: rotate(45deg);
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-10px);
+      border-color: #06b6d4;
+    }
+
+    .plan-card h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 42px;
+      font-weight: 700;
+      color: #06b6d4;
+      margin: 20px 0;
+    }
+
+    .price small {
+      font-size: 16px;
+      color: #94a3b8;
+      font-weight: normal;
+    }
+
+    .plan-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 30px 0;
+      text-align: left;
+    }
+
+    .plan-card li {
+      margin-bottom: 12px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .plan-card li:before {
+      content: "✓";
+      color: #06b6d4;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    /* Productos carrusel */
+    .productos-section {
+      overflow: hidden;
+    }
+
+    .carousel-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 40px;
+    }
+
+    .carousel {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 20px 0;
+      scrollbar-width: none;
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .producto-card {
+      min-width: 300px;
+      background: rgba(31, 41, 55, 0.7);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .producto-card:hover {
+      transform: translateY(-10px);
+      border-color: #06b6d4;
+    }
+
+    .card-image {
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .producto-card:hover .card-image img {
+      transform: scale(1.1);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card-content .price {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    .nav {
+      background: rgba(31, 41, 55, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav:hover {
+      background: #06b6d4;
+      border-color: #06b6d4;
+    }
+
+    /* Perfil profesional */
+    .profile-content {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 50px;
+      align-items: center;
+      margin: 50px 0;
+    }
+
+    .profile-image {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 3px solid #06b6d4;
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .profile-image:hover img {
+      transform: scale(1.05);
+    }
+
+    .highlights {
+      list-style: none;
+      padding: 0;
+    }
+
+    .highlights li {
+      margin-bottom: 15px;
+      padding-left: 30px;
+      position: relative;
+      font-size: 18px;
+    }
+
+    .highlights li:before {
+      content: "→";
+      color: #06b6d4;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    /* Certificaciones */
+    .certifications-slider {
+      overflow: hidden;
+      padding: 30px 0;
+      position: relative;
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(250px * 14);
+      animation: scroll 30s linear infinite;
+    }
+
+    .slide-track img {
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-right: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .slide-track img:hover {
+      border-color: #06b6d4;
+      transform: scale(1.05);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Testimonios */
+    .testimonios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .testimonio-card {
+      background: rgba(31, 41, 55, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+    }
+
+    .testimonio-card:before {
+      content: """;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-size: 60px;
+      color: #06b6d4;
+      opacity: 0.3;
+      font-family: serif;
+    }
+
+    .testimonio-card p {
+      font-size: 18px;
+      font-style: italic;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonio-author {
+      font-weight: bold;
+      color: #06b6d4;
+    }
+
+    .testimonio-company {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    /* Calendly */
+    .calendly-inline-widget {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Formulario */
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: rgba(31, 41, 55, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(17, 24, 39, 0.8);
+      color: white;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #06b6d4;
+      box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.2);
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-btn {
+      width: 100%;
+      padding: 16px;
+      font-size: 18px;
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(11, 17, 32, 0.95);
+      padding: 60px 20px 30px;
+      text-align: center;
+      border-top: 1px solid rgba(6, 182, 212, 0.2);
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #06b6d4, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    .footer-text {
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #06b6d4;
+    }
+
+    .copyright {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    /* Animaciones */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      section {
+        padding: 80px 0;
+      }
+      
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+      }
+      
+      .hero-content h1 {
+        font-size: 42px;
+      }
+      
+      .hero-buttons {
+        justify-content: center;
+      }
+      
+      .profile-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      
+      .profile-image {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      
+      .highlights li {
+        text-align: left;
+      }
+      
+      .plan-card.featured {
+        transform: scale(1);
+      }
+      
+      .section-title {
+        font-size: 32px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 32px;
+      }
+      
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+      
+      .slide-track img {
+        width: 200px;
+        height: 120px;
+      }
+      
+      .form-container {
+        padding: 30px 20px;
+      }
+      
+      .step h3 {
+        font-size: 22px;
+      }
+      
+      .step {
+        padding: 25px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <div class="logo">Kevin Ayala</div>
+    <div class="language-switch">
+      <a href="/" class="lang-btn">ES</a>
+      <a href="/en/" class="lang-btn">EN</a>
+    </div>
+  </header>
 
-<header>
-  <div class="logo">Kevin Ayala</div>
-  <div class="language-switch">
-    <a href="/" class="lang-btn">ES</a>
-    <a href="/en/" class="lang-btn">EN</a>
-  </div>
-</header>
+  <a href="https://wa.me/593992648781?text=Hola%20Kevin%2C%20visité%20tu%20web%20y%20quiero%20más%20información" class="whatsapp" target="_blank">💬</a>
 
-<a href="https://wa.me/593992648781?text=Hola%20Kevin%2C%20visité%20tu%20web%20y%20quiero%20más%20información" class="whatsapp" target="_blank">💬</a>
-
-<!-- HERO SECTION - Optimizado para conversión -->
-<section class="hero container">
-  <div class="hero-content">
-    <h1>
-      <span class="highlight">Solo cobramos</span><br>
-      si tu empresa<br>
-      factura más
-    </h1>
-    <p class="hero-subtitle">
-      Soy Kevin Ayala, Growth Partner especializado en escalamiento empresarial bajo modelo Revenue Share. <strong>Sin anticipos. Sin riesgo. Solo resultados.</strong>
-    </p>
-    
-    <div class="hero-buttons">
-      <button class="btn btn-primary" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'})">
-        🚀 Aplicar evaluación gratuita
-      </button>
-      <button class="btn btn-secondary" onclick="document.getElementById('agenda').scrollIntoView({behavior:'smooth'})">
-        📅 Agendar llamada estratégica
-      </button>
-    </div>
-    
-    <div class="trust-badge">
-      <span>⚡ Revenue Share</span>
-      <span>📊 Basado en datos</span>
-      <span>🎯 Resultados garantizados</span>
-    </div>
-  </div>
-  
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID" 
-            title="Kevin Ayala Growth Partner"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-    </iframe>
-  </div>
-</section>
-
-<!-- RESULTADOS NUMÉRICOS (Social Proof) -->
-<div class="container">
-  <div class="results-counter">
-    <div class="counter-item">
-      <div class="counter-number">+47%</div>
-      <div class="counter-label">Crecimiento promedio</div>
-    </div>
-    <div class="counter-item">
-      <div class="counter-number">12+</div>
-      <div class="counter-label">Empresas escaladas</div>
-    </div>
-    <div class="counter-item">
-      <div class="counter-number">0</div>
-      <div class="counter-label">Anticipos cobrados</div>
-    </div>
-    <div class="counter-item">
-      <div class="counter-number">100%</div>
-      <div class="counter-label">Basado en resultados</div>
-    </div>
-  </div>
-</div>
-
-<!-- MODELO DE TRABAJO (Propuesta de valor) -->
-<section class="modelo-section container">
-  <h2 class="section-title">¿Cómo funciona el modelo?</h2>
-  <p class="section-subtitle">
-    Implemento sistemas completos de crecimiento enfocados en resultados medibles. 
-    No son acciones aisladas, sino una estructura estratégica diseñada para generar 
-    facturación incremental sostenible.
-  </p>
-  
-  <div class="modelo-grid">
-    <div class="modelo-card">
-      <h3>1️⃣ Diagnóstico profundo</h3>
-      <p>Analizamos tu negocio, márgenes y cuellos de botella para establecer una línea base clara.</p>
-    </div>
-    
-    <div class="modelo-card">
-      <h3>2️⃣ Sistema de crecimiento</h3>
-      <ul>
-        <li>Estructura comercial optimizada</li>
-        <li>Procesos internos escalables</li>
-        <li>Sistema de adquisición multicanal</li>
-        <li>Automatizaciones y KPIs</li>
-      </ul>
-    </div>
-    
-    <div class="modelo-card">
-      <h3>3️⃣ Implementación continua</h3>
-      <p>Participación activa en ejecución, pruebas y optimización basada en datos reales.</p>
-    </div>
-    
-    <div class="modelo-card">
-      <h3>4️⃣ Revenue Share</h3>
-      <p class="highlight"><strong>No cobro anticipos. Solo participo del crecimiento generado.</strong></p>
-    </div>
-    
-    <div class="modelo-card">
-      <h3>5️⃣ Transparencia total</h3>
-      <p>Métricas claras y acuerdos definidos. El porcentaje solo aplica sobre el crecimiento.</p>
-    </div>
-  </div>
-  
-  <div style="text-align: center; margin-top: 40px;">
-    <button class="btn btn-primary" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'})">
-      Quiero aplicar al modelo Revenue Share
-    </button>
-  </div>
-</section>
-
-<!-- PLANES DE MARKETING DIGITAL -->
-<section class="container">
-  <h2 class="section-title">Planes de Marketing Digital</h2>
-  <p class="section-subtitle">
-    Soluciones estructuradas diseñadas para construir autoridad, visibilidad y crecimiento escalable.
-  </p>
-  
-  <div class="planes-grid">
-    <!-- PLAN 1 -->
-    <div class="plan-card">
-      <h3>Plan Presencia Digital</h3>
-      <div class="price">$200 <small>/ único</small></div>
-      <ul>
-        <li>Optimización profesional de redes sociales</li>
-        <li>Diseño de identidad visual básica</li>
-        <li>Calendario estratégico de contenido (30 días)</li>
-        <li>Configuración de WhatsApp Business</li>
-        <li>Estrategia inicial de posicionamiento</li>
-      </ul>
-      <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20el%20Plan%20Presencia%20Digital%20$200" 
-         target="_blank" class="btn btn-primary" style="text-align: center;">
-        Contratar ahora
-      </a>
-    </div>
-    
-    <!-- PLAN 2 -->
-    <div class="plan-card">
-      <h3>Plan Web & SEO</h3>
-      <div class="price">$200 <small>/ único</small></div>
-      <ul>
-        <li>Desarrollo de página web profesional</li>
-        <li>Optimización SEO básica</li>
-        <li>Configuración de Google Analytics</li>
-        <li>Optimización para conversión</li>
-        <li>Integración con redes y WhatsApp</li>
-      </ul>
-      <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20el%20Plan%20Web%20y%20Posicionamiento%20$200" 
-         target="_blank" class="btn btn-primary" style="text-align: center;">
-        Contratar ahora
-      </a>
-    </div>
-    
-    <!-- PLAN 3 (Destacado) -->
-    <div class="plan-card featured">
-      <h3>Plan Crecimiento Integral</h3>
-      <div class="price">$400 <small>/ único</small></div>
-      <ul>
-        <li>Incluye Plan Presencia Digital</li>
-        <li>Incluye Plan Web & Posicionamiento</li>
-        <li>Embudo de conversión optimizado</li>
-        <li>Configuración de campañas publicitarias</li>
-        <li>Asesoría estratégica personalizada</li>
-      </ul>
-      <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20el%20Plan%20Crecimiento%20Integral%20$400" 
-         target="_blank" class="btn btn-primary" style="text-align: center;">
-        Contratar ahora
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- PRODUCTOS CON IMÁGENES -->
-<section class="productos-section">
-  <div class="container">
-    <h2 class="section-title">Soluciones Digitales</h2>
-    <p class="section-subtitle">Productos y servicios listos para impulsar tu negocio</p>
-    
-    <div class="carousel-wrapper">
-      <button class="nav prev" onclick="scrollCarousel('productos-carousel', -300)">❮</button>
-      
-      <div class="carousel" id="productos-carousel">
-        <!-- PRODUCTO 1 -->
-        <div class="producto-card">
-          <div class="card-image">
-            <img src="images/camaras.jpg" alt="Cámaras de Seguridad" onerror="this.src='https://via.placeholder.com/300x200?text=Cámaras+de+Seguridad'">
-          </div>
-          <div class="card-content">
-            <h3>Cámaras de Seguridad</h3>
-            <div class="price">$150</div>
-            <p>Instalación profesional y monitoreo remoto en tiempo real.</p>
-            <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20Cámaras%20de%20Seguridad%20$150" 
-               target="_blank" class="btn btn-secondary" style="text-align: center; display: block;">
-              Comprar
-            </a>
-          </div>
-        </div>
-        
-        <!-- PRODUCTO 2 -->
-        <div class="producto-card">
-          <div class="card-image">
-            <img src="images/mantenimiento.jpg" alt="Mantenimiento de Equipos" onerror="this.src='https://via.placeholder.com/300x200?text=Mantenimiento'">
-          </div>
-          <div class="card-content">
-            <h3>Mantenimiento Equipos</h3>
-            <div class="price">$80</div>
-            <p>Optimización, limpieza interna y actualización de software.</p>
-            <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20Mantenimiento%20$80" 
-               target="_blank" class="btn btn-secondary" style="text-align: center; display: block;">
-              Comprar
-            </a>
-          </div>
-        </div>
-        
-        <!-- PRODUCTO 3 -->
-        <div class="producto-card">
-          <div class="card-image">
-            <img src="images/consultoria.jpg" alt="Consultoría Estratégica" onerror="this.src='https://via.placeholder.com/300x200?text=Consultoría'">
-          </div>
-          <div class="card-content">
-            <h3>Consultoría Estratégica</h3>
-            <div class="price">$120</div>
-            <p>Sesión personalizada enfocada en crecimiento digital.</p>
-            <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20Consultoría%20$120" 
-               target="_blank" class="btn btn-secondary" style="text-align: center; display: block;">
-              Agendar
-            </a>
-          </div>
-        </div>
-        
-        <!-- PRODUCTO 4 -->
-        <div class="producto-card">
-          <div class="card-image">
-            <img src="images/contenido.jpg" alt="Creación de Contenido" onerror="this.src='https://via.placeholder.com/300x200?text=Contenido+Digital'">
-          </div>
-          <div class="card-content">
-            <h3>Creación de Contenido</h3>
-            <div class="price">$150</div>
-            <p>Contenido estratégico optimizado para conversión.</p>
-            <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20Contenido%20Digital%20$150" 
-               target="_blank" class="btn btn-secondary" style="text-align: center; display: block;">
-              Solicitar
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <button class="nav next" onclick="scrollCarousel('productos-carousel', 300)">❯</button>
-    </div>
-  </div>
-</section>
-
-<!-- PERFIL PROFESIONAL (Autoridad) -->
-<section class="container">
-  <h2 class="section-title">Kevin Ayala – Growth Partner</h2>
-  <p class="section-subtitle">Estrategia, Automatización y Escalamiento Empresarial</p>
-  
-  <div class="profile-content">
-    <div class="profile-image">
-      <img src="Kevin 1.webp" alt="Kevin Ayala Growth Partner" onerror="this.src='https://via.placeholder.com/300x400?text=Kevin+Ayala'">
-    </div>
-    
-    <div class="profile-text">
-      <p style="font-size: 18px; margin-bottom: 20px;">
-        Soy Kevin Ayala, Growth Partner especializado en crecimiento estratégico, 
-        optimización de procesos y modelos de Revenue Share para empresas de media 
-        y gran escala. Combino visión comercial con base técnica como Tecnólogo en 
-        Redes y Telecomunicaciones, integrando infraestructura digital, automatización 
-        y análisis de datos para generar crecimiento predecible y sostenible.
+  <!-- HERO SECTION -->
+  <section class="hero container">
+    <div class="hero-content">
+      <h1>
+        <span class="highlight">Solo cobramos</span><br>
+        si tu empresa<br>
+        factura más
+      </h1>
+      <p class="hero-subtitle">
+        Soy Kevin Ayala, Growth Partner especializado en escalamiento empresarial bajo modelo Revenue Share. <strong>Sin anticipos. Sin riesgo. Solo resultados.</strong>
       </p>
       
-      <ul class="highlights">
-        <li><strong>🚀 Sistemas automatizados</strong> de captación y conversión basados en datos</li>
-        <li><strong>📊 Optimización estratégica</strong> de embudos y procesos comerciales escalables</li>
-        <li><strong>🤝 Modelos Revenue Share</strong> estructurados para crecimiento sostenible</li>
-        <li><strong>🌐 Integración tecnológica avanzada</strong> (Tecnólogo en Redes y Telecomunicaciones)</li>
-      </ul>
-    </div>
-  </div>
-  
-  <!-- CERTIFICACIONES -->
-  <div style="margin-top: 60px;">
-    <h3 style="text-align: center; font-size: 28px; margin-bottom: 30px;">Certificaciones y Formación</h3>
-    
-    <div class="certifications-slider">
-      <div class="slide-track">
-        <img src="Inteligencia Artificial y productividad.webp" alt="Certificación IA" onerror="this.src='https://via.placeholder.com/250x160?text=IA+y+Productividad'">
-        <img src="Meta Ads desde cero.webp" alt="Meta Ads" onerror="this.src='https://via.placeholder.com/250x160?text=Meta+Ads'">
-        <img src="Fundamentos de Marketing Digital y Comercio Elecctrónico.webp" alt="Marketing Digital" onerror="this.src='https://via.placeholder.com/250x160?text=Marketing+Digital'">
-        <img src="Introducción a Ciberseguridad.webp" alt="Ciberseguridad" onerror="this.src='https://via.placeholder.com/250x160?text=Ciberseguridad'">
-        <img src="WhatsApp Image 2025-08-04 at 18.18.41.webp" alt="Certificación" onerror="this.src='https://via.placeholder.com/250x160?text=Certificación'">
-        <img src="Inicie_su_Negocio_-Certificado_de_Aprobación_del_curso_165599.webp" alt="Negocios" onerror="this.src='https://via.placeholder.com/250x160?text=Inicie+su+Negocio'">
-        <img src="Cer-Aprob-Formación-de-formadores-AYALA-AYALA-.webp" alt="Formación Formadores" onerror="this.src='https://via.placeholder.com/250x160?text=Formación+Formadores'">
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'})">
+          🚀 Aplicar evaluación gratuita
+        </button>
+        <button class="btn btn-secondary" onclick="document.getElementById('agenda').scrollIntoView({behavior:'smooth'})">
+          📅 Agendar llamada estratégica
+        </button>
+      </div>
+      
+      <div class="trust-badge">
+        <span>⚡ Revenue Share</span>
+        <span>📊 Basado en datos</span>
+        <span>🎯 Resultados garantizados</span>
       </div>
     </div>
-  </div>
-</section>
+    
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID" 
+              title="Kevin Ayala Growth Partner"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
-<!-- TESTIMONIOS (Prueba social) -->
-<section class="container">
-  <h2 class="section-title">Resultados que hablan</h2>
-  <p class="section-subtitle">Lo que dicen nuestros clientes sobre el modelo Revenue Share</p>
-  
-  <div class="testimonios-grid">
-    <div class="testimonio-card">
-      <p>"Incrementamos 37% la facturación en solo 4 meses. El modelo Revenue Share eliminó todo el riesgo financiero."</p>
-      <div class="testimonio-author">Carlos Mendoza</div>
-      <div class="testimonio-company">CEO - TechSolutions EC</div>
-    </div>
-    
-    <div class="testimonio-card">
-      <p>"Pasamos de ventas inestables a un sistema predecible y escalable. Kevin no solo estrategia, implementa."</p>
-      <div class="testimonio-author">María Fernanda</div>
-      <div class="testimonio-company">Directora - Grupo Nova</div>
-    </div>
-    
-    <div class="testimonio-card">
-      <p>"El crecimiento fue tan orgánico que ni sentimos la inversión. Solo pagamos cuando facturamos más."</p>
-      <div class="testimonio-author">Juan Pablo</div>
-      <div class="testimonio-company">Fundador - InnovaCorp</div>
+  <!-- CONTADORES DE RESULTADOS -->
+  <div class="container">
+    <div class="results-counter">
+      <div class="counter-item">
+        <div class="counter-number">+47%</div>
+        <div class="counter-label">Crecimiento promedio</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-number">12+</div>
+        <div class="counter-label">Empresas escaladas</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-number">0</div>
+        <div class="counter-label">Anticipos cobrados</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-number">100%</div>
+        <div class="counter-label">Basado en resultados</div>
+      </div>
     </div>
   </div>
-</section>
 
-<!-- AGENDA (Calendly) -->
-<section id="agenda" class="container">
-  <h2 class="section-title">Agenda una llamada estratégica</h2>
-  <p class="section-subtitle">
-    Sin compromiso. Evaluemos si podemos trabajar juntos bajo el modelo Revenue Share.
-  </p>
-  
-  <div class="calendly-inline-widget" 
-       data-url="https://calendly.com/convenimentornosseguros/30min" 
-       style="min-width:320px;height:700px;">
-  </div>
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-</section>
+  <!-- MODELO DE TRABAJO - CORREGIDO (Vertical) -->
+  <section id="modelo" class="modelo-section">
+    <div class="container">
+      
+      <h2 class="section-title">¿Cómo funciona el modelo?</h2>
+      
+      <p class="section-intro">
+        Implemento sistemas completos de crecimiento enfocados en resultados medibles. 
+        No son acciones aisladas, sino una estructura estratégica diseñada para generar 
+        facturación incremental sostenible.
+      </p>
 
-<!-- FORMULARIO DE CONTACTO -->
-<section id="formulario" class="container">
-  <h2 class="section-title">Aplica para evaluación estratégica</h2>
-  <p class="section-subtitle">
-    Completa el formulario y analizaré tu negocio. Si hay potencial, te contactaré en 24h.
-  </p>
-  
-  <div class="form-container">
-    <form action="https://formsubmit.co/convenimentornosseguros@gmail.com" method="POST">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_subject" value="Nueva aplicación Growth Partner - Web">
-      <input type="hidden" name="_next" value="https://kevin-gp.vercel.app/gracias.html">
-      
-      <div class="form-group">
-        <input type="text" name="Nombre" placeholder="Nombre completo" required>
-      </div>
-      
-      <div class="form-group">
-        <input type="email" name="Email" placeholder="Correo electrónico" required>
-      </div>
-      
-      <div class="form-group">
-        <input type="tel" name="Telefono" placeholder="Teléfono / WhatsApp" required>
-      </div>
-      
-      <div class="form-group">
-        <textarea name="Negocio" placeholder="Cuéntame sobre tu empresa y facturación actual (Ej: Empresa de servicios, facturación mensual $15,000)" required></textarea>
-      </div>
-      
-      <button type="submit" class="btn btn-primary form-btn">
-        Enviar aplicación → Revisaré tu caso
-      </button>
-    </form>
-  </div>
-</section>
+      <div class="modelo-steps">
+        <div class="step">
+          <h3>1️⃣ Diagnóstico profundo</h3>
+          <p>
+            Analizamos tu negocio, márgenes y cuellos de botella para establecer una línea base clara.
+          </p>
+        </div>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-content">
-    <div class="footer-logo">Kevin Ayala</div>
-    <p class="footer-text">Growth Partner especializado en Revenue Share</p>
-    
-    <div class="footer-links">
-      <a href="#modelo">Modelo</a>
-      <a href="#planes">Planes</a>
-      <a href="#perfil-profesional">Perfil</a>
-      <a href="#agenda">Agendar</a>
-      <a href="#formulario">Contacto</a>
+        <div class="step">
+          <h3>2️⃣ Sistema de crecimiento</h3>
+          <ul>
+            <li>Estructura comercial optimizada</li>
+            <li>Procesos internos escalables</li>
+            <li>Sistema de adquisición multicanal</li>
+            <li>Automatizaciones y KPIs</li>
+          </ul>
+        </div>
+
+        <div class="step">
+          <h3>3️⃣ Implementación continua</h3>
+          <p>Participación activa en ejecución, pruebas y optimización basada en datos reales.</p>
+        </div>
+
+        <div class="step">
+          <h3>4️⃣ Revenue Share</h3>
+          <p class="highlight"><strong>No cobro anticipos. Solo participo del crecimiento generado.</strong></p>
+        </div>
+
+        <div class="step">
+          <h3>5️⃣ Transparencia total</h3>
+          <p>Métricas claras y acuerdos definidos. El porcentaje solo aplica sobre el crecimiento.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <button class="btn btn-primary" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'})">
+          Quiero aplicar al modelo Revenue Share
+        </button>
+      </div>
+
     </div>
-    
-    <div style="margin: 30px 0;">
-      <a href="https://wa.me/593992648781" style="color: #25D366; text-decoration: none; margin: 0 10px;">WhatsApp</a>
-      <a href="#" style="color: #06b6d4; text-decoration: none; margin: 0 10px;">LinkedIn</a>
-      <a href="#" style="color: #06b6d4; text-decoration: none; margin: 0 10px;">Instagram</a>
-    </div>
-    
-    <p class="copyright">
-      © 2025 Kevin Ayala | Growth Partner. Todos los derechos reservados.<br>
-      Modelo Revenue Share basado en resultados reales. Sin anticipos. Sin riesgo.
+  </section>
+
+  <!-- PLANES DE MARKETING DIGITAL -->
+  <section class="container">
+    <h2 class="section-title">Planes de Marketing Digital</h2>
+    <p class="section-intro">
+      Soluciones estructuradas diseñadas para construir autoridad, visibilidad y crecimiento escalable.
     </p>
-  </div>
-</footer>
+    
+    <div class="planes-grid">
+      <!-- PLAN 1 -->
+      <div class="plan-card">
+        <h3>Plan Presencia Digital</h3>
+        <div class="price">$200 <small>/ único</small></div>
+        <ul>
+          <li>Optimización profesional de redes sociales</li>
+          <li>Diseño de identidad visual básica</li>
+          <li>Calendario estratégico de contenido (30 días)</li>
+          <li>Configuración de WhatsApp Business</li>
+          <li>Estrategia inicial de posicionamiento</li>
+        </ul>
+        <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20el%20Plan%20Presencia%20Digital%20$200" 
+           target="_blank" class="btn btn-primary" style="text-align: center; display: block;">
+          Contratar ahora
+        </a>
+      </div>
+      
+      <!-- PLAN 2 -->
+      <div class="plan-card">
+        <h3>Plan Web & SEO</h3>
+        <div class="price">$200 <small>/ único</small></div>
+        <ul>
+          <li>Desarrollo de página web profesional</li>
+          <li>Optimización SEO básica</li>
+          <li>Configuración de Google Analytics</li>
+          <li>Optimización para conversión</li>
+          <li>Integración con redes y WhatsApp</li>
+        </ul>
+        <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20el%20Plan%20Web%20y%20Posicionamiento%20$200" 
+           target="_blank" class="btn btn-primary" style="text-align: center; display: block;">
+          Contratar ahora
+        </a>
+      </div>
+      
+      <!-- PLAN 3 (Destacado) -->
+      <div class="plan-card featured">
+        <h3>Plan Crecimiento Integral</h3>
+        <div class="price">$400 <small>/ único</small></div>
+        <ul>
+          <li>Incluye Plan Presencia Digital</li>
+          <li>Incluye Plan Web & Posicionamiento</li>
+          <li>Embudo de conversión optimizado</li>
+          <li>Configuración de campañas publicitarias</li>
+          <li>Asesoría estratégica personalizada</li>
+        </ul>
+        <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20el%20Plan%20Crecimiento%20Integral%20$400" 
+           target="_blank" class="btn btn-primary" style="text-align: center; display: block;">
+          Contratar ahora
+        </a>
+      </div>
+    </div>
+  </section>
 
-<script>
-// Función para el carrusel
-function scrollCarousel(id, amount) {
-  const container = document.getElementById(id);
-  container.scrollBy({
-    left: amount,
-    behavior: 'smooth'
-  });
-}
+  <!-- PRODUCTOS CON IMÁGENES -->
+  <section class="productos-section">
+    <div class="container">
+      <h2 class="section-title">Soluciones Digitales</h2>
+      <p class="section-intro">Productos y servicios listos para impulsar tu negocio</p>
+      
+      <div class="carousel-wrapper">
+        <button class="nav prev" onclick="scrollCarousel('productos-carousel', -300)">❮</button>
+        
+        <div class="carousel" id="productos-carousel">
+          <!-- PRODUCTO 1 -->
+          <div class="producto-card">
+            <div class="card-image">
+              <img src="images/camaras.jpg" alt="Cámaras de Seguridad" onerror="this.src='https://via.placeholder.com/300x200?text=Cámaras+de+Seguridad'">
+            </div>
+            <div class="card-content">
+              <h3>Cámaras de Seguridad</h3>
+              <div class="price">$150</div>
+              <p>Instalación profesional y monitoreo remoto en tiempo real.</p>
+              <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20Cámaras%20de%20Seguridad%20$150" 
+                 target="_blank" class="btn btn-secondary" style="text-align: center; display: block;">
+                Comprar
+              </a>
+            </div>
+          </div>
+          
+          <!-- PRODUCTO 2 -->
+          <div class="producto-card">
+            <div class="card-image">
+              <img src="images/mantenimiento.jpg" alt="Mantenimiento de Equipos" onerror="this.src='https://via.placeholder.com/300x200?text=Mantenimiento'">
+            </div>
+            <div class="card-content">
+              <h3>Mantenimiento Equipos</h3>
+              <div class="price">$80</div>
+              <p>Optimización, limpieza interna y actualización de software.</p>
+              <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20Mantenimiento%20$80" 
+                 target="_blank" class="btn btn-secondary" style="text-align: center; display: block;">
+                Comprar
+              </a>
+            </div>
+          </div>
+          
+          <!-- PRODUCTO 3 -->
+          <div class="producto-card">
+            <div class="card-image">
+              <img src="images/consultoria.jpg" alt="Consultoría Estratégica" onerror="this.src='https://via.placeholder.com/300x200?text=Consultoría'">
+            </div>
+            <div class="card-content">
+              <h3>Consultoría Estratégica</h3>
+              <div class="price">$120</div>
+              <p>Sesión personalizada enfocada en crecimiento digital.</p>
+              <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20Consultoría%20$120" 
+                 target="_blank" class="btn btn-secondary" style="text-align: center; display: block;">
+                Agendar
+              </a>
+            </div>
+          </div>
+          
+          <!-- PRODUCTO 4 -->
+          <div class="producto-card">
+            <div class="card-image">
+              <img src="images/contenido.jpg" alt="Creación de Contenido" onerror="this.src='https://via.placeholder.com/300x200?text=Contenido+Digital'">
+            </div>
+            <div class="card-content">
+              <h3>Creación de Contenido</h3>
+              <div class="price">$150</div>
+              <p>Contenido estratégico optimizado para conversión.</p>
+              <a href="https://wa.me/593992648781?text=Estoy%20interesado%20en%20Contenido%20Digital%20$150" 
+                 target="_blank" class="btn btn-secondary" style="text-align: center; display: block;">
+                Solicitar
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <button class="nav next" onclick="scrollCarousel('productos-carousel', 300)">❯</button>
+      </div>
+    </div>
+  </section>
 
-// Smooth scroll para enlaces internos
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+  <!-- PERFIL PROFESIONAL -->
+  <section id="perfil-profesional" class="container">
+    <h2 class="section-title">Kevin Ayala – Growth Partner</h2>
+    <p class="section-intro">Estrategia, Automatización y Escalamiento Empresarial</p>
+    
+    <div class="profile-content">
+      <div class="profile-image">
+        <img src="Kevin%201.webp" alt="Kevin Ayala Growth Partner" onerror="this.src='https://via.placeholder.com/300x400?text=Kevin+Ayala'">
+      </div>
+      
+      <div class="profile-text">
+        <p style="font-size: 18px; margin-bottom: 20px;">
+          Soy Kevin Ayala, Growth Partner especializado en crecimiento estratégico, 
+          optimización de procesos y modelos de Revenue Share para empresas de media 
+          y gran escala. Combino visión comercial con base técnica como Tecnólogo en 
+          Redes y Telecomunicaciones, integrando infraestructura digital, automatización 
+          y análisis de datos para generar crecimiento predecible y sostenible.
+        </p>
+        
+        <ul class="highlights">
+          <li><strong>🚀 Sistemas automatizados</strong> de captación y conversión basados en datos</li>
+          <li><strong>📊 Optimización estratégica</strong> de embudos y procesos comerciales escalables</li>
+          <li><strong>🤝 Modelos Revenue Share</strong> estructurados para crecimiento sostenible</li>
+          <li><strong>🌐 Integración tecnológica avanzada</strong> (Tecnólogo en Redes y Telecomunicaciones)</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- CERTIFICACIONES -->
+    <div style="margin-top: 60px;">
+      <h3 style="text-align: center; font-size: 28px; margin-bottom: 30px;">Certificaciones y Formación</h3>
+      
+      <div class="certifications-slider">
+        <div class="slide-track">
+          <img src="Inteligencia%20Artificial%20y%20productividad.webp" alt="Certificación IA" onerror="this.src='https://via.placeholder.com/250x160?text=IA+y+Productividad'">
+          <img src="Meta%20Ads%20desde%20cero.webp" alt="Meta Ads" onerror="this.src='https://via.placeholder.com/250x160?text=Meta+Ads'">
+          <img src="Fundamentos%20de%20Marketing%20Digital%20y%20Comercio%20Elecctrónico.webp" alt="Marketing Digital" onerror="this.src='https://via.placeholder.com/250x160?text=Marketing+Digital'">
+          <img src="Introducción%20a%20Ciberseguridad.webp" alt="Ciberseguridad" onerror="this.src='https://via.placeholder.com/250x160?text=Ciberseguridad'">
+          <img src="WhatsApp%20Image%202025-08-04%20at%2018.18.41.webp" alt="Certificación" onerror="this.src='https://via.placeholder.com/250x160?text=Certificación'">
+          <img src="Inicie_su_Negocio_-Certificado_de_Aprobación_del_curso_165599.webp" alt="Negocios" onerror="this.src='https://via.placeholder.com/250x160?text=Inicie+su+Negocio'">
+          <img src="Cer-Aprob-Formación-de-formadores-AYALA-AYALA-.webp" alt="Formación Formadores" onerror="this.src='https://via.placeholder.com/250x160?text=Formación+Formadores'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="container">
+    <h2 class="section-title">Resultados que hablan</h2>
+    <p class="section-intro">Lo que dicen nuestros clientes sobre el modelo Revenue Share</p>
+    
+    <div class="testimonios-grid">
+      <div class="testimonio-card">
+        <p>"Incrementamos 37% la facturación en solo 4 meses. El modelo Revenue Share eliminó todo el riesgo financiero."</p>
+        <div class="testimonio-author">Carlos Mendoza</div>
+        <div class="testimonio-company">CEO - TechSolutions EC</div>
+      </div>
+      
+      <div class="testimonio-card">
+        <p>"Pasamos de ventas inestables a un sistema predecible y escalable. Kevin no solo estrategia, implementa."</p>
+        <div class="testimonio-author">María Fernanda</div>
+        <div class="testimonio-company">Directora - Grupo Nova</div>
+      </div>
+      
+      <div class="testimonio-card">
+        <p>"El crecimiento fue tan orgánico que ni sentimos la inversión. Solo pagamos cuando facturamos más."</p>
+        <div class="testimonio-author">Juan Pablo</div>
+        <div class="testimonio-company">Fundador - InnovaCorp</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDA (Calendly) -->
+  <section id="agenda" class="container">
+    <h2 class="section-title">Agenda una llamada estratégica</h2>
+    <p class="section-intro">
+      Sin compromiso. Evaluemos si podemos trabajar juntos bajo el modelo Revenue Share.
+    </p>
+    
+    <div class="calendly-inline-widget" 
+         data-url="https://calendly.com/convenimentornosseguros/30min" 
+         style="min-width:320px;height:700px;">
+    </div>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <section id="formulario" class="container">
+    <h2 class="section-title">Aplica para evaluación estratégica</h2>
+    <p class="section-intro">
+      Completa el formulario y analizaré tu negocio. Si hay potencial, te contactaré en 24h.
+    </p>
+    
+    <div class="form-container">
+      <form action="https://formsubmit.co/convenimentornosseguros@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nueva aplicación Growth Partner - Web">
+        <input type="hidden" name="_next" value="https://kevin-gp.vercel.app/gracias.html">
+        
+        <div class="form-group">
+          <input type="text" name="Nombre" placeholder="Nombre completo" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="email" name="Email" placeholder="Correo electrónico" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="tel" name="Telefono" placeholder="Teléfono / WhatsApp" required>
+        </div>
+        
+        <div class="form-group">
+          <textarea name="Negocio" placeholder="Cuéntame sobre tu empresa y facturación actual (Ej: Empresa de servicios, facturación mensual $15,000)" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary form-btn">
+          Enviar aplicación → Revisaré tu caso
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">Kevin Ayala</div>
+      <p class="footer-text">Growth Partner especializado en Revenue Share</p>
+      
+      <div class="footer-links">
+        <a href="#modelo">Modelo</a>
+        <a href="#planes">Planes</a>
+        <a href="#perfil-profesional">Perfil</a>
+        <a href="#agenda">Agendar</a>
+        <a href="#formulario">Contacto</a>
+      </div>
+      
+      <div style="margin: 30px 0;">
+        <a href="https://wa.me/593992648781" style="color: #25D366; text-decoration: none; margin: 0 10px;">WhatsApp</a>
+        <a href="#" style="color: #06b6d4; text-decoration: none; margin: 0 10px;">LinkedIn</a>
+        <a href="#" style="color: #06b6d4; text-decoration: none; margin: 0 10px;">Instagram</a>
+      </div>
+      
+      <p class="copyright">
+        © 2025 Kevin Ayala | Growth Partner. Todos los derechos reservados.<br>
+        Modelo Revenue Share basado en resultados reales. Sin anticipos. Sin riesgo.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Función para el carrusel
+    function scrollCarousel(id, amount) {
+      const container = document.getElementById(id);
+      container.scrollBy({
+        left: amount,
+        behavior: 'smooth'
       });
     }
-  });
-});
 
-// Animación de contadores (opcional)
-function animateCounters() {
-  const counters = document.querySelectorAll('.counter-number');
-  counters.forEach(counter => {
-    const target = parseInt(counter.innerText.replace('+', '').replace('%', ''));
-    let count = 0;
-    const increment = target / 50;
-    
-    const updateCounter = () => {
-      if (count < target) {
-        count += increment;
-        counter.innerText = Math.ceil(count) + (counter.innerText.includes('%') ? '%' : counter.innerText.includes('+') ? '+' : '');
-        setTimeout(updateCounter, 30);
-      } else {
-        counter.innerText = target + (counter.innerText.includes('%') ? '%' : counter.innerText.includes('+') ? '+' : '');
-      }
-    };
-    
-    // Iniciar animación cuando el elemento sea visible
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          updateCounter();
-          observer.unobserve(entry.target);
+    // Smooth scroll para enlaces internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
         }
       });
     });
-    
-    observer.observe(counter);
-  });
-}
 
-// Iniciar animaciones cuando cargue la página
-window.addEventListener('load', function() {
-  animateCounters();
-});
-</script>
+    // Animación de contadores (opcional)
+    function animateCounters() {
+      const counters = document.querySelectorAll('.counter-number');
+      counters.forEach(counter => {
+        const target = parseInt(counter.innerText.replace('+', '').replace('%', ''));
+        let count = 0;
+        const increment = target / 50;
+        
+        const updateCounter = () => {
+          if (count < target) {
+            count += increment;
+            counter.innerText = Math.ceil(count) + (counter.innerText.includes('%') ? '%' : counter.innerText.includes('+') ? '+' : '');
+            setTimeout(updateCounter, 30);
+          } else {
+            counter.innerText = target + (counter.innerText.includes('%') ? '%' : counter.innerText.includes('+') ? '+' : '');
+          }
+        };
+        
+        // Iniciar animación cuando el elemento sea visible
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              updateCounter();
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+        
+        observer.observe(counter);
+      });
+    }
 
+    // Iniciar animaciones cuando cargue la página
+    window.addEventListener('load', function() {
+      animateCounters();
+    });
+  </script>
 </body>
 </html>
