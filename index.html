@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Kevin Ayala | Growth Partner - Contenido que Convierte</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 (free) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -17,7 +17,7 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #0a0c10;
+            background: #05070a;
             color: #eef2ff;
             line-height: 1.5;
             scroll-behavior: smooth;
@@ -25,7 +25,7 @@
             overflow-x: hidden;
         }
 
-        /* Formas de fondo dinámicas */
+        /* Fondo dinámico con formas abstractas de marketing */
         .bg-shapes {
             position: fixed;
             top: 0;
@@ -39,24 +39,25 @@
 
         .shape {
             position: absolute;
-            background: radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(139,92,246,0.05) 70%);
+            background: radial-gradient(circle, rgba(59,130,246,0.12) 0%, rgba(139,92,246,0.04) 70%);
             border-radius: 50%;
-            filter: blur(60px);
-            animation: float 20s infinite ease-in-out;
+            filter: blur(70px);
+            animation: float 25s infinite ease-in-out;
         }
 
-        .shape-1 { width: 500px; height: 500px; top: -150px; left: -150px; animation-delay: 0s; }
-        .shape-2 { width: 600px; height: 600px; bottom: -200px; right: -200px; animation-delay: -5s; background: radial-gradient(circle, rgba(139,92,246,0.12) 0%, rgba(59,130,246,0.03) 70%);}
-        .shape-3 { width: 350px; height: 350px; top: 40%; left: 70%; animation-delay: -10s; background: radial-gradient(circle, rgba(6,182,212,0.1) 0%, rgba(59,130,246,0.02) 70%);}
-        .shape-4 { width: 450px; height: 450px; top: 70%; left: 10%; animation-delay: -15s; background: radial-gradient(circle, rgba(168,85,247,0.1) 0%, rgba(59,130,246,0.02) 70%);}
+        .shape-1 { width: 550px; height: 550px; top: -200px; left: -150px; animation-delay: 0s; background: radial-gradient(circle, rgba(139,92,246,0.15) 0%, rgba(59,130,246,0.03) 70%);}
+        .shape-2 { width: 650px; height: 650px; bottom: -250px; right: -200px; animation-delay: -6s; background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, rgba(139,92,246,0.02) 70%);}
+        .shape-3 { width: 400px; height: 400px; top: 50%; left: 80%; animation-delay: -12s; background: radial-gradient(circle, rgba(6,182,212,0.08) 0%, rgba(59,130,246,0.02) 70%);}
+        .shape-4 { width: 500px; height: 500px; top: 75%; left: 5%; animation-delay: -18s; background: radial-gradient(circle, rgba(168,85,247,0.08) 0%, rgba(139,92,246,0.02) 70%);}
+        .shape-5 { width: 300px; height: 300px; top: 20%; left: 20%; animation-delay: -24s; background: radial-gradient(circle, rgba(236,72,153,0.06) 0%, rgba(59,130,246,0.01) 70%);}
         
         @keyframes float {
-            0% { transform: translate(0, 0) scale(1); }
-            50% { transform: translate(30px, 20px) scale(1.05); }
-            100% { transform: translate(0, 0) scale(1); }
+            0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+            50% { transform: translate(40px, 30px) scale(1.08) rotate(5deg); }
+            100% { transform: translate(0, 0) scale(1) rotate(0deg); }
         }
 
-        /* Cuadrícula de datos sutil */
+        /* Cuadrícula de datos */
         .grid-pattern {
             position: fixed;
             top: 0;
@@ -64,107 +65,25 @@
             width: 100%;
             height: 100%;
             background-image: 
-                linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px);
-            background-size: 50px 50px;
+                linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px);
+            background-size: 60px 60px;
             z-index: 0;
             pointer-events: none;
         }
 
         .container {
-            max-width: 1280px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 32px;
             position: relative;
             z-index: 2;
         }
 
-        h1, h2, h3 {
-            font-weight: 800;
-            line-height: 1.2;
-        }
-
-        h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            background: linear-gradient(135deg, #ffffff, #94a3b8, #8b5cf6);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            margin-bottom: 1rem;
-        }
-
-        h2 {
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #f1f5f9;
-        }
-
-        .section {
-            padding: 80px 0;
-            border-bottom: 1px solid rgba(148, 163, 184, 0.1);
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 28px;
-            border-radius: 40px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-            font-size: 1rem;
-        }
-
-        .btn-primary {
-            background: #0f172a;
-            color: white;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-        }
-
-        .btn-primary:hover {
-            background: #1e293b;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-        }
-
-        .btn-outline {
-            background: transparent;
-            border: 2px solid #8b5cf6;
-            color: #e2e8f0;
-        }
-
-        .btn-outline:hover {
-            background: rgba(139, 92, 246, 0.15);
-            border-color: #a78bfa;
-            color: white;
-        }
-
-        .btn-accent {
-            background: #7c3aed;
-            color: white;
-            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
-        }
-
-        .btn-accent:hover {
-            background: #8b5cf6;
-            transform: translateY(-2px);
-        }
-
-        /* FIX: Botón evaluación texto blanco */
-        .btn-white-text {
-            color: white !important;
-        }
-        .btn-white-text:hover {
-            color: white !important;
-        }
-
+        /* Header centrado */
         header {
             padding: 20px 0;
-            background: rgba(10, 12, 16, 0.85);
+            background: rgba(5, 7, 10, 0.85);
             backdrop-filter: blur(12px);
             position: sticky;
             top: 0;
@@ -177,20 +96,22 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            gap: 20px;
         }
 
         .logo {
             font-weight: 800;
-            font-size: 1.5rem;
-            background: linear-gradient(135deg, #ffffff, #a78bfa);
+            font-size: 1.6rem;
+            background: linear-gradient(135deg, #ffffff, #a78bfa, #c084fc);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+            letter-spacing: -0.02em;
         }
 
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 2.5rem;
             align-items: center;
             flex-wrap: wrap;
         }
@@ -199,168 +120,363 @@
             text-decoration: none;
             color: #cbd5e6;
             font-weight: 500;
-            transition: color 0.2s;
+            transition: all 0.2s;
+            font-size: 0.95rem;
         }
 
         .nav-links a:hover {
-            color: #a78bfa;
+            color: #c084fc;
         }
 
-        .hero {
-            padding: 80px 0 40px;
+        /* Secciones centradas con más espacio */
+        .section {
+            padding: 100px 0;
         }
-        .hero-grid {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 48px;
+
+        .section:last-of-type {
+            border-bottom: none;
         }
-        .hero-content {
-            flex: 1;
+
+        h1, h2, h3 {
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
         }
-        .hero-stats {
-            display: flex;
-            gap: 32px;
-            margin: 32px 0;
-            flex-wrap: wrap;
-        }
-        .stat {
+
+        h1 {
+            font-size: clamp(2.8rem, 6vw, 4.8rem);
+            background: linear-gradient(135deg, #ffffff, #c4b5fd, #a78bfa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1.5rem;
             text-align: center;
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(4px);
-            padding: 12px 20px;
-            border-radius: 32px;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #f1f5f9;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem auto;
+            color: #94a3b8;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Botones */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 32px;
+            border-radius: 60px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(139, 92, 246, 0.3);
         }
-        .stat-number {
-            font-size: 2rem;
-            font-weight: 800;
-            color: #a78bfa;
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #1e293b, #2d3a5e);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.2);
+            border-color: rgba(139, 92, 246, 0.6);
         }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #8b5cf6;
+            color: #e2e8f0;
+        }
+
+        .btn-outline:hover {
+            background: rgba(139, 92, 246, 0.1);
+            border-color: #c084fc;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .btn-accent {
+            background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+            color: white;
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+        }
+
+        .btn-accent:hover {
+            background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.5);
+        }
+
+        /* Hero centrado */
+        .hero {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
         .hero-badge {
             background: rgba(124, 58, 237, 0.2);
             backdrop-filter: blur(4px);
             color: #c4b5fd;
-            border-radius: 40px;
-            padding: 6px 16px;
-            font-size: 0.875rem;
+            border-radius: 60px;
+            padding: 8px 20px;
+            font-size: 0.85rem;
             font-weight: 600;
             display: inline-block;
-            margin-bottom: 24px;
+            margin-bottom: 2rem;
             border: 1px solid rgba(139, 92, 246, 0.4);
+            letter-spacing: 0.3px;
         }
 
+        .hero-description {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            line-height: 1.6;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(4px);
+            padding: 1rem 2rem;
+            border-radius: 60px;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            min-width: 140px;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #c084fc;
+            line-height: 1.2;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            margin-top: 5px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        /* Cards Grid centrado */
         .cards-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 32px;
+            gap: 2rem;
             justify-content: center;
-            margin-top: 40px;
+            margin-top: 2rem;
         }
+
         .card {
-            background: rgba(15, 23, 42, 0.7);
+            background: rgba(15, 23, 42, 0.6);
             backdrop-filter: blur(8px);
             border-radius: 32px;
-            padding: 32px;
+            padding: 2rem;
             flex: 1;
-            min-width: 260px;
+            min-width: 280px;
+            max-width: 360px;
             border: 1px solid rgba(139, 92, 246, 0.2);
-            transition: all 0.3s;
+            transition: all 0.3s ease;
+            text-align: center;
         }
+
         .card:hover {
             transform: translateY(-8px);
             border-color: #8b5cf6;
-            background: rgba(15, 23, 42, 0.85);
+            background: rgba(15, 23, 42, 0.8);
             box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.5);
         }
+
         .card.popular {
-            border-top: 4px solid #8b5cf6;
+            border-top: 3px solid #8b5cf6;
             position: relative;
         }
+
         .badge-popular {
-            background: #8b5cf6;
+            background: linear-gradient(135deg, #8b5cf6, #c084fc);
             color: white;
-            font-size: 0.75rem;
-            padding: 4px 12px;
+            font-size: 0.7rem;
+            padding: 4px 14px;
             border-radius: 40px;
             position: absolute;
             top: -12px;
-            left: 24px;
-            font-weight: 600;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 700;
+            letter-spacing: 0.5px;
         }
-        .price {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin: 16px 0;
+
+        .card-icon {
+            font-size: 2.8rem;
+            color: #c084fc;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
             color: #f1f5f9;
         }
+
+        .price {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin: 1rem 0;
+            color: #ffffff;
+        }
+
         .price small {
-            font-size: 0.875rem;
+            font-size: 0.9rem;
             font-weight: 400;
             color: #94a3b8;
         }
+
         .feature-list {
             list-style: none;
-            margin: 24px 0;
-        }
-        .feature-list li {
-            margin: 12px 0;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: #cbd5e1;
-        }
-        .feature-list i {
-            color: #8b5cf6;
-            width: 20px;
+            margin: 1.5rem 0;
+            text-align: left;
         }
 
+        .feature-list li {
+            margin: 0.8rem 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #cbd5e1;
+            font-size: 0.9rem;
+        }
+
+        .feature-list i {
+            color: #c084fc;
+            width: 20px;
+            font-size: 0.9rem;
+        }
+
+        .card .btn {
+            width: 100%;
+            justify-content: center;
+            margin-top: 0.5rem;
+        }
+
+        /* Revenue Section */
         .revenue-bg {
-            background: rgba(10, 12, 16, 0.7);
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(5, 7, 10, 0.9));
             backdrop-filter: blur(8px);
             border-radius: 48px;
-            padding: 48px;
-            margin-top: 40px;
+            padding: 3rem;
             border: 1px solid rgba(139, 92, 246, 0.3);
+            text-align: center;
         }
+
+        .revenue-bg h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
         .steps {
             display: flex;
             flex-wrap: wrap;
-            gap: 24px;
-            justify-content: space-between;
-            margin-top: 40px;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2.5rem;
         }
+
         .step {
             flex: 1;
+            min-width: 180px;
             text-align: center;
-            padding: 24px;
+            padding: 1.5rem;
             background: rgba(0, 0, 0, 0.3);
             border-radius: 24px;
             border: 1px solid rgba(139, 92, 246, 0.2);
+            transition: all 0.3s;
         }
 
+        .step:hover {
+            border-color: #8b5cf6;
+            transform: translateY(-5px);
+        }
+
+        .step i {
+            font-size: 2.2rem;
+            color: #c084fc;
+            margin-bottom: 1rem;
+        }
+
+        .step h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #f1f5f9;
+        }
+
+        .step p {
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        /* Showcase Grid */
         .showcase-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 32px;
-            margin-top: 40px;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
         }
+
         .showcase-card {
             flex: 1;
             min-width: 300px;
-            background: rgba(15, 23, 42, 0.7);
+            max-width: 360px;
+            background: rgba(15, 23, 42, 0.6);
             backdrop-filter: blur(8px);
             border-radius: 32px;
             overflow: hidden;
             border: 1px solid rgba(139, 92, 246, 0.2);
             transition: all 0.3s;
+            text-align: center;
         }
+
         .showcase-card:hover {
             transform: translateY(-5px);
             border-color: #8b5cf6;
         }
+
         .showcase-image {
-            height: 220px;
+            height: 200px;
             background: linear-gradient(135deg, #4c1d95, #7c3aed);
             display: flex;
             align-items: center;
@@ -368,271 +484,317 @@
             color: white;
             font-size: 3rem;
         }
+
         .showcase-content {
-            padding: 24px;
+            padding: 1.5rem;
         }
+
         .showcase-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 8px;
-            color: #f1f5f9;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
         }
+
         .result-badge {
             display: inline-block;
-            background: #2d3748;
-            color: #c4b5fd;
+            background: rgba(139, 92, 246, 0.2);
+            color: #c084fc;
             padding: 4px 12px;
             border-radius: 40px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
-            margin: 12px 0;
+            margin: 0.8rem 0;
         }
+
         .testimonial-mini {
             font-style: italic;
             color: #cbd5e6;
             border-left: 3px solid #8b5cf6;
-            padding-left: 16px;
-            margin: 16px 0;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            text-align: left;
+            font-size: 0.85rem;
         }
 
+        /* Testimonials */
         .testimonials-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 32px;
-            margin-top: 40px;
-        }
-        .testimonial {
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(4px);
-            padding: 32px;
-            border-radius: 32px;
-            flex: 1;
-            min-width: 260px;
-            border: 1px solid rgba(139, 92, 246, 0.2);
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
         }
 
+        .testimonial {
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(4px);
+            padding: 2rem;
+            border-radius: 28px;
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            text-align: center;
+        }
+
+        .testimonial i {
+            font-size: 2rem;
+            color: #c084fc;
+            margin-bottom: 1rem;
+            opacity: 0.7;
+        }
+
+        .testimonial p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #e2e8f0;
+        }
+
+        /* Formulario centrado */
+        .contact-form {
+            max-width: 550px;
+            margin: 2rem auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, select {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 60px;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #c084fc;
+            background: rgba(15, 23, 42, 1);
+        }
+
+        input::placeholder {
+            color: #64748b;
+        }
+
+        /* WhatsApp Float */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background-color: #25d366;
+            background: linear-gradient(135deg, #25d366, #20b859);
             color: white;
-            border-radius: 50px;
-            padding: 12px 24px;
+            border-radius: 60px;
+            padding: 12px 28px;
             display: flex;
             align-items: center;
             gap: 12px;
             text-decoration: none;
             font-weight: 600;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
             z-index: 99;
             transition: all 0.3s;
+            font-size: 0.95rem;
         }
+
         .whatsapp-float:hover {
             transform: scale(1.05);
-            background-color: #20b859;
+            background: linear-gradient(135deg, #20b859, #1da154);
         }
 
         footer {
             background: rgba(2, 6, 23, 0.9);
             backdrop-filter: blur(4px);
-            color: #94a3b8;
-            padding: 48px 0;
+            color: #64748b;
+            padding: 3rem 0;
             text-align: center;
             border-top: 1px solid rgba(139, 92, 246, 0.2);
+            margin-top: 2rem;
         }
 
-        input, select {
-            background: rgba(15, 23, 42, 0.8);
-            border: 1px solid rgba(139, 92, 246, 0.4);
-            color: white;
-            padding: 14px;
-            border-radius: 40px;
-            font-size: 1rem;
-        }
-        input::placeholder {
-            color: #94a3b8;
-        }
-        input:focus, select:focus {
-            outline: none;
-            border-color: #8b5cf6;
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
         }
 
         @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            .section {
+                padding: 60px 0;
+            }
             .header-content {
                 flex-direction: column;
-                gap: 16px;
+                text-align: center;
             }
             .nav-links {
                 justify-content: center;
+                gap: 1.5rem;
             }
-            .hero-grid {
-                flex-direction: column;
+            .hero-stats {
+                gap: 1rem;
+            }
+            .stat {
+                padding: 0.8rem 1.2rem;
+                min-width: 100px;
+            }
+            .stat-number {
+                font-size: 1.5rem;
             }
             .revenue-bg {
-                padding: 24px;
+                padding: 1.5rem;
+            }
+            .steps {
+                flex-direction: column;
+            }
+            .btn {
+                padding: 10px 24px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Fondo con formas dinámicas y cuadrícula -->
     <div class="bg-shapes">
         <div class="shape shape-1"></div>
         <div class="shape shape-2"></div>
         <div class="shape shape-3"></div>
         <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
     </div>
     <div class="grid-pattern"></div>
 
     <header>
         <div class="container header-content">
-            <div class="logo">Kevin Ayala <span style="font-weight: 400;">| Growth Partner</span></div>
+            <div class="logo">Kevin Ayala <span style="font-weight: 500;">| Growth Partner</span></div>
             <div class="nav-links">
                 <a href="#contenido">Contenido</a>
                 <a href="#paquetes">Paquetes</a>
                 <a href="#negocios">Casos de Éxito</a>
                 <a href="#revenue">Revenue Share</a>
-                <a href="#contacto" class="btn btn-primary btn-white-text" style="padding: 8px 20px; color: white !important;">Evaluación gratuita</a>
+                <a href="#contacto" class="btn btn-primary" style="padding: 8px 24px;">Evaluación gratuita</a>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero Section Centrada -->
         <div class="container hero">
-            <div class="hero-grid">
-                <div class="hero-content">
-                    <span class="hero-badge"><i class="fas fa-handshake"></i> Alianza Estratégica con Escuela de Modelaje</span>
-                    <h1>Contenido que conecta, talento que convierte</h1>
-                    <p style="font-size: 1.2rem; color: #cbd5e6;">Producimos contenido audiovisual de alto impacto con modelos profesionales (hombres, mujeres, adultos mayores) para potenciar la imagen de marcas que buscan diferenciarse y escalar.</p>
-                    <div class="hero-stats">
-                        <div class="stat"><div class="stat-number">+58%</div><div>engagement en campañas</div></div>
-                        <div class="stat"><div class="stat-number">24+</div><div>modelos en catálogo</div></div>
-                        <div class="stat"><div class="stat-number">12</div><div>empresas potenciadas</div></div>
-                    </div>
-                    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                        <a href="#contenido" class="btn btn-accent">Ver modelos de contenido →</a>
-                        <a href="#negocios" class="btn btn-outline">Ver resultados reales</a>
-                    </div>
-                </div>
-                <div style="flex: 0.8; text-align: center;">
-                    <i class="fas fa-camera-retro" style="font-size: 10rem; color: #8b5cf6; opacity: 0.7;"></i>
-                    <i class="fas fa-users" style="font-size: 3rem; color: #c4b5fd; margin-left: -20px;"></i>
-                </div>
+            <span class="hero-badge"><i class="fas fa-handshake"></i> Alianza Estratégica con Escuela de Modelaje</span>
+            <h1>Contenido que conecta,<br>talento que convierte</h1>
+            <p class="hero-description">Producimos contenido audiovisual de alto impacto con modelos profesionales (hombres, mujeres, adultos mayores) para potenciar la imagen de marcas que buscan diferenciarse y escalar.</p>
+            <div class="hero-stats">
+                <div class="stat"><div class="stat-number">+58%</div><div class="stat-label">engagement en campañas</div></div>
+                <div class="stat"><div class="stat-number">24+</div><div class="stat-label">modelos en catálogo</div></div>
+                <div class="stat"><div class="stat-number">12</div><div class="stat-label">empresas potenciadas</div></div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contenido" class="btn btn-accent">Ver modelos de contenido <i class="fas fa-arrow-right"></i></a>
+                <a href="#negocios" class="btn btn-outline">Ver resultados reales</a>
             </div>
         </div>
 
-        <!-- Sección: Modelos de Contenido Estratégico -->
+        <!-- Modelos de Contenido -->
         <div class="section" id="contenido">
             <div class="container">
-                <h2>Contenido que impulsa <span style="color:#a78bfa">marcas y carreras</span></h2>
-                <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color:#cbd5e6;">Gracias a nuestro convenio con una escuela de modelaje, accedemos a talento diverso para crear material auténtico que conecta con audiencias reales. Tres formatos según tu objetivo comercial.</p>
+                <h2>Contenido que impulsa <span style="color:#c084fc;">marcas y carreras</span></h2>
+                <p class="section-subtitle">Gracias a nuestro convenio con una escuela de modelaje, accedemos a talento diverso para crear material auténtico que conecta con audiencias reales.</p>
                 <div class="cards-grid">
                     <div class="card">
-                        <i class="fas fa-mobile-alt" style="font-size: 2.5rem; color: #a78bfa;"></i>
-                        <h3 style="margin-top: 16px;">Contenido para Redes</h3>
-                        <p class="price" style="font-size: 1.5rem;">Desde $299 <small>/pack</small></p>
-                        <p style="color:#cbd5e6;">Ideal para negocios que necesitan presencia constante y atractiva en Instagram, TikTok y Facebook.</p>
+                        <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Contenido para Redes</h3>
+                        <div class="price">Desde $299 <small>/pack</small></div>
+                        <p style="color:#94a3b8; margin-bottom: 1rem;">Ideal para negocios que necesitan presencia constante y atractiva.</p>
                         <ul class="feature-list">
                             <li><i class="fas fa-check-circle"></i> 10-15 piezas mensuales con modelos</li>
                             <li><i class="fas fa-check-circle"></i> Reels y videos cortos optimizados</li>
                             <li><i class="fas fa-check-circle"></i> Fotografía de producto con talento</li>
                             <li><i class="fas fa-check-circle"></i> Incluye dirección creativa</li>
                         </ul>
-                        <a href="#contacto" class="btn btn-primary btn-white-text" style="width: 100%; text-align: center; color: white !important;">Solicitar propuesta</a>
+                        <a href="#contacto" class="btn btn-primary">Solicitar propuesta</a>
                     </div>
                     <div class="card popular">
                         <div class="badge-popular">Alta conversión</div>
-                        <i class="fas fa-video" style="font-size: 2.5rem; color: #a78bfa;"></i>
-                        <h3 style="margin-top: 16px;">Campañas Publicitarias</h3>
-                        <p class="price" style="font-size: 1.5rem;">Desde $799 <small>/campaña</small></p>
-                        <p style="color:#cbd5e6;">Producción profesional para anuncios en Meta Ads, Google y YouTube con actitud y storytelling.</p>
+                        <div class="card-icon"><i class="fas fa-video"></i></div>
+                        <h3>Campañas Publicitarias</h3>
+                        <div class="price">Desde $799 <small>/campaña</small></div>
+                        <p style="color:#94a3b8; margin-bottom: 1rem;">Producción profesional para anuncios en Meta Ads, Google y YouTube.</p>
                         <ul class="feature-list">
                             <li><i class="fas fa-check-circle"></i> Spot de 15-30 segundos</li>
                             <li><i class="fas fa-check-circle"></i> Modelos según perfil de tu marca</li>
                             <li><i class="fas fa-check-circle"></i> Guion y dirección profesional</li>
                             <li><i class="fas fa-check-circle"></i> Edición y post-producción</li>
                         </ul>
-                        <a href="#contacto" class="btn btn-accent btn-white-text" style="width: 100%; text-align: center; color: white !important;">Quiero resultados</a>
+                        <a href="#contacto" class="btn btn-accent">Quiero resultados</a>
                     </div>
                     <div class="card">
-                        <i class="fas fa-building" style="font-size: 2.5rem; color: #a78bfa;"></i>
-                        <h3 style="margin-top: 16px;">Contenido Corporativo</h3>
-                        <p class="price" style="font-size: 1.5rem;">Personalizado</p>
-                        <p style="color:#cbd5e6;">Para empresas de alto ticket que necesitan imagen institucional, testimonios con actores o campañas inclusivas.</p>
+                        <div class="card-icon"><i class="fas fa-building"></i></div>
+                        <h3>Contenido Corporativo</h3>
+                        <div class="price">Personalizado</div>
+                        <p style="color:#94a3b8; margin-bottom: 1rem;">Para empresas de alto ticket que necesitan imagen institucional.</p>
                         <ul class="feature-list">
                             <li><i class="fas fa-check-circle"></i> Banco de imágenes con talento exclusivo</li>
                             <li><i class="fas fa-check-circle"></i> Videos institucionales</li>
                             <li><i class="fas fa-check-circle"></i> Modelos diversos (edad, género, etnia)</li>
                             <li><i class="fas fa-check-circle"></i> Licencias de uso comercial</li>
                         </ul>
-                        <a href="#revenue" class="btn btn-outline btn-white-text" style="width: 100%; text-align: center; color: white !important;">Agendar asesoría</a>
+                        <a href="#revenue" class="btn btn-outline">Agendar asesoría</a>
                     </div>
                 </div>
-                <p style="text-align: center; margin-top: 40px; font-size: 0.9rem; color: #94a3b8;"><i class="fas fa-star-of-life"></i> Catálogo disponible: más de 24 modelos entre hombres, mujeres y adultos mayores listos para representar tu marca.</p>
+                <p style="text-align: center; margin-top: 2.5rem; font-size: 0.85rem; color: #64748b;"><i class="fas fa-users"></i> Catálogo disponible: más de 24 modelos entre hombres, mujeres y adultos mayores listos para representar tu marca.</p>
             </div>
         </div>
 
-        <!-- Sección: Negocios Potenciados -->
-        <div class="section" id="negocios">
+        <!-- Negocios Potenciados -->
+        <div class="section" id="negocios" style="background: rgba(5, 7, 10, 0.5);">
             <div class="container">
-                <h2>Negocios potenciados con <span style="color:#a78bfa">contenido estratégico</span></h2>
-                <p style="text-align: center; margin-bottom: 20px; color:#cbd5e6;">Marcas que confiaron en nuestra alianza y multiplicaron su impacto visual y comercial.</p>
+                <h2>Negocios potenciados con <span style="color:#c084fc;">contenido estratégico</span></h2>
+                <p class="section-subtitle">Marcas que confiaron en nuestra alianza y multiplicaron su impacto visual y comercial.</p>
                 <div class="showcase-grid">
                     <div class="showcase-card">
-                        <div class="showcase-image">
-                            <i class="fas fa-store"></i>
-                        </div>
+                        <div class="showcase-image"><i class="fas fa-store"></i></div>
                         <div class="showcase-content">
                             <h3>Moda Ética · Quito</h3>
                             <span class="result-badge"><i class="fas fa-chart-line"></i> +127% ventas online</span>
-                            <p>Marca de ropa sostenible que necesitaba conectar con audiencia joven. Creamos campaña con 5 modelos diversos mostrando prendas en entornos urbanos.</p>
-                            <div class="testimonial-mini">
-                                "El contenido con modelos reales transformó nuestra percepción de marca. Pasamos de 30 a 120 pedidos mensuales en 3 meses."
-                            </div>
+                            <p>Campaña con 5 modelos diversos mostrando prendas en entornos urbanos.</p>
+                            <div class="testimonial-mini">"El contenido con modelos reales transformó nuestra percepción de marca. Pasamos de 30 a 120 pedidos mensuales."</div>
                             <p><strong>— Ana Lucía, Fundadora</strong></p>
                         </div>
                     </div>
                     <div class="showcase-card">
-                        <div class="showcase-image">
-                            <i class="fas fa-utensils"></i>
-                        </div>
+                        <div class="showcase-image"><i class="fas fa-utensils"></i></div>
                         <div class="showcase-content">
                             <h3>Restaurante Sabores</h3>
                             <span class="result-badge"><i class="fas fa-chart-line"></i> +84% reservas</span>
-                            <p>Cadena gastronómica que lanzó nueva línea de productos. Realizamos sesión con adultos mayores para transmitir tradición y autenticidad.</p>
-                            <div class="testimonial-mini">
-                                "La campaña con modelos adultos mayores fue un acierto total. Nuestro público objetivo se sintió identificado y las reservas se dispararon."
-                            </div>
+                            <p>Sesión con adultos mayores para transmitir tradición y autenticidad.</p>
+                            <div class="testimonial-mini">"La campaña con modelos adultos mayores fue un acierto total. Las reservas se dispararon."</div>
                             <p><strong>— Carlos M., Director Marketing</strong></p>
                         </div>
                     </div>
                     <div class="showcase-card">
-                        <div class="showcase-image">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
+                        <div class="showcase-image"><i class="fas fa-heartbeat"></i></div>
                         <div class="showcase-content">
                             <h3>Bienestar Activo</h3>
                             <span class="result-badge"><i class="fas fa-chart-line"></i> Alcance +230%</span>
-                            <p>Centro de bienestar para adultos. Creamos contenido inclusivo con modelos de 50+ años mostrando rutinas y testimonios.</p>
-                            <div class="testimonial-mini">
-                                "Por fin encontramos talento que representa a nuestra comunidad. Las redes crecieron un 300% en seguidores orgánicos."
-                            </div>
+                            <p>Contenido inclusivo con modelos de 50+ años mostrando rutinas.</p>
+                            <div class="testimonial-mini">"Por fin encontramos talento que representa a nuestra comunidad. Las redes crecieron un 300%."</div>
                             <p><strong>— Dra. Patricia, Directora</strong></p>
                         </div>
                     </div>
                 </div>
-                <div style="text-align: center; margin-top: 40px;">
-                    <a href="#contacto" class="btn btn-accent btn-white-text" style="color: white !important;">¿Quieres ser el próximo negocio potenciado?</a>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="#contacto" class="btn btn-accent">¿Quieres ser el próximo negocio potenciado?</a>
                 </div>
             </div>
         </div>
 
-        <!-- Paquetes de Marketing Digital -->
+        <!-- Paquetes de Marketing -->
         <div class="section" id="paquetes">
             <div class="container">
-                <h2>Paquetes de implementación <span style="color:#a78bfa">pago único</span></h2>
-                <p style="text-align: center; margin-bottom: 40px; color:#cbd5e6;">Soluciones completas para negocios que necesitan presencia digital sólida y contenido profesional.</p>
+                <h2>Paquetes de implementación <span style="color:#c084fc;">pago único</span></h2>
+                <p class="section-subtitle">Soluciones completas para negocios que necesitan presencia digital sólida y contenido profesional.</p>
                 <div class="cards-grid">
                     <div class="card">
                         <h3>Plan Presencia Digital</h3>
@@ -643,7 +805,7 @@
                             <li><i class="fas fa-check-circle"></i> Configuración WhatsApp Business</li>
                             <li><i class="fas fa-check-circle"></i> +5 fotos profesionales con modelos</li>
                         </ul>
-                        <a href="https://wa.me/593992648781?text=Quiero%20el%20Plan%20Presencia%20Digital" class="btn btn-primary btn-white-text" style="width:100%; color: white !important;">Adquirir</a>
+                        <a href="https://wa.me/593992648781?text=Quiero%20el%20Plan%20Presencia%20Digital" class="btn btn-primary">Adquirir</a>
                     </div>
                     <div class="card popular">
                         <div class="badge-popular">Más vendido</div>
@@ -655,7 +817,7 @@
                             <li><i class="fas fa-check-circle"></i> Google Analytics & conversión</li>
                             <li><i class="fas fa-check-circle"></i> Video promocional con modelo</li>
                         </ul>
-                        <a href="https://wa.me/593992648781?text=Quiero%20el%20Plan%20Web%20%26%20SEO" class="btn btn-accent btn-white-text" style="width:100%; color: white !important;">Lo quiero</a>
+                        <a href="https://wa.me/593992648781?text=Quiero%20el%20Plan%20Web%20%26%20SEO" class="btn btn-accent">Lo quiero</a>
                     </div>
                     <div class="card">
                         <h3>Plan Crecimiento Integral</h3>
@@ -666,26 +828,26 @@
                             <li><i class="fas fa-check-circle"></i> Pack de 10 fotos con talento</li>
                             <li><i class="fas fa-check-circle"></i> Asesoría personalizada</li>
                         </ul>
-                        <a href="https://wa.me/593992648781?text=Quiero%20el%20Plan%20Crecimiento%20Integral" class="btn btn-outline btn-white-text" style="width:100%; color: white !important;">Solicitar</a>
+                        <a href="https://wa.me/593992648781?text=Quiero%20el%20Plan%20Crecimiento%20Integral" class="btn btn-outline">Solicitar</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Revenue Share Section -->
+        <!-- Revenue Share -->
         <div class="section" id="revenue">
             <div class="container">
                 <div class="revenue-bg">
-                    <h2 style="text-align: left;">Modelo Revenue Share: <span style="color:#a78bfa;">Crecemos juntos sin riesgo</span></h2>
-                    <p style="font-size: 1.1rem; color:#cbd5e6;">Para empresas de media y alta facturación que necesitan escalar con contenido profesional y estrategia integral. Sin anticipos. Solo participo del crecimiento real de tu facturación.</p>
+                    <h2>Modelo Revenue Share: <span style="color:#c084fc;">Crecemos juntos sin riesgo</span></h2>
+                    <p style="color:#94a3b8; max-width: 700px; margin: 0 auto;">Para empresas de media y alta facturación que necesitan escalar con contenido profesional y estrategia integral. Sin anticipos. Solo participo del crecimiento real de tu facturación.</p>
                     <div class="steps">
-                        <div class="step"><i class="fas fa-chart-pie" style="font-size: 2rem; color:#a78bfa;"></i><h4>1. Diagnóstico</h4><p>Analizamos tu marca, audiencia y necesidades de contenido.</p></div>
-                        <div class="step"><i class="fas fa-users" style="font-size: 2rem; color:#a78bfa;"></i><h4>2. Selección de talento</h4><p>Elegimos modelos que representen tus valores.</p></div>
-                        <div class="step"><i class="fas fa-video" style="font-size: 2rem; color:#a78bfa;"></i><h4>3. Producción + Estrategia</h4><p>Creamos contenido y activamos campañas.</p></div>
-                        <div class="step"><i class="fas fa-handshake" style="font-size: 2rem; color:#a78bfa;"></i><h4>4. Revenue Share</h4><p>% sobre el crecimiento generado.</p></div>
+                        <div class="step"><i class="fas fa-chart-pie"></i><h4>1. Diagnóstico</h4><p>Analizamos tu marca, audiencia y necesidades de contenido.</p></div>
+                        <div class="step"><i class="fas fa-users"></i><h4>2. Selección de talento</h4><p>Elegimos modelos que representen tus valores.</p></div>
+                        <div class="step"><i class="fas fa-video"></i><h4>3. Producción + Estrategia</h4><p>Creamos contenido y activamos campañas.</p></div>
+                        <div class="step"><i class="fas fa-handshake"></i><h4>4. Revenue Share</h4><p>% sobre el crecimiento generado.</p></div>
                     </div>
-                    <div style="text-align: center; margin-top: 40px;">
-                        <a href="#contacto" class="btn btn-accent btn-white-text" style="background:#7c3aed; color: white !important;">Aplica para evaluación estratégica →</a>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="#contacto" class="btn btn-accent">Aplica para evaluación estratégica →</a>
                     </div>
                 </div>
             </div>
@@ -695,20 +857,21 @@
         <div class="section">
             <div class="container">
                 <h2>Lo que dicen nuestros clientes</h2>
+                <p class="section-subtitle">Experiencias reales de marcas que transformaron su presencia con contenido estratégico.</p>
                 <div class="testimonials-grid">
-                    <div class="testimonial"><i class="fas fa-quote-left" style="color:#a78bfa;"></i><p>"La alianza con la escuela de modelaje fue un game changer. Pasamos de fotos genéricas a contenido auténtico que realmente vende."</p><strong>– Laura G., E-commerce Moda</strong></div>
-                    <div class="testimonial"><i class="fas fa-quote-left" style="color:#a78bfa;"></i><p>"Kevin entendió que nuestra marca necesitaba representación de adultos mayores. La campaña superó todas las expectativas de engagement."</p><strong>– Felipe R., Clínica de Bienestar</strong></div>
-                    <div class="testimonial"><i class="fas fa-quote-left" style="color:#a78bfa;"></i><p>"Revenue Share sin riesgo. El contenido que produjeron para nuestras redes nos ayudó a duplicar ventas en menos de 6 meses."</p><strong>– Mariana V., Alimentos Premium</strong></div>
+                    <div class="testimonial"><i class="fas fa-quote-left"></i><p>"La alianza con la escuela de modelaje fue un game changer. Pasamos de fotos genéricas a contenido auténtico que realmente vende."</p><strong>– Laura G., E-commerce Moda</strong></div>
+                    <div class="testimonial"><i class="fas fa-quote-left"></i><p>"Kevin entendió que nuestra marca necesitaba representación de adultos mayores. La campaña superó todas las expectativas."</p><strong>– Felipe R., Clínica de Bienestar</strong></div>
+                    <div class="testimonial"><i class="fas fa-quote-left"></i><p>"Revenue Share sin riesgo. El contenido para redes nos ayudó a duplicar ventas en menos de 6 meses."</p><strong>– Mariana V., Alimentos Premium</strong></div>
                 </div>
             </div>
         </div>
 
         <!-- Contacto -->
         <div class="section" id="contacto">
-            <div class="container" style="max-width: 600px; text-align: center;">
-                <h2>¿Listo para potenciar tu marca con contenido estratégico?</h2>
-                <p style="color:#cbd5e6;">Completa el formulario y te contactaré en 24h con una propuesta personalizada según tu negocio y necesidades de contenido.</p>
-                <form action="#" method="post" style="display: flex; flex-direction: column; gap: 16px; margin-top: 32px;">
+            <div class="container" style="text-align: center;">
+                <h2>¿Listo para potenciar tu marca?</h2>
+                <p class="section-subtitle" style="margin-bottom: 1.5rem;">Completa el formulario y te contactaré en 24h con una propuesta personalizada.</p>
+                <form class="contact-form" action="#" method="post">
                     <input type="text" placeholder="Nombre y negocio" required>
                     <input type="email" placeholder="Email corporativo" required>
                     <input type="tel" placeholder="WhatsApp" required>
@@ -718,7 +881,7 @@
                         <option>Contenido Corporativo / Alto Ticket</option>
                         <option>Revenue Share (crecimiento compartido)</option>
                     </select>
-                    <button type="submit" class="btn btn-accent btn-white-text" style="justify-content: center; background: #7c3aed; color: white !important;">Solicitar evaluación gratuita</button>
+                    <button type="submit" class="btn btn-accent" style="width: 100%; justify-content: center;">Solicitar evaluación gratuita</button>
                 </form>
             </div>
         </div>
@@ -726,15 +889,14 @@
 
     <footer>
         <div class="container">
-            <p>© 2026 Kevin Ayala – Growth Partner | Alianza Estratégica con Escuela de Modelaje</p>
+            <p>© 2025 Kevin Ayala – Growth Partner | Alianza Estratégica con Escuela de Modelaje</p>
             <p>📍 Ibarra - Ecuador | 📧 kevin@growthpartner.com | 📞 +593 992 648 781</p>
-            <p style="font-size: 0.8rem; margin-top: 16px;"><i class="fas fa-camera"></i> Catálogo de modelos disponible para empresas de media y alta facturación</p>
+            <p style="font-size: 0.75rem; margin-top: 1rem;"><i class="fas fa-camera"></i> Catálogo de modelos disponible para empresas de media y alta facturación</p>
         </div>
     </footer>
 
-    <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/593992648781?text=Hola%20Kevin%2C%20vi%20tu%20página%20sobre%20contenido%20con%20modelos%20y%20quiero%20potenciar%20mi%20marca" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp" style="font-size: 1.6rem;"></i> ¿Creamos contenido?
+        <i class="fab fa-whatsapp" style="font-size: 1.4rem;"></i> ¿Creamos contenido?
     </a>
 </body>
 </html>
