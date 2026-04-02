@@ -10,7 +10,6 @@
     <meta property="og:title" content="Kevin Ayala | Contenido que Conecta - Ibarra">
     <meta property="og:description" content="Producimos contenido audiovisual con talento local y desarrollamos páginas web en Ibarra y todo Imbabura. Potencia tu marca.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://placehold.co/1200x630/8B5CF6/FFFFFF?text=Kevin+Ayala">
     <meta name="twitter:card" content="summary_large_image">
     
     <!-- Font Awesome Icons -->
@@ -27,32 +26,32 @@
         }
 
         :root {
-            --primary: #8B5CF6;
-            --primary-dark: #7C3AED;
-            --primary-light: #A78BFA;
-            --secondary: #EC489A;
+            --primary: #A855F7;
+            --primary-dark: #8B5CF6;
+            --primary-light: #C084FC;
+            --secondary: #F43F5E;
             --accent: #F59E0B;
-            --dark: #0F0F1A;
-            --dark-soft: #1A1A2E;
-            --gray-800: #2D2D3A;
-            --gray-700: #3A3A4A;
-            --gray-600: #6B6B7F;
-            --gray-400: #9CA3AF;
+            --dark: #030014;
+            --dark-card: #0A0A1F;
+            --dark-soft: #111128;
+            --gray-300: #D4D4D8;
+            --gray-400: #A1A1AA;
+            --gray-500: #71717A;
             --white: #FFFFFF;
-            --success: #10B981;
-            --gradient: linear-gradient(135deg, #8B5CF6 0%, #EC489A 100%);
-            --gradient-soft: linear-gradient(135deg, rgba(139,92,246,0.15) 0%, rgba(236,72,153,0.15) 100%);
-            --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.3), 0 8px 10px -6px rgba(0,0,0,0.2);
-            --shadow-md: 0 20px 25px -5px rgba(0,0,0,0.4), 0 8px 10px -6px rgba(0,0,0,0.3);
-            --shadow-lg: 0 25px 50px -12px rgba(0,0,0,0.5);
+            --success: #22C55E;
+            --gradient: linear-gradient(135deg, #A855F7 0%, #EC489A 100%);
+            --gradient-gold: linear-gradient(135deg, #F59E0B 0%, #F97316 100%);
+            --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.5), 0 8px 10px -6px rgba(0,0,0,0.3);
+            --shadow-md: 0 20px 25px -5px rgba(0,0,0,0.6), 0 8px 10px -6px rgba(0,0,0,0.4);
+            --shadow-lg: 0 25px 50px -12px rgba(0,0,0,0.7);
             --radius: 1.5rem;
             --radius-sm: 1rem;
         }
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--dark);
-            color: var(--gray-100);
+            background: var(--dark);
+            color: var(--white);
             line-height: 1.5;
             scroll-behavior: smooth;
         }
@@ -83,7 +82,7 @@
             height: 100%;
             object-fit: cover;
             z-index: 0;
-            opacity: 0.6;
+            opacity: 0.4;
         }
 
         .hero-overlay {
@@ -92,14 +91,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(15,15,26,0.85) 0%, rgba(26,26,46,0.8) 50%, rgba(139,92,246,0.2) 100%);
+            background: linear-gradient(135deg, #030014 0%, rgba(3,0,20,0.85) 50%, rgba(168,85,247,0.2) 100%);
             z-index: 1;
         }
 
         .hero-content {
             position: relative;
             z-index: 2;
-            padding: 100px 0 80px;
+            padding: 120px 0 80px;
             color: white;
         }
 
@@ -112,21 +111,23 @@
 
         .hero-badge {
             display: inline-block;
-            background: rgba(139,92,246,0.9);
-            padding: 6px 16px;
+            background: linear-gradient(135deg, rgba(168,85,247,0.9), rgba(236,72,153,0.9));
+            padding: 8px 20px;
             border-radius: 60px;
             font-size: 0.85rem;
             font-weight: 600;
             color: white;
             margin-bottom: 24px;
             backdrop-filter: blur(4px);
+            border: 1px solid rgba(255,255,255,0.2);
         }
 
         .hero h1 {
-            font-size: 3.2rem;
+            font-size: 3.5rem;
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
 
         .hero-highlight {
@@ -137,9 +138,10 @@
         }
 
         .hero p {
-            font-size: 1.1rem;
-            color: rgba(255,255,255,0.85);
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
             margin-bottom: 32px;
+            text-shadow: 0 1px 5px rgba(0,0,0,0.2);
         }
 
         .btn-group {
@@ -149,14 +151,14 @@
         }
 
         .btn {
-            padding: 12px 28px;
+            padding: 14px 32px;
             border-radius: 60px;
             font-weight: 600;
             text-decoration: none;
             transition: all 0.3s;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             cursor: pointer;
             border: none;
             font-size: 1rem;
@@ -165,18 +167,19 @@
         .btn-primary {
             background: var(--gradient);
             color: white;
-            box-shadow: var(--shadow-sm);
+            box-shadow: 0 0 20px rgba(168,85,247,0.4);
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(168,85,247,0.6);
         }
 
         .btn-outline {
-            border: 2px solid white;
+            border: 2px solid rgba(255,255,255,0.8);
             color: white;
-            background: transparent;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(4px);
         }
 
         .btn-outline:hover {
@@ -188,14 +191,16 @@
         .btn-whatsapp {
             background: #25D366;
             color: white;
-            margin-top: 16px;
+            margin-top: 20px;
             width: 100%;
             justify-content: center;
+            box-shadow: 0 4px 15px rgba(37,211,102,0.3);
         }
 
         .btn-whatsapp:hover {
             background: #128C7E;
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37,211,102,0.4);
         }
 
         /* Botón flotante ciudad */
@@ -204,10 +209,9 @@
             bottom: 24px;
             right: 24px;
             z-index: 1000;
-            background: var(--dark-soft);
-            backdrop-filter: blur(8px);
-            background: rgba(26,26,46,0.95);
-            padding: 10px 20px;
+            background: rgba(17,17,40,0.95);
+            backdrop-filter: blur(12px);
+            padding: 12px 24px;
             border-radius: 60px;
             box-shadow: var(--shadow-lg);
             display: flex;
@@ -215,7 +219,7 @@
             gap: 10px;
             font-weight: 600;
             cursor: pointer;
-            border: 1px solid rgba(139,92,246,0.3);
+            border: 1px solid rgba(168,85,247,0.5);
             transition: all 0.3s ease;
             color: white;
         }
@@ -223,32 +227,12 @@
         .city-selector:hover {
             transform: translateY(-2px);
             border-color: var(--primary);
-            box-shadow: 0 25px 40px -12px rgba(139,92,246,0.4);
+            box-shadow: 0 0 25px rgba(168,85,247,0.5);
         }
 
         .city-selector i {
             color: var(--primary);
             font-size: 1.2rem;
-        }
-
-        .city-tooltip {
-            position: absolute;
-            bottom: 60px;
-            right: 0;
-            background: var(--dark-soft);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            white-space: nowrap;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s;
-            border: 1px solid rgba(139,92,246,0.3);
-        }
-
-        .city-selector:hover .city-tooltip {
-            opacity: 1;
         }
 
         /* WhatsApp Float */
@@ -259,22 +243,28 @@
             z-index: 1000;
             background: #25D366;
             color: white;
-            width: 56px;
-            height: 56px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
-            box-shadow: var(--shadow-lg);
+            font-size: 2rem;
+            box-shadow: 0 0 25px rgba(37,211,102,0.5);
             transition: all 0.3s;
             cursor: pointer;
             text-decoration: none;
+            animation: pulse-wa 2s infinite;
+        }
+
+        @keyframes pulse-wa {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 25px rgba(37,211,102,0.5); }
+            50% { transform: scale(1.05); box-shadow: 0 0 35px rgba(37,211,102,0.8); }
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
-            box-shadow: 0 25px 40px -12px rgba(37,211,102,0.4);
+            box-shadow: 0 0 35px rgba(37,211,102,0.8);
         }
 
         /* Header y navegación */
@@ -285,9 +275,9 @@
             width: 100%;
             padding: 20px 0;
             z-index: 100;
-            background: rgba(15,15,26,0.8);
+            background: rgba(3,0,20,0.8);
             backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(139,92,246,0.2);
+            border-bottom: 1px solid rgba(168,85,247,0.3);
         }
 
         .nav-container {
@@ -298,7 +288,7 @@
         }
 
         .logo h1 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 800;
             background: var(--gradient);
             -webkit-background-clip: text;
@@ -320,7 +310,7 @@
         .nav-links a {
             text-decoration: none;
             font-weight: 500;
-            color: rgba(255,255,255,0.8);
+            color: rgba(255,255,255,0.9);
             transition: color 0.2s;
         }
 
@@ -332,12 +322,12 @@
         .social-proof {
             margin-top: 48px;
             padding-top: 32px;
-            border-top: 1px solid rgba(139,92,246,0.2);
+            border-top: 1px solid rgba(168,85,247,0.3);
         }
 
         .social-proof p {
-            font-size: 0.9rem;
-            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.8);
             margin-bottom: 20px;
             font-weight: 500;
         }
@@ -354,37 +344,25 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            background: var(--dark-soft);
+            background: rgba(17,17,40,0.9);
             padding: 10px 20px;
             border-radius: 60px;
-            box-shadow: var(--shadow-sm);
             transition: all 0.3s;
             cursor: pointer;
             text-decoration: none;
-            color: var(--gray-100);
-            border: 1px solid rgba(139,92,246,0.2);
+            color: var(--white);
+            border: 1px solid rgba(168,85,247,0.3);
+            backdrop-filter: blur(4px);
         }
 
         .social-item:hover {
             transform: translateY(-3px);
-            box-shadow: var(--shadow-md);
             border-color: var(--primary);
+            background: rgba(168,85,247,0.2);
         }
 
         .social-item i {
             font-size: 1.5rem;
-        }
-
-        .social-item .fab.fa-instagram {
-            color: #E4405F;
-        }
-
-        .social-item .fab.fa-tiktok {
-            color: #FFFFFF;
-        }
-
-        .social-item .fab.fa-facebook {
-            color: #1877F2;
         }
 
         .social-info strong {
@@ -409,11 +387,11 @@
             border-radius: 16px;
             overflow: hidden;
             aspect-ratio: 1 / 1;
-            background: var(--dark-soft);
+            background: rgba(17,17,40,0.8);
             position: relative;
             cursor: pointer;
             transition: all 0.3s;
-            border: 1px solid rgba(139,92,246,0.2);
+            border: 1px solid rgba(168,85,247,0.3);
         }
 
         .evidence-item img {
@@ -435,7 +413,8 @@
             background: linear-gradient(transparent, rgba(0,0,0,0.9));
             padding: 12px;
             color: white;
-            font-size: 0.7rem;
+            font-size: 0.75rem;
+            font-weight: 500;
             opacity: 0;
             transition: opacity 0.3s;
         }
@@ -445,41 +424,60 @@
         }
 
         /* Tabs y secciones */
-        .tabs-section {
+        .tabs-section, .web-section {
             padding: 80px 0;
             background: var(--dark);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 16px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            margin-bottom: 48px;
+            color: var(--gray-400);
+            font-size: 1.1rem;
         }
 
         .tabs-header {
             display: flex;
             justify-content: center;
-            gap: 12px;
+            gap: 16px;
             margin-bottom: 48px;
             flex-wrap: wrap;
         }
 
         .tab-btn {
             padding: 12px 28px;
-            background: var(--dark-soft);
-            border: 1px solid rgba(139,92,246,0.2);
+            background: rgba(17,17,40,0.9);
+            border: 1px solid rgba(168,85,247,0.3);
             border-radius: 60px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s;
             font-size: 1rem;
-            color: var(--gray-100);
+            color: var(--white);
         }
 
         .tab-btn.active {
             background: var(--gradient);
             color: white;
-            box-shadow: var(--shadow-sm);
+            box-shadow: 0 0 20px rgba(168,85,247,0.4);
             border-color: transparent;
         }
 
         .tab-btn:hover:not(.active) {
             border-color: var(--primary);
-            background: rgba(139,92,246,0.1);
+            background: rgba(168,85,247,0.2);
+            transform: translateY(-2px);
         }
 
         .tab-content {
@@ -499,38 +497,65 @@
         /* Cards de servicios */
         .cards-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: 32px;
         }
 
         .card {
-            background: var(--dark-soft);
+            background: rgba(17,17,40,0.9);
+            backdrop-filter: blur(10px);
             border-radius: var(--radius);
             padding: 32px;
-            box-shadow: var(--shadow-sm);
-            transition: all 0.3s;
-            border: 1px solid rgba(139,92,246,0.15);
+            transition: all 0.4s;
+            border: 1px solid rgba(168,85,247,0.2);
             display: flex;
             flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
         }
 
         .card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
-            border-color: rgba(139,92,246,0.4);
+            transform: translateY(-10px);
+            border-color: rgba(168,85,247,0.5);
+            box-shadow: 0 25px 40px -15px rgba(168,85,247,0.3);
         }
 
         .card-icon {
-            font-size: 2.5rem;
-            color: var(--primary);
+            font-size: 3rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
             margin-bottom: 20px;
         }
 
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: var(--white);
+        }
+
         .price {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 800;
             margin: 16px 0;
-            color: white;
+            color: var(--primary-light);
         }
 
         .price small {
@@ -541,73 +566,82 @@
 
         .old-price {
             text-decoration: line-through;
-            color: var(--gray-600);
+            color: var(--gray-500);
             font-size: 1rem;
             margin-right: 8px;
         }
 
         .badge-hot {
-            background: linear-gradient(135deg, #F59E0B, #EC489A);
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--gradient-gold);
             color: white;
             padding: 4px 12px;
             border-radius: 60px;
             font-size: 0.7rem;
             font-weight: 700;
-            display: inline-block;
-            margin-bottom: 12px;
         }
 
         .feature-list {
-            margin: 16px 0;
+            margin: 20px 0;
             list-style: none;
             flex-grow: 1;
         }
 
         .feature-list li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
+            color: var(--gray-300);
         }
 
         .feature-list li i {
             color: var(--primary);
-            font-size: 0.9rem;
+            font-size: 1rem;
+            width: 20px;
         }
 
         /* Modelos grid */
         .models-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 32px;
         }
 
         .model-card {
             text-align: center;
-            background: var(--dark-soft);
+            background: rgba(17,17,40,0.9);
+            backdrop-filter: blur(10px);
             border-radius: var(--radius-sm);
-            padding: 24px;
+            padding: 32px;
             transition: all 0.3s;
-            border: 1px solid rgba(139,92,246,0.15);
+            border: 1px solid rgba(168,85,247,0.2);
         }
 
         .model-card:hover {
-            transform: scale(1.02);
-            box-shadow: var(--shadow-md);
-            border-color: rgba(139,92,246,0.4);
+            transform: translateY(-5px);
+            border-color: rgba(168,85,247,0.5);
+            box-shadow: 0 20px 30px -15px rgba(168,85,247,0.2);
         }
 
         .model-avatar {
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background: var(--gradient-soft);
+            background: linear-gradient(135deg, rgba(168,85,247,0.3), rgba(236,72,153,0.3));
             margin: 0 auto 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: var(--primary);
+        }
+
+        .model-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
         }
 
         /* Contador de ventas */
@@ -615,34 +649,36 @@
             background: var(--gradient);
             color: white;
             text-align: center;
-            padding: 12px;
+            padding: 16px;
             border-radius: 60px;
             margin: 40px 0;
-            font-weight: 600;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.9; transform: scale(1.01);}
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 0 30px rgba(168,85,247,0.4);
         }
 
         /* Revenue Share */
         .revenue-section {
-            background: var(--dark-soft);
+            background: linear-gradient(135deg, rgba(17,17,40,0.95), rgba(3,0,20,0.95));
             padding: 80px 0;
             border-radius: 48px;
             margin: 40px 0;
-            border: 1px solid rgba(139,92,246,0.2);
+            border: 1px solid rgba(168,85,247,0.3);
+            text-align: center;
+        }
+
+        .revenue-section h2 {
+            font-size: 2rem;
+            margin-bottom: 16px;
         }
 
         /* Formulario */
         .form-section {
             padding: 80px 0;
-            background: var(--dark-soft);
+            background: linear-gradient(135deg, rgba(17,17,40,0.95), rgba(3,0,20,0.95));
             border-radius: 48px;
             margin: 40px 0;
-            border: 1px solid rgba(139,92,246,0.2);
+            border: 1px solid rgba(168,85,247,0.3);
         }
 
         .form-grid {
@@ -654,33 +690,34 @@
 
         input, select, textarea {
             width: 100%;
-            padding: 14px 18px;
-            border: 1px solid rgba(139,92,246,0.2);
+            padding: 16px 20px;
+            border: 1px solid rgba(168,85,247,0.3);
             border-radius: 16px;
             font-family: inherit;
             transition: all 0.2s;
-            background: var(--dark);
+            background: rgba(3,0,20,0.8);
             color: white;
+            font-size: 1rem;
         }
 
         input:focus, select:focus, textarea:focus {
             outline: none;
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(139,92,246,0.2);
+            box-shadow: 0 0 0 3px rgba(168,85,247,0.2);
         }
 
         input::placeholder, textarea::placeholder {
-            color: var(--gray-600);
+            color: var(--gray-500);
         }
 
         /* Footer */
         footer {
-            background: var(--dark-soft);
+            background: rgba(10,10,31,0.95);
             color: white;
             padding: 48px 0 24px;
             margin-top: 80px;
             border-radius: 48px 48px 0 0;
-            border-top: 1px solid rgba(139,92,246,0.2);
+            border-top: 1px solid rgba(168,85,247,0.3);
         }
 
         @media (max-width: 768px) {
@@ -706,12 +743,15 @@
             .hero-content {
                 padding: 120px 0 60px;
             }
+            .section-title {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 <body>
 
-<!-- Navbar flotante sobre el video -->
+<!-- Navbar -->
 <nav class="navbar">
     <div class="container nav-container">
         <div class="logo">
@@ -719,7 +759,7 @@
             <p>Growth Partner Ecuador</p>
         </div>
         <ul class="nav-links">
-            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#servicios">Audiovisual</a></li>
             <li><a href="#web-services">Web</a></li>
             <li><a href="#modelos">Modelos</a></li>
             <li><a href="#testimonios">Clientes</a></li>
@@ -728,43 +768,41 @@
     </div>
 </nav>
 
-<!-- Hero con video de fondo -->
+<!-- Hero -->
 <section class="hero">
-    <video class="hero-video-bg" autoplay loop muted playsinline poster="https://placehold.co/1920x1080/0F0F1A/8B5CF6?text=Kevin+Ayala">
+    <video class="hero-video-bg" autoplay loop muted playsinline>
         <source src="https://cdn.pixabay.com/video/2023/07/05/171087-843206778_large.mp4" type="video/mp4">
     </video>
-    
     <div class="hero-overlay"></div>
-    
     <div class="hero-content">
         <div class="container hero-grid">
             <div>
                 <span class="hero-badge">🇪🇨 Talento local en Ibarra & Imbabura</span>
-                <h1>Contenido que conecta, <span class="hero-highlight">talento que convierte</span> en el norte de Ecuador</h1>
-                <p>Producimos contenido audiovisual de alto impacto con modelos ecuatorianos y desarrollamos páginas web profesionales para potenciar tu marca en Ibarra, Otavalo, Cotacachi y toda Imbabura.</p>
+                <h1>Contenido que conecta, <span class="hero-highlight">talento que convierte</span></h1>
+                <p>Producimos contenido audiovisual de alto impacto con modelos ecuatorianos y desarrollamos páginas web profesionales para potenciar tu marca en Ibarra, Otavalo y todo Imbabura.</p>
                 <div class="btn-group">
-                    <a href="#contacto" class="btn btn-primary"><i class="fas fa-rocket"></i> Quiero mi propuesta</a>
-                    <a href="#servicios" class="btn btn-outline"><i class="fas fa-play-circle"></i> Ver catálogo</a>
+                    <a href="#contacto" class="btn btn-primary"><i class="fas fa-rocket"></i> Cotizar Ahora</a>
+                    <a href="#servicios" class="btn btn-outline"><i class="fas fa-play-circle"></i> Ver Servicios</a>
                 </div>
                 
                 <div class="social-proof">
-                    <p><i class="fas fa-chart-line"></i> Mira nuestro trabajo en acción →</p>
+                    <p><i class="fas fa-chart-line" style="color: var(--primary);"></i> +50 proyectos realizados en Imbabura →</p>
                     <div class="social-grid">
-                        <a href="https://instagram.com/tuusuario" class="social-item" target="_blank">
+                        <a href="#" class="social-item" target="_blank">
                             <i class="fab fa-instagram"></i>
                             <div class="social-info">
                                 <strong>@kevinayala</strong>
-                                <span>+30 proyectos en Imbabura</span>
+                                <span>Contenido destacado</span>
                             </div>
                         </a>
-                        <a href="https://tiktok.com/@tuusuario" class="social-item" target="_blank">
+                        <a href="#" class="social-item" target="_blank">
                             <i class="fab fa-tiktok"></i>
                             <div class="social-info">
                                 <strong>@kevinayala</strong>
                                 <span>Detrás de cámaras</span>
                             </div>
                         </a>
-                        <a href="https://facebook.com/tupagina" class="social-item" target="_blank">
+                        <a href="#" class="social-item" target="_blank">
                             <i class="fab fa-facebook"></i>
                             <div class="social-info">
                                 <strong>Kevin Ayala</strong>
@@ -775,21 +813,18 @@
                     
                     <div class="evidence-gallery">
                         <div class="evidence-item">
-                            <img src="https://placehold.co/400x400/2D2D3A/8B5CF6?text=Yahuarcocha" alt="Producción en Yahuarcocha">
+                            <img src="https://placehold.co/400x400/A855F7/FFFFFF?text=Yahuarcocha" alt="Producción">
                             <div class="evidence-overlay">📸 Campaña Hotel La Merced</div>
                         </div>
                         <div class="evidence-item">
-                            <img src="https://placehold.co/400x400/2D2D3A/EC489A?text=Otavalo" alt="Modelo en Otavalo">
-                            <div class="evidence-overlay">👗 Moda Textiles Kumpaña</div>
+                            <img src="https://placehold.co/400x400/EC489A/FFFFFF?text=Otavalo" alt="Modelo">
+                            <div class="evidence-overlay">👗 Textiles Kumpaña</div>
                         </div>
                         <div class="evidence-item">
-                            <img src="https://placehold.co/400x400/2D2D3A/F59E0B?text=Ibarra" alt="Food styling Ibarra">
-                            <div class="evidence-overlay">🍽️ Spot Restaurante Sabores</div>
+                            <img src="https://placehold.co/400x400/F59E0B/FFFFFF?text=Ibarra" alt="Restaurante">
+                            <div class="evidence-overlay">🍽️ Restaurante Sabores</div>
                         </div>
                     </div>
-                    <p style="font-size: 0.75rem; margin-top: 12px; text-align: center; color: rgba(255,255,255,0.6);">
-                        <i class="fas fa-play-circle"></i> +50 piezas de contenido generadas solo en 2025 para marcas de Imbabura
-                    </p>
                 </div>
             </div>
             <div></div>
@@ -799,20 +834,20 @@
 
 <div class="container">
     <div class="sales-counter">
-        🔥 Actualización en tiempo real: <span id="counterNumber">17</span> empresas en Imbabura ya potenciaron su marca este mes
+        🔥 <span id="counterNumber">27</span> empresas en Imbabura ya potenciaron su marca este mes
     </div>
 </div>
 
-<!-- Sección de Servicios Audiovisuales -->
+<!-- Sección Audiovisual -->
 <section class="tabs-section" id="servicios">
     <div class="container">
-        <h2 style="text-align: center; margin-bottom: 24px; font-size: 2rem;">🎬 Contenido Audiovisual</h2>
-        <p style="text-align: center; margin-bottom: 48px; color: var(--gray-400);">Producción profesional con talento local para potenciar tu marca</p>
+        <h2 class="section-title">🎬 Contenido Audiovisual</h2>
+        <p class="section-subtitle">Producción profesional con talento local para potenciar tu marca</p>
         
         <div class="tabs-header">
             <button class="tab-btn active" data-tab="servicios-tab">📱 Contenido Redes</button>
-            <button class="tab-btn" data-tab="paquetes-tab">📦 Paquetes Ibarra</button>
-            <button class="tab-btn" data-tab="modelos-tab">👥 Modelos disponibles</button>
+            <button class="tab-btn" data-tab="paquetes-tab">📦 Paquetes Especiales</button>
+            <button class="tab-btn" data-tab="modelos-tab">👥 Modelos Disponibles</button>
         </div>
 
         <div id="servicios-tab" class="tab-content active">
@@ -820,7 +855,7 @@
                 <div class="card">
                     <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
                     <h3>Contenido para Redes</h3>
-                    <div class="price"><span class="old-price">$299</span> <strong>$189</strong> <small>/pack Ibarra</small></div>
+                    <div class="price"><span class="old-price">$299</span> $189</div>
                     <p>Ideal para presencia constante en Instagram y TikTok con talento local.</p>
                     <ul class="feature-list">
                         <li><i class="fas fa-check-circle"></i> 12 piezas mensuales con modelos</li>
@@ -828,15 +863,13 @@
                         <li><i class="fas fa-check-circle"></i> +2 piezas en locaciones icónicas</li>
                         <li><i class="fas fa-check-circle"></i> Dirección creativa incluida</li>
                     </ul>
-                    <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20información%20sobre%20Contenido%20para%20Redes%20en%20Ibarra" class="btn btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
-                    </a>
+                    <a href="#" class="btn btn-whatsapp" id="waServicio1"><i class="fab fa-whatsapp"></i> Consultar por WhatsApp</a>
                 </div>
                 <div class="card">
                     <span class="badge-hot">⭐ MÁS VENDIDO</span>
                     <div class="card-icon"><i class="fas fa-chart-line"></i></div>
                     <h3>Campañas Publicitarias</h3>
-                    <div class="price"><span class="old-price">$799</span> <strong>$549</strong> <small>/campaña</small></div>
+                    <div class="price"><span class="old-price">$799</span> $549</div>
                     <p>Spot profesional para Meta Ads, Google y YouTube.</p>
                     <ul class="feature-list">
                         <li><i class="fas fa-check-circle"></i> Spot de 15-30 segundos</li>
@@ -844,14 +877,12 @@
                         <li><i class="fas fa-check-circle"></i> Guion y dirección profesional</li>
                         <li><i class="fas fa-check-circle"></i> BONO: 3 piezas para historias</li>
                     </ul>
-                    <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20información%20sobre%20Campañas%20Publicitarias%20en%20Ibarra" class="btn btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
-                    </a>
+                    <a href="#" class="btn btn-whatsapp" id="waServicio2"><i class="fab fa-whatsapp"></i> Consultar por WhatsApp</a>
                 </div>
                 <div class="card">
                     <div class="card-icon"><i class="fas fa-building"></i></div>
                     <h3>Plan Turismo & Hotelero</h3>
-                    <div class="price"><strong>$449</strong> <small>/pack</small></div>
+                    <div class="price">$449</div>
                     <p>Para hoteles, hosterías y restaurantes en Ibarra y Otavalo.</p>
                     <ul class="feature-list">
                         <li><i class="fas fa-check-circle"></i> 10 fotos profesionales + reel</li>
@@ -859,9 +890,7 @@
                         <li><i class="fas fa-check-circle"></i> Ficha optimizada en Google Business</li>
                         <li><i class="fas fa-check-circle"></i> Video testimonial de clientes</li>
                     </ul>
-                    <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20información%20sobre%20el%20Plan%20Turismo%20y%20Hotelero%20en%20Ibarra" class="btn btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
-                    </a>
+                    <a href="#" class="btn btn-whatsapp" id="waServicio3"><i class="fab fa-whatsapp"></i> Consultar por WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -870,45 +899,36 @@
             <div class="cards-grid">
                 <div class="card">
                     <h3>🔥 Plan Presencia Digital</h3>
-                    <div class="price"><span class="old-price">$159</span> <strong>$99</strong></div>
-                    <p>Identidad visual + calendario + fotos profesionales con modelos en Ibarra.</p>
+                    <div class="price"><span class="old-price">$159</span> $99</div>
+                    <p>Identidad visual + calendario + fotos profesionales con modelos.</p>
                     <ul class="feature-list">
                         <li><i class="fas fa-check-circle"></i> Identidad visual básica</li>
                         <li><i class="fas fa-check-circle"></i> Calendario de contenido 30 días</li>
-                        <li><i class="fas fa-check-circle"></i> Configuración WhatsApp Business</li>
                         <li><i class="fas fa-check-circle"></i> +5 fotos profesionales con modelos</li>
                     </ul>
-                    <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20información%20sobre%20el%20Plan%20Presencia%20Digital" class="btn btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
-                    </a>
+                    <a href="#" class="btn btn-whatsapp" id="waPaquete1"><i class="fab fa-whatsapp"></i> Consultar por WhatsApp</a>
                 </div>
                 <div class="card">
                     <h3>🚀 Plan Web & SEO</h3>
-                    <div class="price"><span class="old-price">$299</span> <strong>$199</strong></div>
-                    <p>Página web + SEO Ecuador + video promocional con talento imbabureño.</p>
+                    <div class="price"><span class="old-price">$299</span> $199</div>
+                    <p>Página web + SEO + video promocional con talento imbabureño.</p>
                     <ul class="feature-list">
                         <li><i class="fas fa-check-circle"></i> Página web profesional</li>
                         <li><i class="fas fa-check-circle"></i> Optimización SEO Ecuador</li>
-                        <li><i class="fas fa-check-circle"></i> Google Analytics & conversión</li>
-                        <li><i class="fas fa-check-circle"></i> Video promocional con modelo ecuatoriano</li>
+                        <li><i class="fas fa-check-circle"></i> Video promocional con modelo</li>
                     </ul>
-                    <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20información%20sobre%20el%20Plan%20Web%20y%20SEO" class="btn btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
-                    </a>
+                    <a href="#" class="btn btn-whatsapp" id="waPaquete2"><i class="fab fa-whatsapp"></i> Consultar por WhatsApp</a>
                 </div>
                 <div class="card">
                     <h3>💎 Plan Crecimiento Integral</h3>
-                    <div class="price"><span class="old-price">$590</span> <strong>$380</strong></div>
+                    <div class="price"><span class="old-price">$590</span> $380</div>
                     <p>Todo lo anterior + asesoría 3 meses + campaña Google Ads.</p>
                     <ul class="feature-list">
                         <li><i class="fas fa-check-circle"></i> Presencia Digital + Web & SEO</li>
-                        <li><i class="fas fa-check-circle"></i> Embudo de conversión completo</li>
                         <li><i class="fas fa-check-circle"></i> Pack de 10 fotos con talento local</li>
                         <li><i class="fas fa-check-circle"></i> BONO: 1 campaña de Google Ads</li>
                     </ul>
-                    <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20información%20sobre%20el%20Plan%20Crecimiento%20Integral" class="btn btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
-                    </a>
+                    <a href="#" class="btn btn-whatsapp" id="waPaquete3"><i class="fab fa-whatsapp"></i> Consultar por WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -919,127 +939,95 @@
                     <div class="model-avatar"><i class="fas fa-user-circle"></i></div>
                     <h4>Daniela M.</h4>
                     <p>Modelo comercial · Ibarra</p>
-                    <small>Especialista en contenido para marcas de moda y turismo.</small>
-                    <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20contratar%20a%20Daniela%20para%20mi%20marca" class="btn btn-whatsapp" style="margin-top: 16px;" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Contratar
-                    </a>
+                    <small>Especialista en moda y turismo.</small>
+                    <a href="#" class="btn btn-whatsapp" style="margin-top: 16px;" id="waModelo1"><i class="fab fa-whatsapp"></i> Contratar</a>
                 </div>
                 <div class="model-card">
                     <div class="model-avatar"><i class="fas fa-user-tie"></i></div>
                     <h4>Carlos P.</h4>
                     <p>Imagen ejecutiva · Otavalo</p>
-                    <small>Experiencia en video institucional y campañas corporativas.</small>
-                    <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20contratar%20a%20Carlos%20para%20mi%20marca" class="btn btn-whatsapp" style="margin-top: 16px;" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Contratar
-                    </a>
+                    <small>Video institucional y campañas corporativas.</small>
+                    <a href="#" class="btn btn-whatsapp" style="margin-top: 16px;" id="waModelo2"><i class="fab fa-whatsapp"></i> Contratar</a>
                 </div>
                 <div class="model-card">
                     <div class="model-avatar"><i class="fas fa-user-graduate"></i></div>
                     <h4>Martha V.</h4>
                     <p>Modelo adulto mayor · Cotacachi</p>
-                    <small>Autenticidad y conexión con audiencias diversas.</small>
-                    <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20contratar%20a%20Martha%20para%20mi%20marca" class="btn btn-whatsapp" style="margin-top: 16px;" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Contratar
-                    </a>
+                    <small>Autenticidad y conexión con audiencias.</small>
+                    <a href="#" class="btn btn-whatsapp" style="margin-top: 16px;" id="waModelo3"><i class="fab fa-whatsapp"></i> Contratar</a>
                 </div>
-            </div>
-            <div style="text-align: center; margin-top: 32px;">
-                <button class="btn btn-outline" onclick="alert('📸 Catálogo completo disponible: +24 modelos ecuatorianos. Escríbenos para ver más.')" style="border-color: var(--primary); color: var(--primary);">Ver catálogo completo →</button>
             </div>
         </div>
     </div>
 </section>
 
-<!-- NUEVA SECCIÓN: Servicios de Desarrollo Web -->
-<section id="web-services" style="padding: 80px 0; background: var(--dark-soft);">
+<!-- Sección Desarrollo Web -->
+<section id="web-services" class="web-section">
     <div class="container">
-        <h2 style="text-align: center; margin-bottom: 16px; font-size: 2rem;">💻 Desarrollo Web Profesional</h2>
-        <p style="text-align: center; margin-bottom: 48px; color: var(--gray-400);">Creamos sitios web modernos, rápidos y optimizados para convertir visitantes en clientes</p>
+        <h2 class="section-title">💻 Desarrollo Web Profesional</h2>
+        <p class="section-subtitle">Creamos sitios web modernos, rápidos y optimizados para convertir visitantes en clientes</p>
         
         <div class="cards-grid">
-            <!-- Página Web Corporativa -->
             <div class="card">
                 <div class="card-icon"><i class="fas fa-globe"></i></div>
                 <h3>Página Web Corporativa</h3>
-                <div class="price"><span class="old-price">$599</span> <strong>$399</strong> <small>/único pago</small></div>
-                <p>Sitio web profesional de 5 páginas ideal para empresas, negocios y marcas que buscan presencia institucional.</p>
+                <div class="price"><span class="old-price">$599</span> $399</div>
+                <p>Sitio web profesional de 5 páginas ideal para empresas y negocios.</p>
                 <ul class="feature-list">
-                    <li><i class="fas fa-check-circle"></i> Diseño responsive (celular, tablet, escritorio)</li>
-                    <li><i class="fas fa-check-circle"></i> 5 páginas personalizadas (Inicio, Nosotros, Servicios, Contacto, Blog)</li>
-                    <li><i class="fas fa-check-circle"></i> Formulario de contacto funcional</li>
+                    <li><i class="fas fa-check-circle"></i> Diseño responsive</li>
+                    <li><i class="fas fa-check-circle"></i> 5 páginas personalizadas</li>
+                    <li><i class="fas fa-check-circle"></i> Formulario de contacto</li>
                     <li><i class="fas fa-check-circle"></i> Optimización SEO básica</li>
-                    <li><i class="fas fa-check-circle"></i> Integración con redes sociales</li>
-                    <li><i class="fas fa-check-circle"></i> Mapa de Google Maps integrado</li>
                     <li><i class="fas fa-check-circle"></i> 1 año de hosting gratuito</li>
                 </ul>
-                <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20información%20sobre%20Página%20Web%20Corporativa%20en%20Ibarra" class="btn btn-whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Solicitar Propuesta
-                </a>
+                <a href="#" class="btn btn-whatsapp" id="waWeb1"><i class="fab fa-whatsapp"></i> Solicitar Propuesta</a>
             </div>
             
-            <!-- Landing Page -->
             <div class="card">
                 <span class="badge-hot">🔥 MÁS SOLICITADO</span>
                 <div class="card-icon"><i class="fas fa-chalkboard-user"></i></div>
                 <h3>Landing Page</h3>
-                <div class="price"><span class="old-price">$349</span> <strong>$199</strong> <small>/único pago</small></div>
-                <p>Página de aterrizaje diseñada para convertir visitantes en leads o ventas. Ideal para campañas específicas.</p>
+                <div class="price"><span class="old-price">$349</span> $199</div>
+                <p>Página de aterrizaje diseñada para convertir visitantes en ventas.</p>
                 <ul class="feature-list">
-                    <li><i class="fas fa-check-circle"></i> Diseño 100% enfocado en conversión</li>
+                    <li><i class="fas fa-check-circle"></i> Diseño enfocado en conversión</li>
                     <li><i class="fas fa-check-circle"></i> Formulario de captura de leads</li>
-                    <li><i class="fas fa-check-circle"></i> Integración con WhatsApp y email</li>
-                    <li><i class="fas fa-check-circle"></i> Animaciones y efectos visuales</li>
-                    <li><i class="fas fa-check-circle"></i> Optimización para SEO local</li>
-                    <li><i class="fas fa-check-circle"></i> Análisis de métricas y seguimiento</li>
+                    <li><i class="fas fa-check-circle"></i> Integración con WhatsApp</li>
                     <li><i class="fas fa-check-circle"></i> Entrega en 5 días hábiles</li>
                 </ul>
-                <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20información%20sobre%20Landing%20Page%20para%20mi%20negocio%20en%20Ibarra" class="btn btn-whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Solicitar Propuesta
-                </a>
+                <a href="#" class="btn btn-whatsapp" id="waWeb2"><i class="fab fa-whatsapp"></i> Solicitar Propuesta</a>
             </div>
             
-            <!-- Blog Profesional -->
             <div class="card">
                 <div class="card-icon"><i class="fas fa-blog"></i></div>
                 <h3>Blog Profesional</h3>
-                <div class="price"><span class="old-price">$449</span> <strong>$299</strong> <small>/único pago</small></div>
-                <p>Plataforma de contenido para posicionar tu marca como autoridad en tu nicho y atraer tráfico orgánico.</p>
+                <div class="price"><span class="old-price">$449</span> $299</div>
+                <p>Plataforma de contenido para posicionar tu marca como autoridad.</p>
                 <ul class="feature-list">
-                    <li><i class="fas fa-check-circle"></i> Diseño de blog personalizado</li>
-                    <li><i class="fas fa-check-circle"></i> Panel administrativo fácil de usar</li>
+                    <li><i class="fas fa-check-circle"></i> Panel administrativo fácil</li>
                     <li><i class="fas fa-check-circle"></i> Optimización SEO avanzada</li>
-                    <li><i class="fas fa-check-circle"></i> Categorías y etiquetas organizadas</li>
-                    <li><i class="fas fa-check-circle"></i> Sistema de comentarios integrado</li>
-                    <li><i class="fas fa-check-circle"></i> Newsletter y suscripción por email</li>
-                    <li><i class="fas fa-check-circle"></i> Integración con Google Analytics</li>
+                    <li><i class="fas fa-check-circle"></i> Sistema de comentarios</li>
+                    <li><i class="fas fa-check-circle"></i> Newsletter integrada</li>
                 </ul>
-                <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20información%20sobre%20Blog%20Profesional%20para%20mi%20marca" class="btn btn-whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Solicitar Propuesta
-                </a>
+                <a href="#" class="btn btn-whatsapp" id="waWeb3"><i class="fab fa-whatsapp"></i> Solicitar Propuesta</a>
             </div>
         </div>
         
-        <!-- Paquetes Web Combinados -->
-        <div style="margin-top: 48px; text-align: center;">
-            <h3 style="margin-bottom: 24px;">🎯 Paquetes Web Combinados</h3>
+        <div style="margin-top: 48px;">
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-icon"><i class="fas fa-layer-group"></i></div>
                     <h3>Combo: Web + Landing Page</h3>
-                    <div class="price"><span class="old-price">$948</span> <strong>$549</strong> <small>/ahorro $399</small></div>
+                    <div class="price"><span class="old-price">$948</span> $549</div>
                     <p>Tu sitio web corporativo + una landing page para campañas específicas.</p>
-                    <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20información%20sobre%20el%20Combo%20Web%20%2B%20Landing%20Page" class="btn btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Consultar Paquete
-                    </a>
+                    <a href="#" class="btn btn-whatsapp" id="waCombo1"><i class="fab fa-whatsapp"></i> Consultar Paquete</a>
                 </div>
                 <div class="card">
                     <div class="card-icon"><i class="fas fa-crown"></i></div>
                     <h3>Paquete Todo en Uno</h3>
-                    <div class="price"><span class="old-price">$1,397</span> <strong>$799</strong> <small>/ahorro $598</small></div>
+                    <div class="price"><span class="old-price">$1,397</span> $799</div>
                     <p>Web corporativa + Landing Page + Blog + Contenido Audiovisual (10 fotos con modelo)</p>
-                    <a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20información%20sobre%20el%20Paquete%20Todo%20en%20Uno%20para%20mi%20negocio" class="btn btn-whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Consultar Paquete
-                    </a>
+                    <a href="#" class="btn btn-whatsapp" id="waCombo2"><i class="fab fa-whatsapp"></i> Consultar Paquete</a>
                 </div>
             </div>
         </div>
@@ -1047,105 +1035,99 @@
 </section>
 
 <section class="revenue-section">
-    <div class="container" style="text-align: center;">
+    <div class="container">
         <h2>📈 Revenue Share: Crecemos juntos sin riesgo</h2>
         <p style="max-width: 700px; margin: 16px auto; color: var(--gray-400);">Para empresas de media y alta facturación en Ibarra. Sin anticipos. Solo participo del crecimiento real de tu facturación. Si no creces, no pagas.</p>
-        <a href="#contacto" class="btn btn-primary"><i class="fas fa-handshake"></i> Quiero aplicar a Revenue Share</a>
+        <a href="#contacto" class="btn btn-primary"><i class="fas fa-handshake"></i> Aplicar a Revenue Share</a>
     </div>
 </section>
 
 <section id="testimonios" class="container" style="padding: 60px 0;">
-    <h2 style="text-align: center; margin-bottom: 48px;">✨ Marcas potenciadas en Imbabura</h2>
+    <h2 class="section-title">✨ Marcas potenciadas en Imbabura</h2>
     <div class="cards-grid">
-        <div class="card"><i class="fas fa-quote-left" style="color: var(--primary);"></i><p>"La campaña con modelos de Ibarra fue un éxito. Nuestro hotel en Yahuarcocha aumentó reservas +67%."</p><strong>– Hostería La Merced</strong></div>
-        <div class="card"><i class="fas fa-quote-left" style="color: var(--primary);"></i><p>"Kevin entendió el ADN de nuestra marca artesanal en Otavalo. El contenido con talento local nos duplicó ventas."</p><strong>– Textiles Kumpaña</strong></div>
-        <div class="card"><i class="fas fa-quote-left" style="color: var(--primary);"></i><p>"El Plan Revenue Share sin riesgo nos permitió crecer sin presión. Recomendado 100%."</p><strong>– Sabores de Imbabura</strong></div>
+        <div class="card"><i class="fas fa-quote-left" style="color: var(--primary); font-size: 1.5rem;"></i><p style="margin-top: 16px;">"La campaña con modelos de Ibarra fue un éxito. Nuestro hotel aumentó reservas +67%."</p><strong style="margin-top: 16px;">– Hostería La Merced</strong></div>
+        <div class="card"><i class="fas fa-quote-left" style="color: var(--primary); font-size: 1.5rem;"></i><p style="margin-top: 16px;">"Kevin entendió el ADN de nuestra marca artesanal en Otavalo. Duplicamos ventas."</p><strong style="margin-top: 16px;">– Textiles Kumpaña</strong></div>
+        <div class="card"><i class="fas fa-quote-left" style="color: var(--primary); font-size: 1.5rem;"></i><p style="margin-top: 16px;">"Revenue Share sin riesgo nos permitió crecer sin presión. Recomendado 100%."</p><strong style="margin-top: 16px;">– Sabores de Imbabura</strong></div>
     </div>
 </section>
 
 <section class="form-section" id="contacto">
     <div class="container form-grid">
         <div>
-            <h2>¿Listo para potenciar tu marca en Ibarra?</h2>
-            <p style="color: var(--gray-400);">Completa el formulario y te contactaré en 24h con una propuesta personalizada con talento local, sin compromiso.</p>
-            <div style="margin-top: 24px; display: flex; gap: 16px; flex-wrap: wrap;">
+            <h2 style="font-size: 2rem;">¿Listo para potenciar tu marca?</h2>
+            <p style="color: var(--gray-400); margin-top: 16px;">Completa el formulario y te contactaré en 24h con una propuesta personalizada.</p>
+            <div style="margin-top: 24px; display: flex; gap: 20px; flex-wrap: wrap;">
                 <div><i class="fas fa-check-circle" style="color: var(--success);"></i> Atención personalizada</div>
                 <div><i class="fas fa-check-circle" style="color: var(--success);"></i> Resultados garantizados</div>
-                <div><i class="fas fa-check-circle" style="color: var(--success);"></i> +50 piezas generadas 2025</div>
+                <div><i class="fas fa-check-circle" style="color: var(--success);"></i> +50 proyectos en 2025</div>
             </div>
         </div>
-        <form id="contactForm" action="#" method="POST">
+        <form id="contactForm">
             <input type="text" placeholder="Tu nombre" required>
             <input type="email" placeholder="Correo electrónico" required>
             <input type="tel" placeholder="WhatsApp / Teléfono">
             <select required>
-                <option value="">¿En qué ciudad de Imbabura estás?</option>
+                <option value="">¿En qué ciudad estás?</option>
                 <option>Ibarra</option>
                 <option>Otavalo</option>
                 <option>Cotacachi</option>
                 <option>Antonio Ante</option>
             </select>
             <textarea rows="3" placeholder="Cuéntame sobre tu marca..."></textarea>
-            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;"><i class="fas fa-paper-plane"></i> Solicitar propuesta para Ibarra</button>
-            <p style="font-size: 0.75rem; margin-top: 12px; text-align: center; color: var(--gray-600);">Sin compromiso · Respuesta en 24h</p>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;"><i class="fas fa-paper-plane"></i> Solicitar Propuesta</button>
         </form>
     </div>
 </section>
 
 <footer>
     <div class="container" style="text-align: center;">
-        <p>© 2025 Kevin Ayala · Growth Partner Ecuador · Contenido que conecta, talento que convierte y páginas web que venden en Ibarra y todo el norte del país.</p>
-        <p style="margin-top: 16px;"><i class="fas fa-map-marker-alt"></i> Cobertura: Ibarra, Otavalo, Cotacachi, Atuntaqui y resto de Imbabura</p>
-        <p style="margin-top: 8px; font-size: 0.8rem; color: var(--gray-400);">
-            <i class="fab fa-instagram"></i> @kevinayala · 
-            <i class="fab fa-tiktok"></i> @kevinayala · 
-            <i class="fab fa-facebook"></i> Kevin Ayala
-        </p>
+        <p>© 2025 Kevin Ayala · Growth Partner Ecuador · Contenido que conecta, páginas web que venden</p>
+        <p style="margin-top: 16px;"><i class="fas fa-map-marker-alt"></i> Cobertura: Ibarra, Otavalo, Cotacachi, Atuntaqui y todo Imbabura</p>
     </div>
 </footer>
 
-<a href="https://wa.me/593999999999?text=Hola%20Kevin%2C%20quiero%20potenciar%20mi%20marca%20en%20Ibarra" class="whatsapp-float" target="_blank">
+<a href="#" class="whatsapp-float" id="whatsappFloat">
     <i class="fab fa-whatsapp"></i>
 </a>
 
 <div class="city-selector">
     <i class="fas fa-map-marker-alt"></i> Ibarra
-    <div class="city-tooltip">📍 Precios válidos para Ibarra y norte de Ecuador. ¡Incluye traslado sin costo!</div>
+    <div class="city-tooltip" style="position: absolute; bottom: 60px; right: 0; background: #111128; color: white; padding: 8px 16px; border-radius: 12px; font-size: 0.75rem; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; border: 1px solid rgba(168,85,247,0.3);">📍 Precios válidos para Ibarra y norte de Ecuador</div>
 </div>
 
 <script>
-    // Configuración de enlaces (ACTUALIZA CON TUS URLs REALES)
     const WHATSAPP_NUMBER = "593999999999";
-    const INSTAGRAM_URL = "https://instagram.com/tuusuario";
-    const TIKTOK_URL = "https://tiktok.com/@tuusuario";
-    const FACEBOOK_URL = "https://facebook.com/tupagina";
+    const WHATSAPP_MESSAGE = "Hola%20Kevin%2C%20quiero%20información%20sobre%20tus%20servicios%20en%20Ibarra";
     
-    // Actualizar todos los botones de WhatsApp con el número correcto
-    document.querySelectorAll('.btn-whatsapp, .whatsapp-float').forEach(btn => {
-        const href = btn.getAttribute('href');
-        if (href && href.includes('wa.me/593999999999')) {
-            btn.setAttribute('href', href.replace('593999999999', WHATSAPP_NUMBER));
-        } else if (btn.classList.contains('whatsapp-float')) {
-            btn.setAttribute('href', `https://wa.me/${WHATSAPP_NUMBER}?text=Hola%20Kevin%2C%20quiero%20potenciar%20mi%20marca%20en%20Ibarra`);
-        }
-    });
-    
-    // Actualizar enlaces de redes sociales
-    document.querySelectorAll('.social-item').forEach((item, index) => {
-        if (index === 0) item.href = INSTAGRAM_URL;
-        if (index === 1) item.href = TIKTOK_URL;
-        if (index === 2) item.href = FACEBOOK_URL;
-    });
-    
-    // Galería interactiva
-    document.querySelectorAll('.evidence-item').forEach(item => {
-        item.addEventListener('click', () => {
-            const text = item.querySelector('.evidence-overlay')?.innerText || 'Ver más';
-            alert(`📸 ${text}\n\nMira más contenido en nuestro perfil de Instagram: @kevinayala`);
+    // Actualizar todos los botones de WhatsApp
+    document.querySelectorAll('[id^="wa"], .whatsapp-float, .btn-whatsapp').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            let message = WHATSAPP_MESSAGE;
+            if (btn.id) {
+                const textMap = {
+                    waServicio1: "Contenido%20para%20Redes%20en%20Ibarra",
+                    waServicio2: "Campañas%20Publicitarias%20en%20Ibarra",
+                    waServicio3: "Plan%20Turismo%20y%20Hotelero%20en%20Ibarra",
+                    waPaquete1: "Plan%20Presencia%20Digital%20en%20Ibarra",
+                    waPaquete2: "Plan%20Web%20y%20SEO%20en%20Ibarra",
+                    waPaquete3: "Plan%20Crecimiento%20Integral%20en%20Ibarra",
+                    waModelo1: "Contratar%20a%20Daniela%20para%20mi%20marca",
+                    waModelo2: "Contratar%20a%20Carlos%20para%20mi%20marca",
+                    waModelo3: "Contratar%20a%20Martha%20para%20mi%20marca",
+                    waWeb1: "Página%20Web%20Corporativa%20en%20Ibarra",
+                    waWeb2: "Landing%20Page%20en%20Ibarra",
+                    waWeb3: "Blog%20Profesional%20en%20Ibarra",
+                    waCombo1: "Combo%20Web%20%2B%20Landing%20Page%20en%20Ibarra",
+                    waCombo2: "Paquete%20Todo%20en%20Uno%20en%20Ibarra"
+                };
+                if (textMap[btn.id]) message = textMap[btn.id];
+            }
+            window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
         });
     });
     
-    // Tabs dinámicos
+    // Tabs
     document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const tabId = btn.getAttribute('data-tab');
@@ -1156,24 +1138,19 @@
         });
     });
     
-    // Contador dinámico
-    let count = 17;
+    // Contador
+    let count = 27;
     setInterval(() => {
         count += Math.random() < 0.2 ? 1 : 0;
-        if(count > 32) count = 17;
+        if(count > 45) count = 27;
         const counterSpan = document.getElementById('counterNumber');
         if(counterSpan) counterSpan.innerText = count;
     }, 8000);
     
-    // Selector ciudad
-    document.querySelector('.city-selector')?.addEventListener('click', () => {
-        alert('📍 Estás viendo precios especiales para Ibarra y el norte de Ecuador. ¡Incluye traslado sin costo en la ciudad!');
-    });
-    
     // Formulario
     document.getElementById('contactForm')?.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('✅ Gracias por contactarnos. En 24h recibirás tu propuesta personalizada para Ibarra.');
+        alert('✅ ¡Gracias! En 24h recibirás tu propuesta personalizada.');
         e.target.reset();
     });
     
@@ -1187,6 +1164,15 @@
             if(target) target.scrollIntoView({ behavior: 'smooth' });
         });
     });
+    
+    // City selector tooltip
+    const citySelector = document.querySelector('.city-selector');
+    const tooltip = citySelector?.querySelector('.city-tooltip');
+    if (citySelector && tooltip) {
+        citySelector.addEventListener('mouseenter', () => tooltip.style.opacity = '1');
+        citySelector.addEventListener('mouseleave', () => tooltip.style.opacity = '0');
+        citySelector.addEventListener('click', () => alert('📍 Precios especiales para Ibarra y norte de Ecuador. ¡Incluye traslado sin costo!'));
+    }
 </script>
 
 </body>
